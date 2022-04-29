@@ -1,18 +1,38 @@
+const moment = require('moment')
 module.exports = {
+  base:'/docs/',
   // SEO 相关配置 
   title:"大青虫", // 网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上。
   description:"大青虫的成长日记",
   head:[
-    ['link', { rel: 'icon', href: '/assets/img/xiao.png' }],
+    ['link', { rel: 'icon', href: './assets/img/xiao.png' }],
     ['meta', { rel: 'author', content: '不爱吃青菜的大青虫' }],
     ['meta', { rel: 'Keywords', content: 'vuepress介绍说明 不爱吃青菜的大青虫' }],
   ],
   // ps:
+  // moment插件处理相关
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          // const moment = require('moment')
+          moment.locale('zh-cn')
+          return moment(timestamp).format('llll')
+        }
+      }
+    ]
+  ],
+  // ps：
+  // 部署相关
+  
+  // ps:
     themeConfig: {
         // navbar: false,
       
-      lastUpdated: 'Last Updated', // string | boolean
-      logo: '/assets/img/xiaosi.png',
+      lastUpdated: '更新时间', // string | boolean
+      logo: './assets/img/xiaosi.png',
       nav: [
         { text: 'Home', link: '/' },
         { text: 'About', link: '/about.html' },

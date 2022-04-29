@@ -9,8 +9,11 @@
     "vuepress": "^1.9.7"
   },
   "scripts": {
-    
     "dev": "vuepress dev docs --temp .temp",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy":"bash deploy.sh"
+  },
+  "dependencies": {
+    "moment": "^2.29.3"
   }
 }
