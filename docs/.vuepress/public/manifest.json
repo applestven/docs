@@ -1,0 +1,10 @@
+{
+    "theme_color" : "#f69435",
+    "background_color" : "#f69435",
+    "display" : "browser",
+    "scope" : "/",
+    "start_url" : "/",
+    "name" : "不爱白菜大青虫",
+    "short_name" : "大青虫",
+    "description" : "大青虫-csdn"
+}
