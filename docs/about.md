@@ -1,5 +1,5 @@
 ---
-navbar: true
+navbar: false
 title: 关于我的介绍
 ---
 
@@ -12,3 +12,4 @@ title: 关于我的介绍
 
 文明6 地下城与勇士
 ### 以及我不喜欢的游戏
+<Vssue />
