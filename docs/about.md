@@ -12,4 +12,8 @@ title: 关于我的介绍
 
 文明6 地下城与勇士
 ### 以及我不喜欢的游戏
+
+追加Travis 
 <Vssue />
+<<< @/docs/about.md
+<<< @/docs/forbidden.md
