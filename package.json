@@ -7,15 +7,14 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
     "@vuepress/plugin-pwa": "^1.9.7",
     "vuepress": "^1.9.7"
   },
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
-    "cname":"bash cname.sh"
-
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",

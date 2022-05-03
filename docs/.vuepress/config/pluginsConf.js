@@ -34,6 +34,9 @@ module.exports =
       clientSecret: secret.clientSecret,
     },
     '@vuepress/back-to-top':true,
+    '@vuepress/medium-zoom': {
+      selector: 'img.custom',
+    }
   
 }
 // ps:

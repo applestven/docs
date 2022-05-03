@@ -37,7 +37,7 @@
         <slot name="page-top" />
       </template>
       <template #bottom>
-        <Vssue  />
+        <Vssue class="theme-default-content" />
         <slot name="page-bottom" />
       </template>
     </Page>
