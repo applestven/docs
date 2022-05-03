@@ -1,7 +1,7 @@
 const headConf = require('./config/headConf.js')
 const pluginsConf  = require('./config/pluginsConf')
-const navConf  = require('./config/navConf')
-const sidebarConf  = require('./config/sidebarConf')
+const navConf  = require('./nav.js')
+
 module.exports = {
   // base:'/docs/',
   // SEO 相关配置 
@@ -14,7 +14,7 @@ module.exports = {
       logo: './assets/img/xiaosi.PNG',
       nav: navConf, // 右侧导航
       // sidebar: 'auto' ,
-      sidebar: sidebarConf // 侧边栏分组 
+      
       
     },
     

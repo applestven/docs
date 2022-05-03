@@ -36,7 +36,8 @@ module.exports =
     '@vuepress/back-to-top':true,
     '@vuepress/medium-zoom': {
       selector: 'img.custom',
-    }
+    },
+    "vuepress-plugin-auto-sidebar": {}
   
 }
 // ps:
