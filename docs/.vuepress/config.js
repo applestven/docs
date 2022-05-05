@@ -6,7 +6,7 @@ module.exports = {
   // base:'/docs/',
   // SEO 相关配置 
   title:"大青虫", // 网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上。
-  description:"大青虫的成长日记",
+  description:"文档、笔记、博客",
   head:headConf,
   plugins: pluginsConf,
   themeConfig: { // navbar: false,

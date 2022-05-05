@@ -1,8 +1,8 @@
 ---
 home: true
-# heroImage: /hero.png
-heroText: Hero 标题
-tagline: Hero 副标题
+heroImage: /assets/img/logo.PNG
+heroText: 不爱吃青菜的大青虫
+# tagline: Hero 副标题
 actionText: 快速上手 →
 actionLink: /zh/guide/
 features:
@@ -15,4 +15,7 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-# docs 第一次写vuepress --- 演示PWA的弹窗效果的内容测试再次手机测试
+# 关于~~文档~~笔记 
+::: danger
+这根本不是什么文档，仅仅是一个人笔记而已。
+:::
