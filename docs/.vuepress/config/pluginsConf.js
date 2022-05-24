@@ -17,7 +17,7 @@ module.exports =
             serviceWorker: true,
             updatePopup: {
               // message: "别让鸡零狗碎的琐事耗尽你对生活的向往",
-              message: "主人，",
+              message: "更新了前端笔记",
               buttonText: "刷新"
             }
             
