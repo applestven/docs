@@ -1,5 +1,5 @@
 module.exports = [
-    ['link', { rel: 'icon', href: './assets/img/xiao.PNG' }],
+    ['link', { rel: 'icon', href: '/assets/img/xiao.PNG' }],
     ['meta', { rel: 'author', content: '不爱吃青菜的大青虫' }],
     ['meta', { rel: 'Keywords', content: 'vuepress介绍说明 不爱吃青菜的大青虫' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
