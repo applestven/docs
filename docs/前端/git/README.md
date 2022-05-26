@@ -95,7 +95,21 @@ If you are planning on basing your work on an upstream
 hint: branch that already exists at the remote, you may need to
 hint: run "git fetch" to retrieve it.
 
+## git clone push 所有的操作 ssh  和 htpps 方式  都不行的时候   
+https://www.githubstatus.com/ 网站监测（可不用）
 
+1. 方法一 ： 修改host文件（github访问慢 ， 或者不能访问被墙 都可使用此方法测试）
+找到host文件： 
+windows系统的hosts文件的位置如下：C:\Windows\System32\drivers\etc\hosts
+mac/linux系统的hosts文件的位置如下：/etc/hosts     
+添加映射关系（在hosts中添加如下） ：
+140.82.114.4	github.com
+199.232.5.194	github.global.ssl.fastly.net
+2. 方法二 ： 
+修改本地网络环境 服务器dns地址 ： 
+首选 8888
+备用 114114114114 
+cmd刷新DNS解析缓存  ipconfig /flushdns
 
 
 ## github技巧： 
@@ -119,4 +133,4 @@ hint: run "git fetch" to retrieve it.
 登陆：
 加载：
 运行：
-
+## 
