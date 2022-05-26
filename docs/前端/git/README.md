@@ -44,6 +44,19 @@ b.进入.ssh目录： cd ~/.ssh
 c.找到id_rsa.pub文件： ls
 d.查看公钥： cat id_rsa.pub 或者 vim id_rsa.pub
 ```
+## git add 报错 
+```js
+warning: LF will be replaced by CRLF in docs/.vuepress/nav.js.
+The file will have its original line endings in your working directory
+参考： https://blog.csdn.net/huihuikuaipao_/article/details/100183521
+情况一：
+Git 可以在你提交时自动地把回车（CR）和换行（LF）转换成换行（LF），而在检出代码时把换行（LF）转换成回车（CR）和换行（LF）。 你可以用git config --global core.autocrlf true 来打开此项功能。 如果是在 Windows 系统上，把它设置成 true，这样在检出代码时，换行会被转换成回车和换行：
+
+#提交时转换为LF，检出时转换为CRLF
+$ git config --global core.autocrlf true
+
+
+```
 ## git clone报错
 [session-0d4d6890] Access denied  403   clone代码报错    解决方法 
 ```js
@@ -96,8 +109,10 @@ hint: branch that already exists at the remote, you may need to
 hint: run "git fetch" to retrieve it.
 
 ## git clone push 所有的操作 ssh  和 htpps 方式  都不行的时候   
-https://www.githubstatus.com/ 网站监测（可不用）
 
+
+```js
+https://www.githubstatus.com/ 网站连通监测
 1. 方法一 ： 修改host文件（github访问慢 ， 或者不能访问被墙 都可使用此方法测试）
 找到host文件： 
 windows系统的hosts文件的位置如下：C:\Windows\System32\drivers\etc\hosts
@@ -110,7 +125,7 @@ mac/linux系统的hosts文件的位置如下：/etc/hosts
 首选 8888
 备用 114114114114 
 cmd刷新DNS解析缓存  ipconfig /flushdns
-
+```
 
 ## github技巧： 
 

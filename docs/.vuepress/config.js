@@ -14,8 +14,6 @@ module.exports = {
       logo: './assets/img/xiaosi.PNG',
       nav: navConf, // 右侧导航
       // sidebar: 'auto' ,
-      
-      
     },
     
   }

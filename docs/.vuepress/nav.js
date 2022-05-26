@@ -1,40 +1,40 @@
 module.exports = [
-  {
-    "text": "about",
-    "items": [
-      {
-        "text": "About",
-        "link": "/about/"
-      }
-    ]
-  },
-  {
-    "text": "article",
-    "items": [
-      {
-        "text": "Article",
-        "link": "/article/"
-      }
-    ]
-  },
-  {
-    "text": "foo",
-    "items": [
-      {
-        "text": "Foo",
-        "link": "/foo/"
-      }
-    ]
-  },
-  {
-    "text": "fooCopy",
-    "items": [
-      {
-        "text": "Foo Copy",
-        "link": "/fooCopy/"
-      }
-    ]
-  },
+  // {
+  //   "text": "about",
+  //   "items": [
+  //     {
+  //       "text": "About",
+  //       "link": "/about/"
+  //     }
+  //   ]
+  // },
+  // {
+  //   "text": "article",
+  //   "items": [
+  //     {
+  //       "text": "Article",
+  //       "link": "/article/"
+  //     }
+  //   ]
+  // },
+  // {
+  //   "text": "foo",
+  //   "items": [
+  //     {
+  //       "text": "Foo",
+  //       "link": "/foo/"
+  //     }
+  //   ]
+  // },
+  // {
+  //   "text": "fooCopy",
+  //   "items": [
+  //     {
+  //       "text": "Foo Copy",
+  //       "link": "/fooCopy/"
+  //     }
+  //   ]
+  // },
   {
     "text": "前端",
     "items": [
