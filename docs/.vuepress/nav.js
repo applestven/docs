@@ -1,40 +1,29 @@
 module.exports = [
-  // {
-  //   "text": "about",
-  //   "items": [
-  //     {
-  //       "text": "About",
-  //       "link": "/about/"
-  //     }
-  //   ]
-  // },
-  // {
-  //   "text": "article",
-  //   "items": [
-  //     {
-  //       "text": "Article",
-  //       "link": "/article/"
-  //     }
-  //   ]
-  // },
-  // {
-  //   "text": "foo",
-  //   "items": [
-  //     {
-  //       "text": "Foo",
-  //       "link": "/foo/"
-  //     }
-  //   ]
-  // },
-  // {
-  //   "text": "fooCopy",
-  //   "items": [
-  //     {
-  //       "text": "Foo Copy",
-  //       "link": "/fooCopy/"
-  //     }
-  //   ]
-  // },
+  {
+    "text": "webpack",
+    "items": [
+      {
+        "text": "原理",
+        "link": "/webpack/原理/"
+      },
+      {
+        "text": "基础",
+        "link": "/webpack/基础/"
+      },
+      {
+        "text": "项目",
+        "link": "/webpack/项目/"
+      },
+      {
+        "text": "高级",
+        "link": "/webpack/高级/"
+      },
+      {
+        "text": "Webpack",
+        "link": "/webpack/"
+      }
+    ]
+  },
   {
     "text": "前端",
     "items": [
@@ -69,6 +58,15 @@ module.exports = [
       {
         "text": "前端",
         "link": "/前端/"
+      }
+    ]
+  },
+  {
+    "text": "笔记",
+    "items": [
+      {
+        "text": "笔记",
+        "link": "/笔记/"
       }
     ]
   },

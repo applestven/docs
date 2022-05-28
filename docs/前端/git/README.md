@@ -22,8 +22,10 @@ git branch -a（-r只显示所有的分支 ， -a比-r多了本地已经选择�
 git add 报错:
 The file will have its original line endings in your working directory
 warning: LF will be replaced by CRLF in tests/unit/utils/validate.spec.js.
-The file will have its original line endings in your working directory
-
+The file will have its original line endings in your working directory 
+最简单的一种办法就是把自动转换功能关掉即可。
+输入命令 ：git config core.autocrlf false (仅对当前git仓库有效）
+git config --global core.autocrlf false (全局有效，不设置推荐全局）
 ```js
 切换分支 
 git checkout   xxx  

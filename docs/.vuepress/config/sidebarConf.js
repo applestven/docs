@@ -1,6 +1,6 @@
 module.exports = [
     '',
-    'about',
+    // 'about',
     // 'forbidden',
     // {
     //   title: '举例的fool',   // 必要的
