@@ -32,16 +32,16 @@ module.exports = [
         "link": "/前端/CSS/"
       },
       {
-        "text": "Canvas",
-        "link": "/前端/Canvas/"
-      },
-      {
         "text": "Git",
         "link": "/前端/git/"
       },
       {
         "text": "Java Script",
         "link": "/前端/JavaScript/"
+      },
+      {
+        "text": "React",
+        "link": "/前端/React/"
       },
       {
         "text": "Study",
