@@ -1,4 +1,4 @@
-# git基操 
+# git基操 \ npm 基操
 ## git  相关创建分支推送分支（部署ssh）
 ``` js
 新建一个本地分支 
@@ -151,3 +151,11 @@ cmd刷新DNS解析缓存  ipconfig /flushdns
 加载：
 运行：
 ## 
+
+## npm 全局安装
+
+npm inatsll -g XXX 是安装在全局目录下的，
+
+npm config set prefix '目录路径' 而后者全局路径
+
+npm get prefix  查看当前的全局目录   全局安装失效可查看命令是否在该目录下

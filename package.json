@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",
+    "start": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "docs:nav": "vuepress nav docs",

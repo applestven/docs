@@ -1,4 +1,7 @@
-## 友情链接（大家有好的开源项目和优秀作者，欢迎推荐）
+## 友链
+请联系博主
+
+<!-- ## 友情链接（大家有好的开源项目和优秀作者，欢迎推荐）
 
 * [jsliang的文档库](https://github.com/LiangJunrong/document-library)（每日一道 LeetCode，jsliang 带你进行每日折腾~）
 * [千古壹号](https://github.com/qianguyihao/Web)（前端入门和进阶学习笔记作者。从零开始学前端，做一个web全栈工程师。）
@@ -36,4 +39,4 @@
 * [面试图谱](https://yuchengkai.cn/docs/) （打造最好的面试图谱）
 * [前端知识整理](https://github.com/pingan8787/Leo-JavaScript) （Cute系列更新一些系列文章和框架demo，作为自己学习结果的输出，喜欢的朋友欢迎 👉star）
 * 洞见前端小程序-(微信搜索，非常有意思的小程序，刷题必备)
-* 前端荣耀小程序-(微信搜索，非常有意思的小程序，通关打卡还有排行榜)
+* 前端荣耀小程序-(微信搜索，非常有意思的小程序，通关打卡还有排行榜) -->

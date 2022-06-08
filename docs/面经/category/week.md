@@ -12,7 +12,7 @@
 - 欢迎大家到**Issues**交流，鼓励**PR**，感谢**Star**，大家有啥好的建议可以加我微信一起交流讨论！
 > 希望大家**每日**去学习与思考，这才达到来这里的目的！！！（不要为了谁而来，要为自己而来！）
 
-![微信公众号和微信群](https://github.com/haizlin/fe-interview/raw/master/resource/images/qrcode.jpg)
+<!-- ![微信公众号和微信群](https://github.com/haizlin/fe-interview/raw/master/resource/images/qrcode.jpg) -->
 
 【推荐】欢迎跟 jsliang 一起折腾前端，系统整理前端知识，目前正在折腾 LeetCode，打算打通算法与数据结构的任督二脉。[GitHub 地址](https://github.com/LiangJunrong/document-library)
 
@@ -59,4 +59,4 @@
 ## 交流讨论
 欢迎大家前来讨论，如果觉得对你的学习有一定的帮助，欢迎点个[**Star**](https://github.com/haizlin/fe-interview), 同时欢迎加入 **“前端面试每日3+1”** 微信群（扫个人微信号邀请入群）相互交流。
 
-![微信公众号和微信群](https://github.com/haizlin/fe-interview/raw/master/resource/images/qrcode.jpg)
+<!-- ![微信公众号和微信群](https://github.com/haizlin/fe-interview/raw/master/resource/images/qrcode.jpg) -->·

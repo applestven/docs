@@ -1,7 +1,20 @@
 module.exports = [
   {
+    "text": "noteBook",
+    "items": [
+      {
+        "text": "Note Book",
+        "link": "/noteBook/"
+      }
+    ]
+  },
+  {
     "text": "webpack",
     "items": [
+      {
+        "text": "Webpack",
+        "link": "/webpack/"
+      },
       {
         "text": "原理",
         "link": "/webpack/原理/"
@@ -17,10 +30,6 @@ module.exports = [
       {
         "text": "高级",
         "link": "/webpack/高级/"
-      },
-      {
-        "text": "Webpack",
-        "link": "/webpack/"
       }
     ]
   },
@@ -58,15 +67,6 @@ module.exports = [
       {
         "text": "前端",
         "link": "/前端/"
-      }
-    ]
-  },
-  {
-    "text": "笔记",
-    "items": [
-      {
-        "text": "笔记",
-        "link": "/笔记/"
       }
     ]
   },
