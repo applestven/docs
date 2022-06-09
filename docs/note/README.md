@@ -7,3 +7,8 @@
 
 ## vscode注释的快捷键：
 “Ctrl + /”和“Alt+Shift+A”。vscode中进行注释的方法：1、单行注释，使用“Ctrl + /”，或者先按“CTRL+K”，再按“CTRL+U”；2、块注释，使用“Alt+Shift+A”。
+
+## vscode 用户自定义代码的设置方法
+1. ctrl+shift+P 
+2. 选择Preferences: Configure User Snippets 
+3. 在html.json, javascript.json, javascriptbabel.json里都设置一下~
