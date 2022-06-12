@@ -19,24 +19,16 @@ git branch -a（-r只显示所有的分支 ， -a比-r多了本地已经选择�
 提交到远程分支： ps：实际上是 git push origin ts_EN 
 
 
-git add 报错:
-The file will have its original line endings in your working directory
-warning: LF will be replaced by CRLF in tests/unit/utils/validate.spec.js.
-The file will have its original line endings in your working directory 
-最简单的一种办法就是把自动转换功能关掉即可。
-输入命令 ：git config core.autocrlf false (仅对当前git仓库有效）
-git config --global core.autocrlf false (全局有效，不设置推荐全局）
-```js
+
+
 切换分支 
 git checkout   xxx  
 ```
-```js
-提交冲突的情况下： Updates were rejected because the tip of your current branch is behind
 
-先更新本地版本  git pull  origin  xxx  
-再进行提交   git  push origin xxx
 
-```
+
+
+
 ##  查看本机ssh公钥，生成公钥
 
     参考地址 https://blog.csdn.net/shog808/article/details/76563136
@@ -46,16 +38,8 @@ b.进入.ssh目录： cd ~/.ssh
 c.找到id_rsa.pub文件： ls
 d.查看公钥： cat id_rsa.pub 或者 vim id_rsa.pub
 ```
-## git add 报错 
-```js
-warning: LF will be replaced by CRLF in docs/.vuepress/nav.js.
-The file will have its original line endings in your working directory
-参考： https://blog.csdn.net/huihuikuaipao_/article/details/100183521
-情况一：
-Git 可以在你提交时自动地把回车（CR）和换行（LF）转换成换行（LF），而在检出代码时把换行（LF）转换成回车（CR）和换行（LF）。 你可以用git config --global core.autocrlf true 来打开此项功能。 如果是在 Windows 系统上，把它设置成 true，这样在检出代码时，换行会被转换成回车和换行：
 
-#提交时转换为LF，检出时转换为CRLF
-$ git config --global core.autocrlf true
+
 
 
 ```
@@ -97,18 +81,7 @@ ssh -T git@github.com 测试一下通不通，通了显示如下
 
 ```
 
-## git pull 报错 ：
 
-There is no tracking information for the current branch.
-Please specify which branch you want to merge with（当前分支没有跟踪信息请指定要合并的分支）
-
-    git branch --set-upstream-to origin/master master
-
-继续报错 ： 
-
-If you are planning on basing your work on an upstream
-hint: branch that already exists at the remote, you may need to
-hint: run "git fetch" to retrieve it.
 
 ## git clone push 所有的操作 ssh  和 htpps 方式  都不行的时候   
 

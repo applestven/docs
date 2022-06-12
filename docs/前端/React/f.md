@@ -1,6 +1,6 @@
 # 第6章: 常用UI组件 
 ## antd的按需引入+自定主题
-	1.安装依赖：yarn add react-app-rewired customize-cra babel-plugin-import lesless-loader
+	1.安装依赖：yarn add react-app-rewired customize-cra babel-plugin-import less less-loader
 	2.修改package.json
 			....
 				"scripts": {
@@ -12,7 +12,7 @@
 			....
 	3.根目录下创建config-overrides.js
 		//配置具体的修改规则
-		const { override, fixBabelImports,addLessLoader} = requ('customize-cra');
+		const { override, fixBabelImports,addLessLoader} = require('customize-cra');
 		module.exports = override(
 			fixBabelImports('import', {
 				libraryName: 'antd',
@@ -26,4 +26,7 @@
 				}
 			}),
 		);
-	4.备注：不用在组件里亲自引入样式了，即：import 'antd/dist/antd.css'应该删掉
+	4.备注：不用在组件里亲自引入样式了，即：import 'antd/dist/antd.css'应该删掉 
+ps : react 18以前可用 
+	 模板 ：https://gitee.com/big_insect/study-class/tree/master/react/react-cli/antd-react17 
+	 
