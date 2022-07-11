@@ -52,14 +52,14 @@
 
 ## 3. Hooks
 
-#### 1. React Hook/Hooks是什么?
+### 1. React Hook/Hooks是什么?
 
 ```
 (1). Hook是React 16.8.0版本增加的新特性/新语法
 (2). 可以让你在函数组件中使用 state 以及其他的 React 特性
 ```
 
-#### 2. 三个常用的Hook
+### 2. 三个常用的Hook
 
 ```
 (1). State Hook: React.useState()
@@ -67,7 +67,7 @@
 (3). Ref Hook: React.useRef()
 ```
 
-#### 3. State Hook
+### 3. State Hook
 
 ```
 (1). State Hook让函数组件也可以有state状态, 并进行状态数据的读写操作
@@ -80,7 +80,7 @@
         setXxx(value => newValue): 参数为函数, 接收原本的状态值, 返回新的状态值, 内部用其覆盖原来的状态值
 ```
 
-#### 4. Effect Hook
+### 4. Effect Hook
 
 ```
 (1). Effect Hook 可以让你在函数组件中执行副作用操作(用于模拟类组件中的生命周期钩子)
@@ -108,7 +108,7 @@
     	componentWillUnmount() 
 ```
 
-#### 5. Ref Hook
+### 5. Ref Hook
 
 ```
 (1). Ref Hook可以在函数组件中存储/查找组件内的标签或任意其它数据

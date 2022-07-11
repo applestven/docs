@@ -1,10 +1,10 @@
 module.exports = [
   {
-    "text": "noteBook",
+    "text": "note",
     "items": [
       {
-        "text": "Note Book",
-        "link": "/noteBook/"
+        "text": "Note",
+        "link": "/note/"
       }
     ]
   },
@@ -65,6 +65,10 @@ module.exports = [
         "link": "/前端/VUE/"
       },
       {
+        "text": "javaScript高级",
+        "link": "/前端/JavaScript/javaScript高级/"
+      },
+      {
         "text": "前端",
         "link": "/前端/"
       }
@@ -80,6 +84,10 @@ module.exports = [
       {
         "text": "Contribution",
         "link": "/面经/contribution/"
+      },
+      {
+        "text": "Experience",
+        "link": "/面经/experience/"
       },
       {
         "text": "Lib",

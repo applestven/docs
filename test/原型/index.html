@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>原型继承</P>
+    <script>
+    function Person (){
+        this.name = "人类"
+    }
+    Person.prototype.specking = function(name){
+        console.log("我是人类方法","正在调用的是"+this.name)
+    }
+
+function students(){
+    this.name = "张三"
+}  
+
+students.prototype = new Person()
+console.log(students) 
+
+    </script>
+</body>
+</html>

@@ -85,7 +85,12 @@ module.exports = function(app){
 ```
 
 ## 案例-消息订阅-发布机制 pubsub-js
-https://gitee.com/big_insect/study-class/tree/master/react/react-cli/hello-react/05_发布订阅pubsub-js
+	https://gitee.com/big_insect/study-class/tree/master/react/react-cli/hello-react/05_发布订阅pubsub-js
+1. yarn add pubsub-js
+2. 订阅  
+ import PubSub from 'pubsub-js'  
+ 
+
 
 ## 扩展：Fetch 
 ### 文档
