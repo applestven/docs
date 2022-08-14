@@ -5,7 +5,7 @@
 <<< @/docs/前端/React/react_basic/01_hello_react/hello_react.html
 :::
 ## 02_虚拟DOM的两种创建方式 
-
+ 
     1_使用jsx创建虚拟DOM
 ::: details 点击查看代码
 <<< @/docs/前端/React/react_basic/02_虚拟DOM的两种创建方式/1_使用jsx创建虚拟DOM.html
