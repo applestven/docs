@@ -37,6 +37,9 @@ a.打开你的git bash 窗口
 b.进入.ssh目录： cd ~/.ssh
 c.找到id_rsa.pub文件： ls
 d.查看公钥： cat id_rsa.pub 或者 vim id_rsa.pub
+// or ：cat ~/.ssh/id_rsa.pub
+e. 生成公钥 ssh-keygen
+https://blog.csdn.net/shog808/article/details/76563136
 ```
 
 
