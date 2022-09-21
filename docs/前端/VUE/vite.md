@@ -4,7 +4,7 @@ title: vite-ts-pinia-study
 
 ---
 # vite 
-## 1.创建vue3项目  :  基于构建工具webpack
+## 1.创建vue3项目  :  基于构建工具webpack 
 
 	vue create 项目名称
 
@@ -14,7 +14,8 @@ title: vite-ts-pinia-study
 
 	3. vite优势：在开发过程中大大提升我们的效率
 
-## 2.创建vue3项目 ： 基于vite
+## 2.创建vue3项目 ： 基于 vite （已废弃 具体查看官网）
+	https://vitejs.cn/guide/ 
 
 	npm init @vitejs/app 项目名称
 
