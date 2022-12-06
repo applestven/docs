@@ -1,10 +1,9 @@
-## docker 获取镜像 image 的两种方式 
+## docker 
+## 1. docker 获取镜像 image 的两种方式 
 
 ```bash
 
-1. registry   
-
-ps:（换源）
+1. registry   ps:（换源）
 
  sudo tee /etc/docker/daemon.json   
 
@@ -19,15 +18,13 @@ ps:（换源）
 
 ## 开机报错 
 
-
-
 Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 
+ 解决方法
+service docker restart  
 
-service docker restart   解决
 
-
-## docker 常用命令 
+## 2.docker 常用命令 
 
 ```bash
 
@@ -173,7 +170,7 @@ sudo service docker restart
  192.168.0.188:5000/v2/_catalog  
  
 ```
-## dockerfile 实战 
+## 3.dockerfile 实战 
 ``` bash
 ## DockerFile 
 FROM python:2.7
@@ -183,7 +180,8 @@ COPY app.py /app/
 WORKDIR /app
 EXPOSE 5000
 CMD ["python" , "app.py"]
-```
+
+
 ## app.py
 from flask import Flask
 app = Flask(__name__)
@@ -192,10 +190,13 @@ def hello():
 return "hello docker"
 if__name__ == '__main__':
 app.run()
+```
 
-总结 ： 如何调试Dockerfile   ？   docker build  运行会一层一层执行 ，可以看到在哪一层执行错误 ， 并且每一层都会生成零时镜像 ，可在出错误的前一层   执行镜像 ，进入容器中调试下一层命令 。 
 
-## container 容器的操作 
+总结 ： 如何调试Dockerfile   ？   docker build  运行会一层一层执行 ，可以看到在哪一层执行错误 ， 并且每一层都会生成临时镜像 ，可在出错误的前一层   执行镜像 ，进入容器中调试下一层命令 。 
+
+## 4.container 容器的操作 
+``` bash
 先运行一个容器   * -it  交互式运行  
 
  docker exec -it [容器id]  /bin/bash  进入容器根目录  
@@ -225,8 +226,9 @@ docker inspect [容器id]  显示容器详细 ，主要内容包括 ：
 em：Networks ， Gateway:172.17.0.1 ，IPAddress:172.17.0.2 ,MacAddress
 
 docker logs [容器id]  ： 运行信息  可做调试用
-
-## 网络基础回顾
+```
+## 5.网络基础回顾
+```bash
 ping 和 telnet  
 ping 验证ip可达性 
 telnet  验证服务可用性
@@ -236,8 +238,9 @@ telnet www.imooc.com 80
 能ping通  telent 不能  ，考虑防火墙
 
 抓包工具 ： wireshark
-
-## Linux 网络命名空间 
+```
+## 6.Linux 网络命名空间 
+```bash
 sudo docker exec [容器id] ip a  查看容器网络
 
 sudo ip netns list 查看本机网络命名空间（ network linux space ）
@@ -251,9 +254,9 @@ sudo ip netns exec test1 ip a ,在test1的  linux   network Namespace中 运行i
 ip link 查看本机网络信息 （本地回环口， 端口） 
 
 sudo ip netns exec test1 ip link set dev lo up   在test1的network linux space中 运行 ip link set dev lo up ，启动端口   
-
-##  连接两个network namespace 使得能够ping通
-
+```
+## 7. 连接两个network namespace 使得能够ping通
+``` bash
 过程 ： 创建一对（可连通）端口' veth-test1 ， veth-test2‘  并将这两个端口添加到容器test1 test2中    ping通 
  
 添加一对link ： sudo ip link add veth-test1 type veth peer name veth-test2 (可连接通)
@@ -289,8 +292,8 @@ ip link 查询到这一对link
 sudo ip netns exec test1 ping 192.168.1.2 
 
 完结撒花 。。。。 。。。。。。
-
-##  Docker bridge 详解 
+```
+## 8. Docker bridge 详解 
 
 ``` bash
 前提 ： 已经创建有test1容器 且容器绑定有自建端口（network namespace） 以做下面查询
@@ -307,7 +310,7 @@ brctl show 查看机器上的linux bridge  连接 （interfaces）
 ip a  查看到最后一个端口为(em : veth26d281c@xxx  )  表示我们的接口连接到了 docker0 
 ```
 
-## 容器端口的映射 （nginx）
+## 9.容器端口的映射 （nginx）
 ``` bash
 1. run 一个持久化运行的nginx （取名为web）
  sudo docker run --name web -d nginx (-d 持久化运行)
@@ -341,26 +344,28 @@ ip a 可以看到容器外面有docker0 bridge
 
 ``` 
 
-## 容器网络之host与none 
+## 10.容器网络之host与none 
+``` bash 
 1. docker network ls  查询到网络 bridge 和 host 以及 none 三个网络 
 2. docker run -d --name test1 --network none busybox /bin/sh -c "while true; do sleep 3600 ;done" 创建容器test1 用--network 指定网络 none ,一般来说指定为none的使用场景只有是只供内网访问的应用 
 3. docker network inspect none 查询none网络 发现test1绑定 
 4. docker exec -it test1 /bin/sh   //   ip a 进入  查询到none的网络只有本地回环口lo
 5. docker run -d --name test1 --network host busybox /bin/sh -c "while true; do sleep 3600 ;done" 创建容器test1 用--network 指定网络 host , 进入容器 ip a再查网络  本地网络回环口 ，内网网络回环口就都在了 跟linux主机是一样的
+```
+## 11.多容器的复杂应用部署 (空)
 
-## 多容器的复杂应用部署 
-
-## underlay和overlay 
+## 12.underlay和overlay 
+``` bash
 1. underlay: 现实的物理基础层网络设备。-数据中心基础转发架构的网络。
     - 以太网最初设计的时候就是一个分布式的网络架构，没有中心控制节点，网络中的节点通过协议传递学习网络的可达性信息。underlay就是数据中心场景的基础物理设施，保证任何两个点路由可达，其中包含了传统的网络技术。
 
 2. overlay：一个基于物理网络之上构建的逻辑网络。
     - overlay是在网络技术领域指的是一种网络架构上叠加的虚拟化技术模式，Overlay网络也是一个网络，不过是建立在Underlay网络之上的网络。overlay网络节点通过虚拟或者逻辑链路进行通信，其实现基于ip技术的基础网络为主。Overlay网络技术多种多样，一般采用TRILL、VxLan、GRE、NVGRE等隧道技术。
     更多连接 ： https://blog.csdn.net/xinquanv1/article/details/102509858/    
+```
+## 13.Docker Overlay 网络 和etcd实现多容器通信(空)
 
-## Docker Overlay 网络 和etcd实现多容器通信
-
-## 部署一个wordPress 
+## 14.部署一个wordPress 
 
 ``` bash
 ### 创建数据库  -v volume  持续化存储  
@@ -371,7 +376,8 @@ docker run -d -e WORDPRESS_DB_HOST=mysql:3306 -e WORDPRESS_DB_USER=root -e WORDP
 
 ```
 
-## Docker 的持久化存储 和数据共享 
+## 15.Docker 的持久化存储 和数据共享
+``` bash 
 Docker持久化数据的方案 
 1. 基于本地系统的Volume 。
 可以在执行Docker create 和 Docker run时 ,通过 -v参数将主机的目录作为容器的数据卷 ，这部分功能便是基于本地系统文件系统的volume管理
@@ -381,9 +387,10 @@ Docker持久化数据的方案
     + 受管理的data volume ，由docker后台自动创建
     + 绑定挂载的volume ，具体挂载位置可以由用户指定 
 2. Bind Mouting 
-
+```
 ``` bash
-### Data Volume  
+### Data Volume 数据卷 
+（删除容器，不删除镜像 ，可找通过数据卷找回数据 ，如数据库数据）
 1. sudo docker run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD mysql 
 
 “数据库未初始化，密码没设置。你需要设置MYSQL_ROOT_PASSWORD, MYSQL_ALLOW_EMPTY_PASSWORD and MYSQL_RANDOM_ROOT_PASSWORD三个中的任意一项”
@@ -428,7 +435,9 @@ docker run -v /home/aaa:/root/aaa  本地目录 映射 目录
 将本地目录 $(pwd) 映射到 /usr/share/nginx/html
 docker run -d -v $(pwd):/usr/share/nginx/html -p 80:80 --name web xxx 
 ```
-## docker-compose  
+## 16.docker-compose  
+ 定义： Compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 Compose，您可以使用 YML 文件来配置应用程序需要的所有服务。然后，使用一个命令，就可以从 YML 文件配置中创建并启动所有服务。
+``` bash
 1. docker-compose 解决什么问题   
  - 要从Dockerfile build image 或者 dockerhub 拉去image 太恶心 
  - 要创建多个container 
@@ -441,18 +450,20 @@ docker run -d -v $(pwd):/usr/share/nginx/html -p 80:80 --name web xxx
     - 通过一条命令就可以根据yml文件的定义去创建或者管理这多个容器
     + 总结 ： docker-compose  “一个批处理工具”  一个docker up 命令管理 多个container
 
-
+```
 
 ###  docker-compose.yml 是compose默认名字 
 ## docker compose三大概念 ： 
+``` bash
 1. services : 
     - 一个service代表一个container ，这个container可以从dockerhub的image来创建 ，或者从本地的Dockerfile build出来的image来创建
     - Service的启动类似docker run ，我们可以给其指定network 和volume ，所以可以给service指定network和volume的引用
 2. Networks ：
 
 3. Volumes
-
+```
 ## docker-compose的安装 使用
+```bash
 1. dockerHub的 compose地址 ： 
   https://github.com/docker/compose/releases 
 
@@ -482,7 +493,7 @@ sudo curl -L  https://github.com/docker/compose/releases/download/1.18.0/docker-
     - docker-compose exec wordpress bash
   docker network ls 查看docker-compose创建的网络  
   docker-compose exec mysql bash 进入mysql的bash
- 
+ ```
 ## docker-compose部署wordpress 
 1. docker-compose.yml
 ``` js
@@ -539,14 +550,15 @@ services:
       REDIS_HOST: redis 
 ```
 
-## 水平扩展和负载均衡 
+## 17.水平扩展和负载均衡 
 
 1. 
     - docker-compose up -d 后台运行
     - docker-compose ps 
     - docker-compose up --scale web=3 将web容器启动三个
-    ```bash
      docker-compose文件参考 ：
+    ```bash
+    
       version: "3"
 
       services:
@@ -592,7 +604,8 @@ services:
           - /var/run/docker.sock:/var/run/docker.sock
   ```
   
-## swarm集群  
+## 18.swarm集群  
+```bash
   创建一个三节点的swarm集群 
 1. 初始化swarm manager节点为 192.168.31.132
 docker swarm init --advertise-addr=192.168.31.132 
@@ -604,8 +617,9 @@ docker swarm init --advertise-addr=192.168.31.132
 
 3. 查看节点（manager  worker）
 docker node ls
-
-### Swarm  service的创建和水平扩展维护
+```
+## Swarm  service的创建和水平扩展维护
+```bash
  在manager中创建service 类似（docker run）
 docker service create --name demo busybox sh -c "while true;do sleep 3600;done"
 - 查询 ： docker service ls  
@@ -619,8 +633,9 @@ docker service create --name demo busybox sh -c "while true;do sleep 3600;done"
   + 删除水平扩展的五个demo服务 ，在manager中 ：  
     docker service rm demo 
     过一会再到worker中查询 ：docker ps 
-
-### 在swarm集群里通过service部署wordpress 
+```
+## 在swarm集群里通过service部署wordpress 
+```bash
   通过swarm 创建service  mysql 和wordpress  很可能不在一个worker中  这时候用overlay网络去解决通信问题  
   ps： swarm为了保持通信： overlay网络demo 会在其他worker中同步创建
 
@@ -635,8 +650,9 @@ docker service create --name demo busybox sh -c "while true;do sleep 3600;done"
   docker service create --name wordpress -p 80:80 --env WORDPRESS_DB_PASSWORD=root --env WORDPRESS_DB_HOST=mysql --network demo wordpress 
 
   此时去访问worker1  、 workder2 地址（192.168.31.129/192.168.31.131）等都可以访问到我们部署的wordpress  由此引出集群服务间通信的Routing Mesh
-
- ###   集群服务间通信的 Routing Mesh 
+```
+ ## 集群服务间通信的 Routing Mesh 
+ ```bash
  关键字流程 ： request --》 dns  --》 vip（虚拟ip 10.0.0.7） --》iptable --》 ipvs（负载均衡） -》service/worker（A.B.C）
  流程 ： 
   1. 水平扩展scale demo= 5  ，会有共同的一个虚拟ip （virtual ip） ，访问（ping demo）任意容器的demo服务 ，都会访问一个dns 虚拟ip（em：10.0.0.7）  
@@ -652,9 +668,10 @@ docker service create --name demo busybox sh -c "while true;do sleep 3600;done"
 
   查看docker创建的本地网络 ： 
   sudo ls /var/run/docker/nets 
+```
 
-
-##  docker stack 部署wordpress 
+## docker stack 部署wordpress 
+```bash
 <!-- 文件夹 / -->
 在manager中执行部署stack ：  取名为example ，执行文件为docker.compose.yml
 docker stack deploy example --compose-file=docker.compose.yml 
@@ -671,7 +688,7 @@ docker stack rm  [stack name] 删除该stack 的服务与网络
 总结 ： docker stack 是用来部署swarm集群的 ， 写法与docekr-compose一样 ，只是多一些参数 比如ddeploy 中mode: replicated /global 是否支持水平扩展 ， 配置关闭重启 ， 更新等 以及网络一般为overlay  ， 还有区别于docker-compose的就是image，不能使用Dockerfile再docker build，只能上传dockerhub拉取， 
 参考文件 docker-compose.yml 
 <!-- /home/applestven/d-compose/swarm-stack -->
-
+```
 ``` bash
 version: '3'
 
@@ -733,7 +750,8 @@ networks:
     driver: overlay
 ``` 
 
-## docker Secret
+## 19.docker Secret
+```bash
 1. Secret Management
  - 存在Swarm Manager节点Raft database 
  - Secret可以给assign给一个service  ，这个service就能看到secret
@@ -759,12 +777,13 @@ networks:
   - docker exec -it ccee sh //
   - cd /run/secrets/    查看密码 ls  
   - cat my-pw 查看原文密码 
-4. secret使用 
+4. secret创建服务时的使用 
   - 4.1  docker service create --name db --secret my-pw -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/my-pw mysql 
   - 4.2 cd /run/secrets/my-pw   em :admin123
     + mysql -u root -p 登录使用 admin123 测试密码生效
-
+```
 5. 参考docker-compose.yml 
+
 ``` bash 
 version: '3'
 
@@ -829,6 +848,68 @@ networks:
 6. 使用swarm集群 stack方式创建 -c为--compose= 缩写 ，执行文件为docker.compose.yml
 docker stack deploy wordpress -c=docker-compose.yml 
 
+## service 的更新 
+普通更新原理：  水平扩展scale多个service ， 进行循环部分更新 
+stack swarm集群更新 ： 
+- 如果是docerk stack更新的话 就在 deploy中的update_config中去设置相关参数 去执行命令更新 即可  
+``` bash
+ 
+ 测试命令  ：
+ - 循环访问web服务
+  sh -c "while true ; do curl 127.0.0.1:8080&&sleep 1 ;done"
+ - 更新服务 (版本)
+  docker service update --image [image name]:2.0 web 
+  遗留问题： 更新过程中 新版本（2.0） 和旧版本（1.0） 访问会同时存在 
+ -更新 端口 (从8080 更新到 8088)
+ docker service update --update --publish-rm 8080:50 --publish--add 8088:5000 web
+```
+## kubernetes k8s 
+- 中文文档 https://www.kubernetes.org.cn/installkubectl
+1. 安装minikube
+ - minikube ( https://github.com/kubernetes/minikube )
+    
+    - 安装使用流程 ： https://minikube.sigs.k8s.io/docs/start/ 
+    + 安装minikube curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64 （不同设备安装包不同，可在安装流程中寻找）
+
+    + sudo install minikube-linux-arm64 /usr/local/bin/minikube
+    + 使用curl下载kubectl客户端工具
+    
+      1）使用以下命令下载最新版本：
+      curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+      2）验证二进制文件（可选）
+      下载 kubectl 校验和文件：
+      curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+
+      3）根据校验和文件验证 kubectl 二进制文件：
+      echo "$(<kubectl.sha256) kubectl" | sha256sum --check
+      如果有效，则输出为：
+      kubectl: OK
+
+      4）安装 kubectl
+      install -o root -g root -m 0755 kubectl /usr/bin/kubectl
+
+      5）测试以确保您安装的版本是最新的：
+      kubectl version --client
+
+      6）将rancher集群中kubeconfig的内容复制到服务器config中
+      mkdir -p $HOME/.kube
+      vi $HOME/.kube/config    #粘贴复制的内容
+
+      7）测试kubectl
+      kubectl get node
+
+2. 运行 minikube start
+可能出现的错误 
+   - bash: /usr/local/bin/minikube: cannot execute binary file
+    第一步的安装 没有选中对版本 
+   - iting due to DRV_AS_ROOT: The "docker" driver should not be used with root privileges.
+      Exiting due to DRV_DOCKER_NOT_RUNNING: Found docker, but the docker service
+   + start报错 解决办法 : 
+      minikube start --force --driver=docker
+
+## Docker怎么升级到最新版本
+ 
 
   
 

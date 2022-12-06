@@ -1,6 +1,7 @@
 # TypeScript Study
 
     参考CDN : https://blog.csdn.net/qq_40280582/article/details/112444461
+    复习参考 ： https://zhuanlan.zhihu.com/p/393799486
 
 ## TypeScript 介绍篇
 - TypeScript是一种由微软开发的开源、跨平台的编程语言。它是JavaScript的超集，最终会被编译为JavaScript代码。
