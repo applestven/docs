@@ -3,7 +3,7 @@
  ```bash 
  ## whereis nginx #可以在容器中查询出nginx的相关配置文件存放位置
  ```
-
+文件夹 nodePro docke-compose 部署 两个node应用示例
 ## nas配置nginx过程  
 部署 vue前端应用
 1. 通过containerStation 安装 nginx 

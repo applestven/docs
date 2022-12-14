@@ -37,20 +37,24 @@ module.exports = [
     "text": "前端",
     "items": [
       {
+        "text": "Angulr",
+        "link": "/前端/Angulr/"
+      },
+      {
         "text": "CSS",
         "link": "/前端/CSS/"
       },
       {
         "text": "Git",
-        "link": "/前端/git/"
+        "link": "/前端/Git/"
+      },
+      {
+        "text": "HTML",
+        "link": "/前端/HTML/"
       },
       {
         "text": "Java Script",
         "link": "/前端/JavaScript/"
-      },
-      {
-        "text": "Nodejs",
-        "link": "/前端/Nodejs/"
       },
       {
         "text": "React",
@@ -58,7 +62,7 @@ module.exports = [
       },
       {
         "text": "Study",
-        "link": "/前端/study/"
+        "link": "/前端/Study/"
       },
       {
         "text": "Type Script",
@@ -88,6 +92,26 @@ module.exports = [
       {
         "text": "Koa",
         "link": "/后端/koa/"
+      },
+      {
+        "text": "Mysql",
+        "link": "/后端/mysql/"
+      },
+      {
+        "text": "Nginx",
+        "link": "/后端/nginx/"
+      },
+      {
+        "text": "Node",
+        "link": "/后端/node/"
+      },
+      {
+        "text": "Nvm",
+        "link": "/后端/nvm/"
+      },
+      {
+        "text": "Redis",
+        "link": "/后端/redis/"
       }
     ]
   },
