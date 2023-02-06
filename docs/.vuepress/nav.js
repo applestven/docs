@@ -1,37 +1,35 @@
 module.exports = [
   {
-    "text": "about",
+    "text": "note",
     "items": [
       {
-        "text": "About",
-        "link": "/about/"
+        "text": "Note",
+        "link": "/note/"
       }
     ]
   },
   {
-    "text": "article",
+    "text": "webpack",
     "items": [
       {
-        "text": "Article",
-        "link": "/article/"
-      }
-    ]
-  },
-  {
-    "text": "foo",
-    "items": [
+        "text": "Webpack",
+        "link": "/webpack/"
+      },
       {
-        "text": "Foo",
-        "link": "/foo/"
-      }
-    ]
-  },
-  {
-    "text": "fooCopy",
-    "items": [
+        "text": "原理",
+        "link": "/webpack/原理/"
+      },
       {
-        "text": "Foo Copy",
-        "link": "/fooCopy/"
+        "text": "基础",
+        "link": "/webpack/基础/"
+      },
+      {
+        "text": "项目",
+        "link": "/webpack/项目/"
+      },
+      {
+        "text": "高级",
+        "link": "/webpack/高级/"
       }
     ]
   },
@@ -39,12 +37,20 @@ module.exports = [
     "text": "前端",
     "items": [
       {
+        "text": "Angulr",
+        "link": "/前端/Angulr/"
+      },
+      {
         "text": "CSS",
         "link": "/前端/CSS/"
       },
       {
-        "text": "Canvas",
-        "link": "/前端/Canvas/"
+        "text": "Git",
+        "link": "/前端/Git/"
+      },
+      {
+        "text": "HTML",
+        "link": "/前端/HTML/"
       },
       {
         "text": "Git",
@@ -55,12 +61,25 @@ module.exports = [
         "link": "/前端/JavaScript/"
       },
       {
+<<<<<<< HEAD
         "text": "Study",
         "link": "/前端/study/"
+=======
+        "text": "React",
+        "link": "/前端/React/"
+      },
+      {
+        "text": "Study",
+        "link": "/前端/Study/"
+>>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
       },
       {
         "text": "Type Script",
         "link": "/前端/TypeScript/"
+      },
+      {
+        "text": "Utils",
+        "link": "/前端/utils/"
       },
       {
         "text": "VUE",
@@ -73,6 +92,42 @@ module.exports = [
     ]
   },
   {
+<<<<<<< HEAD
+=======
+    "text": "后端",
+    "items": [
+      {
+        "text": "Docker",
+        "link": "/后端/docker/"
+      },
+      {
+        "text": "Koa",
+        "link": "/后端/koa/"
+      },
+      {
+        "text": "Mysql",
+        "link": "/后端/mysql/"
+      },
+      {
+        "text": "Nginx",
+        "link": "/后端/nginx/"
+      },
+      {
+        "text": "Node",
+        "link": "/后端/node/"
+      },
+      {
+        "text": "Nvm",
+        "link": "/后端/nvm/"
+      },
+      {
+        "text": "Redis",
+        "link": "/后端/redis/"
+      }
+    ]
+  },
+  {
+>>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
     "text": "面经",
     "items": [
       {
@@ -84,6 +139,13 @@ module.exports = [
         "link": "/面经/contribution/"
       },
       {
+<<<<<<< HEAD
+=======
+        "text": "Experience",
+        "link": "/面经/experience/"
+      },
+      {
+>>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
         "text": "Lib",
         "link": "/面经/lib/"
       },
