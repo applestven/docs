@@ -46,32 +46,23 @@ module.exports = [
       },
       {
         "text": "Git",
-        "link": "/前端/Git/"
+        "link": "/前端/git/"
       },
       {
         "text": "HTML",
         "link": "/前端/HTML/"
       },
       {
-        "text": "Git",
-        "link": "/前端/git/"
-      },
-      {
         "text": "Java Script",
         "link": "/前端/JavaScript/"
       },
       {
-<<<<<<< HEAD
-        "text": "Study",
-        "link": "/前端/study/"
-=======
         "text": "React",
         "link": "/前端/React/"
       },
       {
         "text": "Study",
-        "link": "/前端/Study/"
->>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
+        "link": "/前端/study/"
       },
       {
         "text": "Type Script",
@@ -92,8 +83,6 @@ module.exports = [
     ]
   },
   {
-<<<<<<< HEAD
-=======
     "text": "后端",
     "items": [
       {
@@ -127,7 +116,6 @@ module.exports = [
     ]
   },
   {
->>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
     "text": "面经",
     "items": [
       {
@@ -139,13 +127,10 @@ module.exports = [
         "link": "/面经/contribution/"
       },
       {
-<<<<<<< HEAD
-=======
         "text": "Experience",
         "link": "/面经/experience/"
       },
       {
->>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
         "text": "Lib",
         "link": "/面经/lib/"
       },

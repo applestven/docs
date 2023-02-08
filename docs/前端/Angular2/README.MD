@@ -23,6 +23,8 @@
 5. 循环语句
 6. 事件绑定
 7. 模板引用变量
+8. 双向数据绑定
+9. 动态表单控件
 参考项目 ng_start 
 部分具体文件： 
 https://gitee.com/big_insect/study-class/blob/master/angular/ng_start/src/app/hello/hello.component.html
