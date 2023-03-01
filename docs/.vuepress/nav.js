@@ -37,8 +37,8 @@ module.exports = [
     "text": "前端",
     "items": [
       {
-        "text": "Angulr",
-        "link": "/前端/Angulr/"
+        "text": "Angular",
+        "link": "/前端/Angular/"
       },
       {
         "text": "CSS",

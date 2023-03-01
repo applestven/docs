@@ -203,7 +203,7 @@ app.run()
 ``` bash
 先运行一个容器   * -it  交互式运行  
 
- docker exec -it [容器id]  /bin/bash  进入容器根目录  
+ docker exec -it [容器id]  /bin/bash 或者/bin/sh 进入容器根目录  
 
 docker exec -it [容器id]  python   进入运行容器，执行python 
 

@@ -91,7 +91,7 @@ show global variables like 'port';
 
 ## docker启动MySQL后 其他应用如何连接 MySQL
 
-##  查看pm2启动的nodejs的日志
+##  查看 启动的nodejs的日志
 
  pm2 logs
 

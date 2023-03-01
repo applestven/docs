@@ -5,7 +5,6 @@
 项目包含：脑图、png图片和md文档。方便你在不同场景下使用学习。
 不仅是一个自学的前端路径，项目包括前端自学的路径+知识图谱+B站免费视频的整合。
 
-<<<<<<< HEAD
 | 视频说明：[https://www.bilibili.com/video/BV1ub4y1h7ZY](https://www.bilibili.com/video/BV1ub4y1h7ZY)
 
 你按照这个图谱学习前端，完全可以自学成功。
@@ -16,33 +15,14 @@
 由于微信号好友达到上限，没办法加人入群，推荐关注公众号“技术胖学程序”，每天有编程相关文章推送。
 
 ![技术胖公众号](https://newimg.jspang.com/gongzhonghao002.jpg)
-=======
-<!-- | 视频说明：[https://www.bilibili.com/video/BV1ub4y1h7ZY](https://www.bilibili.com/video/BV1ub4y1h7ZY) -->
-
-按照这个图谱学习前端，完全可以自学成功。
-
-<!-- 我还建立了一个微信自学群，方便和我一起进步学习。我的微信号：php100，加上我好友后，可以发送“我要自学”，我24小时内就会邀请你入群。
-承诺：群内无收费、无广告、无买卖行为，只为学习使用。 -->
-
-<!-- 由于微信号好友达到上限，没办法加人入群，推荐关注公众号“技术胖学程序”，每天有编程相关文章推送。 -->
-
-<!-- ![技术胖公众号](https://newimg.jspang.com/gongzhonghao002.jpg) -->
->>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
 
 
 
 
-<<<<<<< HEAD
-![前端知识图谱+B站资源整合](https://newimg.jspang.com/web_atlas.jpg)
-
-
-## 技术胖的前端学习路径
-=======
 <!-- ![前端知识图谱+B站资源整合](https://newimg.jspang.com/web_atlas.jpg) -->
 
 
 ## 前端学习路径
->>>>>>> 1d7f46e65a4307b878fe4a0c17dc6428c1511453
 B站学习资源整合
 ## 网络知识
 （Internet）
