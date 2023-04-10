@@ -40,6 +40,8 @@ LF和CRLF其实都是换行符，但是不同的是，LF是linux和Unix系统的
 ## 5.0提交时转换为LF，检出时转换为CRLF
 $ git config --global core.autocrlf true    
 
+## 6.error: The following untracked working tree files would be overwritten by merge:
+git clean -d -fx 放弃本地 慎用！！
 
 
 
