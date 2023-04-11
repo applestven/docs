@@ -1,9 +1,8 @@
 ## web3.0 智能合约 :
-
-1 、 以太坊官网，包括了：教程和文档，以及示例游戏 https://ethereum.org/zh/developers/docs/
-2、B站视频教程，建议选定一个，从头到尾看完。https://search.bilibili.com/all?keyword=%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%20%E6%95%99%E7%A8%8B&from_source=webtop_search&spm_id_from=333.1007&search_source=5
-3、Github项目：Krypt  真枪实弹:第一个Web3项目【上集】用React.js,Solidity,智能合约构建最新区块链应用详细教程
-4、社区：WTF，开源免费  https://wtf.academy/
+1. 以太坊官网，包括了：教程和文档，以及示例游戏 https://ethereum.org/zh/developers/docs/
+2. B站视频教程，建议选定一个，从头到尾看完。https://search.bilibili.com/all?keyword=%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%20%E6%95%99%E7%A8%8B&from_source=webtop_search&spm_id_from=333.1007&search_source=5
+3. Github项目：Krypt  真枪实弹:第一个Web3项目【上集】用React.js,Solidity,智能合约构建最新区块链应用详细教程
+4. 社区：WTF，开源免费  https://wtf.academy/
 
 
 

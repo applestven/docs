@@ -46,7 +46,7 @@ module.exports = [
       },
       {
         "text": "Git",
-        "link": "/前端/Git/"
+        "link": "/前端/git/"
       },
       {
         "text": "HTML",
@@ -62,7 +62,7 @@ module.exports = [
       },
       {
         "text": "Study",
-        "link": "/前端/Study/"
+        "link": "/前端/study/"
       },
       {
         "text": "Type Script",
@@ -77,8 +77,8 @@ module.exports = [
         "link": "/前端/VUE/"
       },
       {
-        "text": "Web3",
-        "link": "/前端/web3/"
+        "text": "W E B 3",
+        "link": "/前端/WEB3/"
       },
       {
         "text": "前端",
