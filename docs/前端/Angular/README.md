@@ -251,7 +251,7 @@ F.angualr http拦截器Interceptor  设置 全局请求token
   
 1.创建一个 global.interceptor.ts （已上传附件）文件 
 2.内容参见  https://angular.cn/guide/http  
-![angular-01](./1%20(1).png)
+![angular-01](./1.png)
 
 3.导入app.modules.ts根模块中  
 ++import { GlobalInterceptor} from "./global.interceptor"
