@@ -65,6 +65,10 @@ module.exports = [
         "link": "/前端/study/"
       },
       {
+        "text": "THREEJS",
+        "link": "/前端/THREEJS/"
+      },
+      {
         "text": "Type Script",
         "link": "/前端/TypeScript/"
       },

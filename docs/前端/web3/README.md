@@ -51,9 +51,9 @@ cnpm i ganache -g
 ## web3.js
 
 github  ： https://github.com/web3/web3.js 
-
+```js
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-
+```
 登链社区 - 开发者最喜欢的区块链技术社区  ：  https://learnblockchain.cn/ 
 
 
@@ -68,7 +68,7 @@ web3 社区文档 ：https://learnblockchain.cn/docs/web3.js/
 
 
 
-## ## 编写智能合约 
+## 编写智能合约 
 
 1. Remix IDE
 
