@@ -1,5 +1,18 @@
 module.exports = [
   {
+    "text": "case",
+    "items": [
+      {
+        "text": "Case",
+        "link": "/case/"
+      },
+      {
+        "text": "Threejs One",
+        "link": "/case/threejsOne/"
+      }
+    ]
+  },
+  {
     "text": "note",
     "items": [
       {
@@ -81,8 +94,8 @@ module.exports = [
         "link": "/前端/VUE/"
       },
       {
-        "text": "W E B 3",
-        "link": "/前端/WEB3/"
+        "text": "Web3",
+        "link": "/前端/web3/"
       },
       {
         "text": "前端",
