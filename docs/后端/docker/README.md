@@ -44,7 +44,7 @@ docker image ls  #查看本地所有镜像
 
 5. 本地启动自己打包的镜像
 
-`docker run -dp 3090:80 applestven/nginx-vite`
+`docker run -dp 3090:80 applestven/nginx-vite` 
 
 Dockefile 示例 ： 
 ``` js
