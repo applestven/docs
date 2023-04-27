@@ -18,4 +18,4 @@ debug.log
 *.ntvs*
 *.njsproj
 *.sln
-secret.js
+# secret.js
