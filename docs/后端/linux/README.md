@@ -1,4 +1,4 @@
-# 待上传
+# 待完善
 ##  Ubuntu防火墙
 
 1. sudo ufw status   inactive是关闭，active是开启 

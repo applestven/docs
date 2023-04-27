@@ -1,4 +1,24 @@
-## docker 
+# docker 
+## 在ubuntu中安装docker 
+1. 使用 Shell 脚本进行安装(新机)
+参考 ： https://www.runoob.com/docker/ubuntu-docker-install.html
+
+` curl -fsSL https://get.docker.com -o get-docker.sh`
+` sudo sh get-docker.sh `
+
+## 可能遇到的问题 ： debconf: delaying package configuration, since apt-utils is not installed
+
+解决 ： 
+`DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils`
+`apt-get update && apt-get install --assume-yes apt-utils`
+
+未解决
+
+2. 手动安装
+  待完善 
+
+    
+
 ## 1. docker 获取镜像 image 的两种方式 
 
 ```bash
@@ -34,7 +54,7 @@ docker login -u <你的docker用户名>.  #你登录docker的用户名 然后在
 
  `docker push applestven/nginx-vite`
 
-4. docker build
+4. docker build .
  打包Dockerfile 文件 注意 " . 代表当前文件夹Dockerfile文件" 
 
 示例：# -t是起一个别名的意思，这里的意思是在当前目录进行build（注意后面还有个“.”）打包后的镜像名字是`applestven/nginx-vite`
