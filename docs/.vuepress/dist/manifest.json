@@ -1,0 +1,23 @@
+{
+    "name" : "不爱白菜大青虫",
+    "short_name" : "大青虫",
+    "start_url" : "/",
+    "display" : "standalone",
+    "background_color" : "#f69435",
+    "theme_color" : "#f69435",
+    "description": "个人博客 中文文档 进阶教程",
+    "icons":[
+        {
+            "src":"/icons/android-chrome-192x192.PNG",
+            "sizes":"192x192"
+           
+        },
+        {
+            "src":"/icons/android-chrome-512x512.PNG",
+            "sizes":"512x512"
+            
+        }
+    ]
+    
+
+}
