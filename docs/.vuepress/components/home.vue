@@ -9,7 +9,7 @@
 <script>
 
 import * as THREE from "three"
-import loginBg from "../public/assets/bg/login-bgjpg"
+import loginBg from "../public/assets/bg/login-bg.png"
 import DeeoLoginBg from "../public/assets/bg/login-bg_depth.jpg"
 
 export default {
