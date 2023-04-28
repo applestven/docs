@@ -37,7 +37,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile
-          tags: latest  #上一步所拿到的tags，默认是分支名字
+          tags: ${{ steps.meta.outputs.tags }}  #上一步所拿到的tags，默认是分支名字
           labels: ${{ steps.meta.outputs.labels }} # 上一步所拿到的labels
       - name: ssh docker login    # 登陆云服务器
         uses: appleboy/ssh-action@master

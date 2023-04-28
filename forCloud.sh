@@ -4,9 +4,9 @@ echo -e "---------docker Stop--------"
 docker stop docs
 echo -e "---------docker Rm--------"
 docker rm docs
-docker rmi applestven/docs:latest
+docker rmi applestven/docs:forCloud
 echo -e "---------docker Pull--------"
-docker pull applestven/docs:latest 
+docker pull applestven/docs:forCloud 
 echo -e "---------docker Create and Start--------"
-docker run --rm -d -p 9000:80  --name docs applestven/docs:latest
+docker run --rm -d -p 9000:80  --name docs applestven/docs:forCloud
 echo -e "---------deploy Success--------"
