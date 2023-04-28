@@ -10,6 +10,8 @@ jobs:
       matrix:
         node-version: [14.17.3]
     steps:
+      - name: Install OpenSSL
+        run: sudo apt-get install libssl1.1=1.1.1d-0+deb10u7
       - name: Checkout
         uses: actions/checkout@v2
         with:
