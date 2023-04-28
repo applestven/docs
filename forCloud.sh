@@ -8,5 +8,5 @@ docker rmi applestven/docs:latest
 echo -e "---------docker Pull--------"
 docker pull applestven/docs:latest 
 echo -e "---------docker Create and Start--------"
-docker run --rm -d -p 9000:80 --name docs applestven/docs:latest
+docker run --rm -d -p 9000:80  --name docs applestven/docs:latest
 echo -e "---------deploy Success--------"
