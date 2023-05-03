@@ -1,4 +1,24 @@
-## docker 
+# docker 
+## 在ubuntu中安装docker 
+1. 使用 Shell 脚本进行安装(新机)
+参考 ： https://www.runoob.com/docker/ubuntu-docker-install.html
+
+` curl -fsSL https://get.docker.com -o get-docker.sh`
+` sudo sh get-docker.sh `
+
+## 可能遇到的问题 ： debconf: delaying package configuration, since apt-utils is not installed
+
+解决 ： 
+`DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils`
+`apt-get update && apt-get install --assume-yes apt-utils`
+
+未解决
+
+2. 手动安装
+  待完善 
+
+    
+
 ## 1. docker 获取镜像 image 的两种方式 
 
 ```bash
@@ -13,8 +33,53 @@
  复制黏贴如下  然后回车换行  再输入 :wq   ctrl+C 退出  
 
 
-
 ```
+
+## 打包自己的docekr包 上传
+
+
+1. 登陆docker
+
+docker login -u <你的docker用户名>.  #你登录docker的用户名 然后在命令行中输入密码 
+
+
+2. 给你的镜像起一个别名字
+
+`docker tag <你的项目名> <你的docker用户名>/<你的项目的名字>`
+
+3. push镜像
+
+`docker push  <你的docker用户名>/<你的项目的名字>`
+示例：
+
+ `docker push applestven/nginx-vite`
+
+4. docker build .
+ 打包Dockerfile 文件 注意 " . 代表当前文件夹Dockerfile文件" 
+
+示例：# -t是起一个别名的意思，这里的意思是在当前目录进行build（注意后面还有个“.”）打包后的镜像名字是`applestven/nginx-vite`
+`docker build -t  applestven/nginx-vite .`
+
+docker image ls  #查看本地所有镜像
+
+5. 本地启动自己打包的镜像
+
+`docker run -dp 3090:80 applestven/nginx-vite` 
+
+Dockefile 示例 ： 
+``` js
+FROM nginx:latest                            
+COPY ./dist /usr/share/nginx/html  
+EXPOSE 80
+``` 
+
+总结上传docker
+1. 登陆dockehub  
+2. 创建Dockerfile  
+3. docker build -t  [用户名/项目名] 
+4. docker push [用户名/项目名]    
+5. 运行上传的镜像 ： docker run -it applestven/nginx-vite
+
 
 ## 开机报错 
 
@@ -61,7 +126,7 @@ docker commit 容器名  重新命名
 此时就构建了自己的镜像 
 但是这种创建镜像（docker image）并不推荐 ，因为别人拿到我们的镜像 image ，不知道怎么产生的 ，也可能有不安全的东西放入这里面 ，然后发布出去 
 
-6.2  dockerfile 通过dockerbuild 创建image镜像 
+6.2  dockerfile 通过docker build 创建image镜像 
 - mkdir docker-centos-vim (创建文件夹)
 cd  docker-centos-vim
 - vim Dockerfile （创建/编辑文件Dockerfile）
@@ -74,7 +139,7 @@ RUN yum makecache
 RUN yum update -y
 RUN yum -y install vim
 
-- docker build -t  applestven/centos-vim-new .  (.执行Dockerfile)
+- docker build -t  applestven/centos-vim-new .  (注意 “.” 为执行Dockerfile)
 
 7.Dockerfile 语法梳理及实践
 
@@ -135,7 +200,7 @@ RUN vs CMD vs ENTRYPOINT  ( entrypoint )
    ENTRYPOINT ： 设置容器启动时运行的命令   （一定会执行）  
 
 ## 镜像的发布 
-``` bash 
+​``` bash 
 ##  docker push 
 
 docker push [OPTIONS] NAME[:TAG]
@@ -346,7 +411,7 @@ ip a 可以看到容器外面有docker0 bridge
 11. 127.0.0.1:xxxx 如果要再做局域网（nas/路由器）访问 ， 需要再做端口映射 把虚拟地址映射到本地地址 
 以windows为例 ，需要在防火墙中添加入站规则   将xxxx映射出去
 
-``` 
+```
 
 ## 10.容器网络之host与none 
 ``` bash 
@@ -497,7 +562,7 @@ sudo curl -L  https://github.com/docker/compose/releases/download/1.18.0/docker-
     - docker-compose exec wordpress bash
   docker network ls 查看docker-compose创建的网络  
   docker-compose exec mysql bash 进入mysql的bash
- ```
+```
 ## docker-compose部署wordpress 
 1. docker-compose.yml
 ``` js
@@ -578,7 +643,7 @@ services:
             - 8080:5000
           environment:
             REDIS_HOST: redis   
-     ```
+    ```
 
 2. docker-compose up --scale web=10 需要注意posts端口占用 可以删除ports项
   - 负载均衡 ：  haproxy -- 10web -- redis
@@ -607,7 +672,7 @@ services:
         volumes:
           - /var/run/docker.sock:/var/run/docker.sock
   ```
-  
+
 ## 18.swarm集群  
 ```bash
   创建一个三节点的swarm集群 
@@ -672,7 +737,7 @@ docker service create --name demo busybox sh -c "while true;do sleep 3600;done"
 
   查看docker创建的本地网络 ： 
   sudo ls /var/run/docker/nets 
-```
+ ```
 
 ## docker stack 部署wordpress 
 ```bash
@@ -752,7 +817,7 @@ volumes:
 networks:
   my-network:
     driver: overlay
-``` 
+```
 
 ## 19.docker Secret
 ```bash
@@ -871,7 +936,7 @@ stack swarm集群更新 ：
 - 中文文档 https://www.kubernetes.org.cn/installkubectl
 1. 安装minikube
  - minikube ( https://github.com/kubernetes/minikube )
-    
+   
     - 安装使用流程 ： https://minikube.sigs.k8s.io/docs/start/ 
     + 安装minikube curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64 （不同设备安装包不同，可在安装流程中寻找）
 
@@ -913,9 +978,9 @@ stack swarm集群更新 ：
       minikube start --force --driver=docker
 
 ## Docker怎么升级到最新版本
- 
 
-  
+
+
 
 
 
@@ -933,10 +998,12 @@ stack swarm集群更新 ：
 ## finally : 
 1. github 上有很多官方提供的的 Dockerfile供参考实践 
 for example 
-  search ：  
+    search ：  
 dockerl-library/redis   
  docker-library/mysql
 2. dockerFile 官网文档 ：https://docs.docker.com/engine/reference/builder/
 
- 
+
 ``` 
+
+```

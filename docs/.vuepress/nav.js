@@ -1,5 +1,18 @@
 module.exports = [
   {
+    "text": "case",
+    "items": [
+      {
+        "text": "Case",
+        "link": "/case/"
+      },
+      {
+        "text": "Threejs One",
+        "link": "/case/threejsOne/"
+      }
+    ]
+  },
+  {
     "text": "note",
     "items": [
       {
@@ -46,7 +59,7 @@ module.exports = [
       },
       {
         "text": "Git",
-        "link": "/前端/Git/"
+        "link": "/前端/git/"
       },
       {
         "text": "HTML",
@@ -62,7 +75,11 @@ module.exports = [
       },
       {
         "text": "Study",
-        "link": "/前端/Study/"
+        "link": "/前端/study/"
+      },
+      {
+        "text": "THREEJS",
+        "link": "/前端/THREEJS/"
       },
       {
         "text": "Type Script",

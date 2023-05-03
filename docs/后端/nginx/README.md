@@ -1,4 +1,4 @@
-
+# nginx 基础
 1. 进入nginx容器进行相关配置
  ```bash 
  ## whereis nginx #可以在容器中查询出nginx的相关配置文件存放位置

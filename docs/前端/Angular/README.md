@@ -33,13 +33,13 @@ typeScript实质    = type类型的概念 + ECMAScript6
 
 好处：能够在编写时发现一些类型错误 ，能够避免很多低级错误
  
-    引入：
-1.本地编译搭建环境 npm i -g typescript       
-     cmd命令窗口执行    tsc  ./01.ts 执行转化js   
-            tsc  --version   tsc --help 查看帮助   查看版本号
-2.在线编译 typescript  转化为 javascript    
-typescript基础知识点：
-    a. ts数据类型 ： boolean number  string number[]或者Array<number>  元组[number,string]  对象Object    任意类型any  函数空返回值void  null和underfind 变量声明  var  let  const    
++ 本地编译搭建环境 npm i -g typescript       
+cmd命令窗口执行    tsc  ./01.ts 执行转化js   
+tsc  --version   tsc --help 查看帮助   查看版本号
+
++ 在线编译 typescript转化为javascript
+## typescript基础知识点：
+    a.ts数据类型 ： boolean number  string number[]或者Array<number>  元组[number,string]  对象Object    任意类型any  函数空返回值void  null和underfind 变量声明  var  let  const    
     b.解构赋值   let [a,b] = Array[1,2]    
     c.剩余参数 function(...args:number){ //可以传多个数字参数 args.forEach()}
     d.数组展开操作符  ： let arr1 =[1,2,3]  let2=[4,5,6]  let arr =[...arr1,arr2]
@@ -79,19 +79,21 @@ let obj1 = {foo :'bar'}  ;let obj2 ={ ...obj1, // , name:'Jack'}  //一般用于
 
 ## 6. 写Todomvc案例   
 
-  1.下载案列模板 todomvc-app-template   
+1. 下载案列模板 todomvc-app-template   
        git clone http://github.com/tastejs/todomvc-app-template.git  
-  2.导入css   yarn add todomvc-common todomvc-app-css  
+2. 导入css   yarn add todomvc-common todomvc-app-css  
     
 @import url('todomvc-common/base.css');
 @import url('todomvc-app-css/index.css');  
 导入全局报错  重启解决QAQ   
 
-3.    
-<li class="completed" *ngFor="let todo of todos" />  循环写法  
+3. 循环写法  
+
+```js
+<li class="completed" *ngFor="let todo of todos" />    
 <ng-template [ngIf]="todos.length">       ng-template写法  ng命令写法
 <footer class="footer" *ngIf="todos.length"> 条件渲染 
-
+```
 4. 引入表单双向绑定 到主模块 (app)
     
 import {FormsModule} from '@angular/forms';  
@@ -249,7 +251,7 @@ F.angualr http拦截器Interceptor  设置 全局请求token
   
 1.创建一个 global.interceptor.ts （已上传附件）文件 
 2.内容参见  https://angular.cn/guide/http  
-![angular-01](./1%20(1).png)
+![angular-01](./1.png)
 
 3.导入app.modules.ts根模块中  
 ++import { GlobalInterceptor} from "./global.interceptor"

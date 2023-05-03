@@ -15,15 +15,15 @@ data () {
  }
 ```
 ## vue 内存泄漏的解决办法
-###  https://blog.csdn.net/weixin_57646982/article/details/120082047
+**https://blog.csdn.net/weixin_57646982/article/details/120082047**
 
 1. 在非严格模式下 ， fn内部创建的变量 ，this指向window ， 导致意外的全局变量  
 一般vue在destoryed()里进行清除 
 
-2. setTimeout  和 setInterval  以及 dom元素 未及时清除
+1. setTimeout  和 setInterval  以及 dom元素 未及时清除
 变量赋值为 dom元素 
 var test = document.querySelect('.main') 
-3. 未及时清除闭包 || 模块形成的闭包内部变量使用完后没有置成null
+1. 未及时清除闭包 || 模块形成的闭包内部变量使用完后没有置成null
 ``` js
 function fun(name){
     function fun1(){
@@ -75,19 +75,18 @@ destroyed () {
 
 ## http缓存 
 
-过期时间 ：
+过期时间
 expires
 cach-control: max-age:60 (优先级更高)
 
 协商缓存：
 客户端资源过期 需要重新获取服务器资源 ，但服务器资源不一定有更新 ，所以 
 
-一般是对请求文件的“ 更新时间 ” 以及 “文件名的hash值” 进行比较  
-通过设置不同的缓存策略比较    etag的优先级更高 
+一般是对请求文件的“ 更新时间 ” 以及 “文件名的hash值” 进行比较  通过设置不同的缓存策略比较    etag的优先级更高 
 
 如果需要更新  那么响应就是200 ， 如果不需要更新那么返回  304 ，继续使用之前的资源 
 
-静态文件的缓存  前端在头部标签中<mate> 中设置  
+静态文件的缓存  前端在头部标签中meta中设置  
 xhr请求的缓存  以请求头的方式进行 添加相关的缓存策略
 
 如果某个请求的资源 更新频繁 ， 那么使用 cach-control :no-cach  ， 这节省了判断 ， 也可以提升性能 ，
