@@ -3,12 +3,12 @@ module.exports = [
     "text": "case",
     "items": [
       {
-        "text": "Case",
-        "link": "/case/"
-      },
-      {
         "text": "Threejs One",
         "link": "/case/threejsOne/"
+      },
+      {
+        "text": "Case",
+        "link": "/case/"
       }
     ]
   },
@@ -56,6 +56,10 @@ module.exports = [
       {
         "text": "CSS",
         "link": "/前端/CSS/"
+      },
+      {
+        "text": "Electron",
+        "link": "/前端/Electron/"
       },
       {
         "text": "Git",
@@ -107,6 +111,14 @@ module.exports = [
     "text": "后端",
     "items": [
       {
+        "text": "CICD",
+        "link": "/后端/CICD/"
+      },
+      {
+        "text": "Crawlers",
+        "link": "/后端/Crawlers/"
+      },
+      {
         "text": "Docker",
         "link": "/后端/docker/"
       },
@@ -133,6 +145,10 @@ module.exports = [
       {
         "text": "Nvm",
         "link": "/后端/nvm/"
+      },
+      {
+        "text": "Puppteer",
+        "link": "/后端/Crawlers/puppteer/"
       },
       {
         "text": "Redis",
