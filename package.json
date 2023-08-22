@@ -1,17 +1,19 @@
 {
-  "name": "docs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/applestven/docs.git",
-  "author": "简单纯粹 <huihua.w@foxmail.com>",
-  "license": "MIT",
-  "devDependencies": {
+  "name": "docs",//包的名称
+  "version": "1.0.0", //项目版本号
+  "main": "index.js", //项目入口文件
+  "repository": {"type": "git","url": "https://github.com/xxx.git","directory": "xxx"} //项目的仓库地址以及版本控制信息
+  "author": "简单纯粹 <huihua.w@foxmail.com>",//项目作者
+  "description":"project description" ,// 包的描述信息
+  "contributors": ["XXX <xxxxx@xx.com> (https://XXX)","XXX <xxxxx@xx.com> (https://XXX)", //项目贡献者
+  "license": "MIT",//项目的开源许可证
+  "devDependencies": {//开发依赖
     "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/plugin-medium-zoom": "^1.9.7",
     "@vuepress/plugin-pwa": "^1.9.7",
     "vuepress": "^1.9.7"
   },
-  "scripts": {
+  "scripts": { //脚本配置项
     "dev": "vuepress dev docs --temp .temp",
     "start": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
@@ -19,12 +21,13 @@
     "docs:nav": "vuepress nav docs",
     "docs:navf": "vuepress nav docs -f"
   },
-  "dependencies": {
+  "dependencies": {//运行依赖
     "@vssue/api-github-v4": "^1.4.7",
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "moment": "^2.29.3",
     "three": "^0.151.3",
     "vssue": "^1.4.8",
     "vuepress-plugin-auto-sidebar": "^2.3.2"
-  }
+  },
+  
 }
