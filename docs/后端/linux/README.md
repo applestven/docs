@@ -26,26 +26,6 @@
 ## linux 命令收集 
 
 netstat  -tunlp  查看可访问的端口
-## zerotier 组网 
-搭建根 plant
-https://zhuanlan.zhihu.com/p/544807922     可以参考其思路 ，但下载链接不能使用
-https://blog.csdn.net/smzq123/article/details/128760942  可以参考其思路 ，但下载链接不能使用
-https://zhuanlan.zhihu.com/p/573746661?utm_id=0    有一定基础再参考 
-https://www.west.cn/docs/408273.html    安装 zerotier 服务端
 
 
 
-https://blog.csdn.net/smzq123/article/details/128760942  
-
-https://zhuanlan.zhihu.com/p/605544905      主要参考
-
-
-
-#zerotier安全组说明
-#ztncui Web控制面板使用的端口。可以自行选择端口，根据自己选择端口配置安全组
-TCP:3443
-# Zerotier节点与控制器通讯的端口，可自行选择端口，根据自己选择的端口配置安全组
-TCP:9993
-#MOON节点与控制器通讯的中继端口，可自行选择端口，根据自己选择的端口配置安全组
-UDP:9993
-#需要分别设置ipv4和ipv6的规则

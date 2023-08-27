@@ -1,14 +1,23 @@
 module.exports = [
   {
+    "text": "AIGC",
+    "items": [
+      {
+        "text": "AIGC",
+        "link": "/AIGC/"
+      }
+    ]
+  },
+  {
     "text": "case",
     "items": [
       {
-        "text": "Threejs One",
-        "link": "/case/threejsOne/"
-      },
-      {
         "text": "Case",
         "link": "/case/"
+      },
+      {
+        "text": "Threejs One",
+        "link": "/case/threejsOne/"
       }
     ]
   },
@@ -157,6 +166,15 @@ module.exports = [
       {
         "text": "Redis",
         "link": "/后端/redis/"
+      }
+    ]
+  },
+  {
+    "text": "网络",
+    "items": [
+      {
+        "text": "网络",
+        "link": "/网络/"
       }
     ]
   },
