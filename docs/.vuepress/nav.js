@@ -3,6 +3,10 @@ module.exports = [
     "text": "AIGC",
     "items": [
       {
+        "text": "动画制作",
+        "link": "/AIGC/动画制作/"
+      },
+      {
         "text": "AIGC",
         "link": "/AIGC/"
       }
@@ -166,6 +170,15 @@ module.exports = [
       {
         "text": "Redis",
         "link": "/后端/redis/"
+      }
+    ]
+  },
+  {
+    "text": "杂项",
+    "items": [
+      {
+        "text": "杂项",
+        "link": "/杂项/"
       }
     ]
   },
