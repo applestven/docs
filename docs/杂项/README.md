@@ -26,3 +26,20 @@ ffmpeg -i input.mp4 -c:v h264_qsv output.mp4
 注意：具体的加速选项可能因你的显卡型号和驱动程序版本而异。请根据你的显卡和驱动程序选择适当的加速选项。
 
 请注意，GPU加速在某些情况下可能会导致图像质量的损失。此外，不同的GPU加速选项可能具有不同的性能和效果。建议你根据自己的需求进行测试和调整，以获得最佳的转码效果。
+
+
+
+## 虚拟视频 
+
+搜搜 ： electron开源obs    obs虚拟摄像头    electron虚拟摄像头    electron obs虚拟摄像头
+
+https://avmedia.0voice.com/?id=44403   webrtc采集本地摄像头 vue
+
+
+https://zhuanlan.zhihu.com/p/647843404  OBS推流工具介绍及桌面录屏推流功能实现
+
+
+https://zhuanlan.zhihu.com/p/549100898  Chrome不支持obs虚拟摄像头解决方法（需要实践）
+
+
+https://blog.csdn.net/hyc13520/article/details/128475495   OBS虚拟摄像头使用教程 
