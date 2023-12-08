@@ -31,7 +31,7 @@ ffmpeg -i input.mp4 -c:v h264_qsv output.mp4
 
 ## 虚拟视频 
 
-搜搜 ： electron开源obs    obs虚拟摄像头    electron虚拟摄像头    electron obs虚拟摄像头
+搜搜 ： electron开源obs    obs虚拟摄像头    electron虚拟摄像头    electron obs虚拟摄像头   Electron 中实现虚拟摄像头功能
 
 https://avmedia.0voice.com/?id=44403   webrtc采集本地摄像头 vue
 
@@ -43,3 +43,18 @@ https://zhuanlan.zhihu.com/p/549100898  Chrome不支持obs虚拟摄像头解决�
 
 
 https://blog.csdn.net/hyc13520/article/details/128475495   OBS虚拟摄像头使用教程 
+
+
+如果您想在 Electron 中实现虚拟摄像头功能，您可能需要考虑以下几个步骤：
+
+在 Electron 的主进程中，使用第三方库（如 node-virtualcam）或操作系统级工具（如 v4l2loopback）创建虚拟摄像头。这些工具可以模拟一个虚拟摄像头设备，将其注册到操作系统中。
+
+使用 getUserMedia API 或其他适当的 API 在渲染进程中获取本地文件的视频流。
+
+将获取到的视频流通过 WebRTC 或其他流媒体传输协议（如 RTMP、HLS 等）推送到虚拟摄像头设备。
+
+
+
+## 将node项目打包成二进制文件开机运行 
+
+https://blog.csdn.net/m0_55173487/article/details/128015052

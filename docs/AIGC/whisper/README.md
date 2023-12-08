@@ -28,3 +28,7 @@
 
 地址：https://github.com/SubtitleEdit/subtitleedit
 
+## whisper 的安装 ： 
+
+https://www.jianshu.com/p/3f7abe0de65f
+

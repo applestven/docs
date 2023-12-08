@@ -35,13 +35,20 @@ LF和CRLF其实都是换行符，但是不同的是，LF是linux和Unix系统的
     解决
 最简单的一种办法就是把自动转换功能关掉即可。
 
-    输入命令 ：git config core.autocrlf false (仅对当前git仓库有效）
-    git config --global core.autocrlf false (全局有效，不设置推荐全局）
+    输入命令 ：git config core.autocrlf false 仅对当前git仓库有
+    git config --global core.autocrlf false 全局有效，不设置推荐全局
 ## 5.0提交时转换为LF，检出时转换为CRLF
-$ git config --global core.autocrlf true    
+     git config --global core.autocrlf true    
 
 ## 6.error: The following untracked working tree files would be overwritten by merge:
 git clean -d -fx 放弃本地 慎用！！
+
+
+## 7. 本地修改后 ， 新分支有更新 
+git stash 暂存本地修改
+git pull 更新本地
+git stash apply 恢复本地修改 (推荐使用) 
+git stash apply stash@{n}   n是序列数 
 
 
 
