@@ -43,3 +43,6 @@ https://civitai.com/models/3627/protgenv22-aime-offiial-release
 
 https://www.jianshu.com/p/3f7abe0de65f
 
+
+https://github.com/openai/whisper
+
