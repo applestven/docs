@@ -3,8 +3,20 @@ module.exports = [
     "text": "AIGC",
     "items": [
       {
+        "text": "Whisper",
+        "link": "/AIGC/whisper/"
+      },
+      {
+        "text": "Ffmpeg",
+        "link": "/AIGC/ffmpeg/"
+      },
+      {
         "text": "动画制作",
         "link": "/AIGC/动画制作/"
+      },
+      {
+        "text": "Tts",
+        "link": "/AIGC/tts/"
       },
       {
         "text": "AIGC",

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第8章: 扩展 | 大青虫</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/xiao.PNG">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.PNG">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="文档、笔记、博客">
+    <meta rel="author" content="不爱吃青菜的大青虫">
+    <meta rel="Keywords" content="vuepress介绍说明 不爱吃青菜的大青虫">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.PNG">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.497a3858.css" as="style"><link rel="preload" href="/assets/js/app.6c856068.js" as="script"><link rel="preload" href="/assets/js/15.dea97000.js" as="script"><link rel="preload" href="/assets/js/3.55438353.js" as="script"><link rel="preload" href="/assets/js/89.4e5ac6ac.js" as="script"><link rel="preload" href="/assets/js/6.ff336aa3.js" as="script"><link rel="prefetch" href="/assets/js/1.54146c49.js"><link rel="prefetch" href="/assets/js/10.f2d02379.js"><link rel="prefetch" href="/assets/js/100.bbb0ecca.js"><link rel="prefetch" href="/assets/js/101.c4243a60.js"><link rel="prefetch" href="/assets/js/102.3473f160.js"><link rel="prefetch" href="/assets/js/103.31498811.js"><link rel="prefetch" href="/assets/js/104.bccd23cc.js"><link rel="prefetch" href="/assets/js/105.1436d53e.js"><link rel="prefetch" href="/assets/js/106.29f4cc89.js"><link rel="prefetch" href="/assets/js/107.6a6817a6.js"><link rel="prefetch" href="/assets/js/108.aab7cd3e.js"><link rel="prefetch" href="/assets/js/109.aeb58ddd.js"><link rel="prefetch" href="/assets/js/11.502ea543.js"><link rel="prefetch" href="/assets/js/110.929f0775.js"><link rel="prefetch" href="/assets/js/111.bf8df0ab.js"><link rel="prefetch" href="/assets/js/112.f5cac5d2.js"><link rel="prefetch" href="/assets/js/113.0c3a6f21.js"><link rel="prefetch" href="/assets/js/114.f69839c4.js"><link rel="prefetch" href="/assets/js/115.ce60771a.js"><link rel="prefetch" href="/assets/js/116.8904ca27.js"><link rel="prefetch" href="/assets/js/117.cce75cf0.js"><link rel="prefetch" href="/assets/js/118.e3a77f80.js"><link rel="prefetch" href="/assets/js/119.9bd28496.js"><link rel="prefetch" href="/assets/js/12.7f2c5135.js"><link rel="prefetch" href="/assets/js/120.d019383a.js"><link rel="prefetch" href="/assets/js/121.16c9183d.js"><link rel="prefetch" href="/assets/js/122.6fd7ef11.js"><link rel="prefetch" href="/assets/js/123.4f62bc1c.js"><link rel="prefetch" href="/assets/js/124.49077ff8.js"><link rel="prefetch" href="/assets/js/125.75a25a70.js"><link rel="prefetch" href="/assets/js/126.72cd07a3.js"><link rel="prefetch" href="/assets/js/127.52d1fcdd.js"><link rel="prefetch" href="/assets/js/128.f4b60dc5.js"><link rel="prefetch" href="/assets/js/129.b2555ed2.js"><link rel="prefetch" href="/assets/js/13.8c0ce79b.js"><link rel="prefetch" href="/assets/js/130.9e76e82f.js"><link rel="prefetch" href="/assets/js/131.f619d038.js"><link rel="prefetch" href="/assets/js/132.10bf5d73.js"><link rel="prefetch" href="/assets/js/133.3c961231.js"><link rel="prefetch" href="/assets/js/134.e8369d65.js"><link rel="prefetch" href="/assets/js/135.f84086f2.js"><link rel="prefetch" href="/assets/js/136.f8fd144f.js"><link rel="prefetch" href="/assets/js/137.93e46a9c.js"><link rel="prefetch" href="/assets/js/138.dab9a42a.js"><link rel="prefetch" href="/assets/js/139.3830099b.js"><link rel="prefetch" href="/assets/js/14.f2e17d24.js"><link rel="prefetch" href="/assets/js/140.c50b8f91.js"><link rel="prefetch" href="/assets/js/141.f395550f.js"><link rel="prefetch" href="/assets/js/142.de481ab2.js"><link rel="prefetch" href="/assets/js/143.9bc99737.js"><link rel="prefetch" href="/assets/js/144.a558eac0.js"><link rel="prefetch" href="/assets/js/145.64283a2b.js"><link rel="prefetch" href="/assets/js/146.d1976e3b.js"><link rel="prefetch" href="/assets/js/147.aec56df2.js"><link rel="prefetch" href="/assets/js/148.aa94991e.js"><link rel="prefetch" href="/assets/js/149.acd1d25b.js"><link rel="prefetch" href="/assets/js/150.5412b0cd.js"><link rel="prefetch" href="/assets/js/151.53e710cc.js"><link rel="prefetch" href="/assets/js/152.d6210f57.js"><link rel="prefetch" href="/assets/js/16.661cd8d2.js"><link rel="prefetch" href="/assets/js/17.3f02f1a0.js"><link rel="prefetch" href="/assets/js/18.4cbfec42.js"><link rel="prefetch" href="/assets/js/19.524dbd3f.js"><link rel="prefetch" href="/assets/js/20.bbbaea26.js"><link rel="prefetch" href="/assets/js/21.1b10f204.js"><link rel="prefetch" href="/assets/js/22.0af9ca20.js"><link rel="prefetch" href="/assets/js/23.37249122.js"><link rel="prefetch" href="/assets/js/24.4d21590c.js"><link rel="prefetch" href="/assets/js/25.851487bf.js"><link rel="prefetch" href="/assets/js/26.395583bf.js"><link rel="prefetch" href="/assets/js/27.d9440c22.js"><link rel="prefetch" href="/assets/js/28.33b2e183.js"><link rel="prefetch" href="/assets/js/29.6381fb70.js"><link rel="prefetch" href="/assets/js/30.a69706bb.js"><link rel="prefetch" href="/assets/js/31.31507de3.js"><link rel="prefetch" href="/assets/js/32.b0626e41.js"><link rel="prefetch" href="/assets/js/33.9298b2fc.js"><link rel="prefetch" href="/assets/js/34.55665e05.js"><link rel="prefetch" href="/assets/js/35.feab1adc.js"><link rel="prefetch" href="/assets/js/36.68612078.js"><link rel="prefetch" href="/assets/js/37.11db60fa.js"><link rel="prefetch" href="/assets/js/38.b07d6a44.js"><link rel="prefetch" href="/assets/js/39.e3c10e31.js"><link rel="prefetch" href="/assets/js/4.00cecd82.js"><link rel="prefetch" href="/assets/js/40.97a46e5e.js"><link rel="prefetch" href="/assets/js/41.91a0b5c6.js"><link rel="prefetch" href="/assets/js/42.edd54061.js"><link rel="prefetch" href="/assets/js/43.e79e0c85.js"><link rel="prefetch" href="/assets/js/44.6c8874c2.js"><link rel="prefetch" href="/assets/js/45.3e3e4b66.js"><link rel="prefetch" href="/assets/js/46.26933e0c.js"><link rel="prefetch" href="/assets/js/47.6902b7d6.js"><link rel="prefetch" href="/assets/js/48.2b315085.js"><link rel="prefetch" href="/assets/js/49.e89ec0d6.js"><link rel="prefetch" href="/assets/js/5.4ea1ceee.js"><link rel="prefetch" href="/assets/js/50.137667fd.js"><link rel="prefetch" href="/assets/js/51.b1befb20.js"><link rel="prefetch" href="/assets/js/52.adcdac19.js"><link rel="prefetch" href="/assets/js/53.1e41b292.js"><link rel="prefetch" href="/assets/js/54.4fb9a21f.js"><link rel="prefetch" href="/assets/js/55.3b7ea5cb.js"><link rel="prefetch" href="/assets/js/56.03ae384f.js"><link rel="prefetch" href="/assets/js/57.1c0433b3.js"><link rel="prefetch" href="/assets/js/58.9e95ab77.js"><link rel="prefetch" href="/assets/js/59.1e5789ae.js"><link rel="prefetch" href="/assets/js/60.b2e1e8b2.js"><link rel="prefetch" href="/assets/js/61.6ec09195.js"><link rel="prefetch" href="/assets/js/62.6f1c3b8e.js"><link rel="prefetch" href="/assets/js/63.f62cbfeb.js"><link rel="prefetch" href="/assets/js/64.fc04745a.js"><link rel="prefetch" href="/assets/js/65.0f365ff6.js"><link rel="prefetch" href="/assets/js/66.035b1247.js"><link rel="prefetch" href="/assets/js/67.86c92ea8.js"><link rel="prefetch" href="/assets/js/68.d1b0ede1.js"><link rel="prefetch" href="/assets/js/69.6dda08c5.js"><link rel="prefetch" href="/assets/js/7.a3d26d62.js"><link rel="prefetch" href="/assets/js/70.1902b06f.js"><link rel="prefetch" href="/assets/js/71.8f843f6e.js"><link rel="prefetch" href="/assets/js/72.dc3881cb.js"><link rel="prefetch" href="/assets/js/73.8d5cfbb8.js"><link rel="prefetch" href="/assets/js/74.5d9e273b.js"><link rel="prefetch" href="/assets/js/75.53a42ab8.js"><link rel="prefetch" href="/assets/js/76.9bee45a9.js"><link rel="prefetch" href="/assets/js/77.6acdc66e.js"><link rel="prefetch" href="/assets/js/78.9f17fed9.js"><link rel="prefetch" href="/assets/js/79.bb6a7f56.js"><link rel="prefetch" href="/assets/js/8.bd048d93.js"><link rel="prefetch" href="/assets/js/80.4014b79f.js"><link rel="prefetch" href="/assets/js/81.54ac8728.js"><link rel="prefetch" href="/assets/js/82.0f993630.js"><link rel="prefetch" href="/assets/js/83.b717476e.js"><link rel="prefetch" href="/assets/js/84.40b539e1.js"><link rel="prefetch" href="/assets/js/85.42928e78.js"><link rel="prefetch" href="/assets/js/86.2a8dec41.js"><link rel="prefetch" href="/assets/js/87.9f08a1b5.js"><link rel="prefetch" href="/assets/js/88.9117804a.js"><link rel="prefetch" href="/assets/js/9.c213f5ee.js"><link rel="prefetch" href="/assets/js/90.aa9c0a29.js"><link rel="prefetch" href="/assets/js/91.09ecb78a.js"><link rel="prefetch" href="/assets/js/92.1e1376f7.js"><link rel="prefetch" href="/assets/js/93.3326101b.js"><link rel="prefetch" href="/assets/js/94.eaf10838.js"><link rel="prefetch" href="/assets/js/95.c547e73c.js"><link rel="prefetch" href="/assets/js/96.9218988c.js"><link rel="prefetch" href="/assets/js/97.aede8353.js"><link rel="prefetch" href="/assets/js/98.a0bc633b.js"><link rel="prefetch" href="/assets/js/99.29f18bdb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.497a3858.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./assets/img/xiaosi.PNG" alt="大青虫" class="logo"> <span class="site-name can-hide">大青虫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>React</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E5%89%8D%E7%AB%AF/React/" aria-current="page" class="sidebar-link">React全家桶(技术栈)</a></li><li><a href="/前端/React/b.html" class="sidebar-link">第2章：React面向组件编程</a></li><li><a href="/前端/React/c.html" class="sidebar-link">第3章 React应用(基于React脚手架)</a></li><li><a href="/前端/React/d.html" class="sidebar-link">第4章：React ajax</a></li><li><a href="/前端/React/e.html" class="sidebar-link">第5章：React路由@5</a></li><li><a href="/前端/React/e-2.html" class="sidebar-link">react-router@6</a></li><li><a href="/前端/React/f.html" class="sidebar-link">第6章: 常用UI组件</a></li><li><a href="/前端/React/g.html" class="sidebar-link">第7章: redux :集中式状态管理</a></li><li><a href="/前端/React/h.html" class="active sidebar-link">第8章: 扩展</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端/React/h.html#_1-setstate" class="sidebar-link">1. setState</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_2-lazyload" class="sidebar-link">2. lazyLoad</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_3-hooks" class="sidebar-link">3. Hooks</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_4-fragment" class="sidebar-link">4. Fragment</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_5-context" class="sidebar-link">5. Context</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_6-组件优化" class="sidebar-link">6. 组件优化</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_7-render-props" class="sidebar-link">7. render props</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_8-错误边界" class="sidebar-link">8. 错误边界</a></li><li class="sidebar-sub-header"><a href="/前端/React/h.html#_9-组件通信方式总结" class="sidebar-link">9. 组件通信方式总结</a></li></ul></li><li><a href="/前端/React/z.html" class="sidebar-link">react项目常用笔记</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="第8章-扩展"><a href="#第8章-扩展" class="header-anchor">#</a> 第8章: 扩展</h1> <h2 id="_1-setstate"><a href="#_1-setstate" class="header-anchor">#</a> 1. setState</h2> <h3 id="setstate更新状态的2种写法"><a href="#setstate更新状态的2种写法" class="header-anchor">#</a> setState更新状态的2种写法</h3> <div class="language- extra-class"><pre class="language-text"><code>	(1). setState(stateChange, [callback])------对象式的setState
+            1.stateChange为状态改变对象(该对象可以体现出状态的更改)
+            2.callback是可选的回调函数, 它在状态更新完毕、界面也更新后(render调用后)才被调用
+			ps:this.setState( state =&gt; ({count:state.count+1}))		
+            
+	(2). setState(updater, [callback])------函数式的setState
+            1.updater为返回stateChange对象的函数。
+            2.updater可以接收到state和props。
+            4.callback是可选的回调函数, 它在状态更新、界面也更新后(render调用后)才被调用。
+总结:
+		1.对象式的setState是函数式的setState的简写方式(语法糖)
+		2.使用原则：
+				(1).如果新状态不依赖于原状态 ===&gt; 使用对象方式
+				(2).如果新状态依赖于原状态 ===&gt; 使用函数方式
+				(3).如果需要在setState()执行后获取最新的状态数据, 
+					要在第二个callback函数中读取
+</code></pre></div><hr> <h2 id="_2-lazyload"><a href="#_2-lazyload" class="header-anchor">#</a> 2. lazyLoad</h2> <h3 id="路由组件的lazyload"><a href="#路由组件的lazyload" class="header-anchor">#</a> 路由组件的lazyLoad</h3> <div class="language-js extra-class"><pre class="language-js"><code>	<span class="token comment">//1.通过React的lazy函数配合import()函数动态加载路由组件 ===&gt; 路由组件代码会被分开打包</span>
+	<span class="token keyword">const</span> Login <span class="token operator">=</span> <span class="token function">lazy</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/pages/Login'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	
+	<span class="token comment">//2.通过&lt;Suspense&gt;指定在加载得到路由打包文件前显示一个自定义loading界面</span>
+	<span class="token operator">&lt;</span>Suspense fallback<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>loading<span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Switch<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/xxx&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>Xxxx<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>Redirect to<span class="token operator">=</span><span class="token string">&quot;/login&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Switch<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Suspense<span class="token operator">&gt;</span>
+</code></pre></div><hr> <h2 id="_3-hooks"><a href="#_3-hooks" class="header-anchor">#</a> 3. Hooks</h2> <h3 id="_1-react-hook-hooks是什么"><a href="#_1-react-hook-hooks是什么" class="header-anchor">#</a> 1. React Hook/Hooks是什么?</h3> <div class="language- extra-class"><pre class="language-text"><code>(1). Hook是React 16.8.0版本增加的新特性/新语法
+(2). 可以让你在函数组件中使用 state 以及其他的 React 特性
+</code></pre></div><h3 id="_2-三个常用的hook-useeffect-usestate-useref"><a href="#_2-三个常用的hook-useeffect-usestate-useref" class="header-anchor">#</a> 2. 三个常用的Hook useEffect  useState useRef</h3> <div class="language- extra-class"><pre class="language-text"><code>(1). State Hook: React.useState()
+(2). Effect Hook: React.useEffect()
+(3). Ref Hook: React.useRef()
+</code></pre></div><h3 id="_3-state-hook"><a href="#_3-state-hook" class="header-anchor">#</a> 3. State Hook</h3> <div class="language- extra-class"><pre class="language-text"><code>(1). State Hook让函数组件也可以有state状态, 并进行状态数据的读写操作
+(2). 语法: const [xxx, setXxx] = React.useState(initValue)  
+(3). useState()说明:
+        参数: 第一次初始化指定的值在内部作缓存
+        返回值: 包含2个元素的数组, 第1个为内部当前状态值, 第2个为更新状态值的函数
+(4). setXxx()2种写法:
+        setXxx(newValue): 参数为非函数值, 直接指定新的状态值, 内部用其覆盖原来的状态值
+        setXxx(value =&gt; newValue): 参数为函数, 接收原本的状态值, 返回新的状态值, 内部用其覆盖原来的状态值
+</code></pre></div><h3 id="_4-effect-hook"><a href="#_4-effect-hook" class="header-anchor">#</a> 4. Effect Hook</h3> <div class="language- extra-class"><pre class="language-text"><code>(1). Effect Hook 可以让你在函数组件中执行副作用操作(用于模拟类组件中的生命周期钩子)
+(2). React中的副作用操作:
+        发ajax请求数据获取
+        设置订阅 / 启动定时器
+        手动更改真实DOM
+(3). 语法和说明: 
+        useEffect(() =&gt; { 
+			ps:写在此类似didMoout didupdate  1+n 不写[] ,监测所有的useState改变 
+          // 在此可以执行任何带副作用操作
+          return () =&gt; { // 在组件卸载前执行
+            // 在此做一些收尾工作, 比如清除定时器/取消订阅等
+          }
+        }, [stateValue]) // 如果指定的是[], 回调函数只会在第一次render()后执行 
+		ps:第二个参数写空数组[]  谁也不监测  函数体相当于didMount
+		ps:d第二个参数不写，监测所有userstate值   相当于群体的didMount didUpdate监听
+		ps:第二个参数为[stateValue] , 相当于stateValue单个值的didMount didUpdate监听 
+		ps:当前监听多个值的时候  函数体只执行一次&quot;didMouont&quot;
+		ps:在函数体内return 函数  ， 此时return的函数体内相当于willUnmount
+    
+(4). 可以把 useEffect Hook 看做如下三个函数的组合
+        componentDidMount()
+        componentDidUpdate()
+    	componentWillUnmount() 
+</code></pre></div><h3 id="_5-ref-hook"><a href="#_5-ref-hook" class="header-anchor">#</a> 5. Ref Hook</h3> <div class="language- extra-class"><pre class="language-text"><code>(1). Ref Hook可以在函数组件中存储/查找组件内的标签或任意其它数据
+(2). 语法: const refContainer = useRef()
+(3). 作用:保存标签对象,功能与React.createRef()一样
+</code></pre></div><hr> <h2 id="_4-fragment"><a href="#_4-fragment" class="header-anchor">#</a> 4. Fragment</h2> <h3 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h3> <div class="language- extra-class"><pre><code>&lt;Fragment&gt;&lt;Fragment&gt;
+&lt;&gt;&lt;/&gt;
+</code></pre></div><h3 id="作用"><a href="#作用" class="header-anchor">#</a> 作用</h3> <blockquote><p>可以不用必须有一个真实的DOM根标签了</p></blockquote> <hr> <h2 id="_5-context"><a href="#_5-context" class="header-anchor">#</a> 5. Context</h2> <h3 id="理解"><a href="#理解" class="header-anchor">#</a> 理解</h3> <blockquote><p>一种组件间通信方式, 常用于【祖组件】与【后代组件】间通信</p></blockquote> <h3 id="使用-2"><a href="#使用-2" class="header-anchor">#</a> 使用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">1</span><span class="token punctuation">)</span> 创建Context容器对象：
+	<span class="token keyword">const</span> XxxContext <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+	
+<span class="token number">2</span><span class="token punctuation">)</span> 渲染子组时，外面包裹xxxContext<span class="token punctuation">.</span>Provider<span class="token punctuation">,</span> 通过value属性给后代组件传递数据：
+	<span class="token operator">&lt;</span>xxxContext<span class="token punctuation">.</span>Provider value<span class="token operator">=</span><span class="token punctuation">{</span>数据<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+		子组件
+    <span class="token operator">&lt;</span><span class="token operator">/</span>xxxContext<span class="token punctuation">.</span>Provider<span class="token operator">&gt;</span>
+    
+<span class="token number">3</span><span class="token punctuation">)</span> 后代组件读取数据：
+
+	<span class="token comment">//第一种方式:仅适用于类组件 </span>
+	  <span class="token keyword">static</span> contextType <span class="token operator">=</span> xxxContext  <span class="token comment">// 声明接收context</span>
+	  <span class="token keyword">this</span><span class="token punctuation">.</span>context <span class="token comment">// 读取context中的value数据</span>
+	  
+	<span class="token comment">//第二种方式: 函数组件与类组件都可以</span>
+	  <span class="token operator">&lt;</span>xxxContext<span class="token punctuation">.</span>Consumer<span class="token operator">&gt;</span>
+	    <span class="token punctuation">{</span>
+	      <span class="token parameter">value</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span> <span class="token comment">// value就是context中的value数据</span>
+	        要显示的内容
+	      <span class="token punctuation">)</span>
+	    <span class="token punctuation">}</span>
+	  <span class="token operator">&lt;</span><span class="token operator">/</span>xxxContext<span class="token punctuation">.</span>Consumer<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="注意"><a href="#注意" class="header-anchor">#</a> 注意</h3> <div class="language- extra-class"><pre><code>在应用开发中一般不用context, 一般都它的封装react插件
+</code></pre></div><hr> <h2 id="_6-组件优化"><a href="#_6-组件优化" class="header-anchor">#</a> 6. 组件优化</h2> <h3 id="component的2个问题"><a href="#component的2个问题" class="header-anchor">#</a> Component的2个问题</h3> <blockquote><ol><li><p>只要执行setState(),即使不改变状态数据, 组件也会重新render()</p></li> <li><p>只当前组件重新render(), 就会自动重新render子组件 ==&gt; 效率低</p></li></ol></blockquote> <h3 id="效率高的做法"><a href="#效率高的做法" class="header-anchor">#</a> 效率高的做法</h3> <blockquote><p>只有当组件的state或props数据发生改变时才重新render()</p></blockquote> <h3 id="原因"><a href="#原因" class="header-anchor">#</a> 原因</h3> <blockquote><p>Component中的shouldComponentUpdate()总是返回true</p></blockquote> <h3 id="解决"><a href="#解决" class="header-anchor">#</a> 解决</h3> <div class="language- extra-class"><pre><code>办法1: 
+	重写shouldComponentUpdate()方法
+	比较新旧state或props数据, 如果有变化才返回true, 如果没有返回false
+办法2:  
+	使用PureComponent
+	PureComponent重写了shouldComponentUpdate(), 只有state或props数据有变化才返回true
+	注意: 
+		只是进行state和props数据的浅比较, 如果只是数据对象内部数据变了, 返回false  
+		不要直接修改state数据, 而是要产生新数据
+项目中一般使用PureComponent来优化
+</code></pre></div><hr> <h2 id="_7-render-props"><a href="#_7-render-props" class="header-anchor">#</a> 7. render props</h2> <h3 id="如何向组件内部动态传入带内容的结构-标签"><a href="#如何向组件内部动态传入带内容的结构-标签" class="header-anchor">#</a> 如何向组件内部动态传入带内容的结构(标签)?</h3> <div class="language- extra-class"><pre><code>Vue中: 
+	使用slot技术, 也就是通过组件标签体传入结构  &lt;AA&gt;&lt;BB/&gt;&lt;/AA&gt;
+React中:
+	使用children props: 通过组件标签体传入结构
+	使用render props: 通过组件标签属性传入结构, 一般用render函数属性
+</code></pre></div><h3 id="children-props"><a href="#children-props" class="header-anchor">#</a> children props</h3> <div class="language- extra-class"><pre><code>&lt;A&gt;
+  &lt;B&gt;xxxx&lt;/B&gt;
+&lt;/A&gt;
+{this.props.children}
+问题: 如果B组件需要A组件内的数据, ==&gt; 做不到 ||render props就可以
+</code></pre></div><h3 id="render-props"><a href="#render-props" class="header-anchor">#</a> render props</h3> <div class="language- extra-class"><pre><code>&lt;A render={(data) =&gt; &lt;C data={data}&gt;&lt;/C&gt;}&gt;&lt;/A&gt;
+A组件: {this.props.render(内部state数据)}
+C组件: 读取A组件传入的数据显示 {this.props.data} 
+</code></pre></div><hr> <h2 id="_8-错误边界"><a href="#_8-错误边界" class="header-anchor">#</a> 8. 错误边界</h2> <h4 id="理解-2"><a href="#理解-2" class="header-anchor">#</a> 理解：</h4> <p>错误边界：用来捕获后代组件错误，渲染出备用页面</p> <h4 id="特点"><a href="#特点" class="header-anchor">#</a> 特点：</h4> <p>只能捕获后代组件生命周期产生的错误，不能捕获自己组件产生的错误和其他组件在合成事件、定时器中产生的错误</p> <h5 id="使用方式"><a href="#使用方式" class="header-anchor">#</a> 使用方式：</h5> <p>getDerivedStateFromError配合componentDidCatch</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 生命周期函数，一旦后台组件报错，就会触发</span>
+<span class="token keyword">static</span> <span class="token function">getDerivedStateFromError</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 在render之前触发</span>
+    <span class="token comment">// 返回新的state</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">hasError</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">componentDidCatch</span><span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> info</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 统计页面的错误。发送请求发送到后台去</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">,</span> info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_9-组件通信方式总结"><a href="#_9-组件通信方式总结" class="header-anchor">#</a> 9. 组件通信方式总结</h2> <h4 id="方式"><a href="#方式" class="header-anchor">#</a> 方式：</h4> <div class="language- extra-class"><pre><code>	props：
+		(1).children props
+		(2).render props
+	消息订阅-发布：
+		pubs-sub、event等等
+	集中式管理：
+		redux、dva等等
+	conText:
+		生产者-消费者模式
+</code></pre></div><h4 id="组件间的关系"><a href="#组件间的关系" class="header-anchor">#</a> 组件间的关系</h4> <div class="language- extra-class"><pre><code>	父子组件：props
+	兄弟组件(非嵌套组件)：消息订阅-发布、集中式管理
+	祖孙组件(跨级组件)：消息订阅-发布、集中式管理、conText(用的少)
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2023年5月18日星期四 09:24</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/前端/React/g.html" class="prev">
+        第7章: redux :集中式状态管理
+      </a></span> <span class="next"><a href="/前端/React/z.html">
+        react项目常用笔记
+      </a>
+      →
+    </span></p></div> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.6c856068.js" defer></script><script src="/assets/js/15.dea97000.js" defer></script><script src="/assets/js/3.55438353.js" defer></script><script src="/assets/js/89.4e5ac6ac.js" defer></script><script src="/assets/js/6.ff336aa3.js" defer></script>
+  </body>
+</html>
