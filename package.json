@@ -17,8 +17,7 @@
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "docs:nav": "vuepress nav docs",
-    "docs:navf": "vuepress nav docs -f",
-    "build:deploy":"npm run docs:navf && npm run deploy "
+    "docs:navf": "vuepress nav docs -f"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",

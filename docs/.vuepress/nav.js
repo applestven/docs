@@ -223,6 +223,10 @@ module.exports = [
         "link": "/面经/lib/"
       },
       {
+        "text": "前端面试",
+        "link": "/面经/前端面试/"
+      },
+      {
         "text": "面经",
         "link": "/面经/"
       }
