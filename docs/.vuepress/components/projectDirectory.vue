@@ -170,6 +170,7 @@ export default{
     backdrop-filter: blur(8px);
     /* 偏黑背景 */
     /* background-color: rgb(85 0 0 / 46%); */
+    cursor: pointer;
 }
 
 .home-containter .project .item-project .animate-list {

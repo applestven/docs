@@ -182,6 +182,10 @@ module.exports = [
       {
         "text": "Redis",
         "link": "/后端/redis/"
+      },
+      {
+        "text": "Shell",
+        "link": "/后端/shell/"
       }
     ]
   },
