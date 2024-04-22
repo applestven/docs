@@ -50,7 +50,12 @@
 
     ssh -T git@github.com 测试一下通不通
 
+## 服务器添加公钥
 
+    1. 添加公钥到authorized_keys 
+    sudo vim ~/.ssh/authorized_keys
+    2. 重启ssh服务  （unbuntu）
+    sudo /etc/init.d/ssh restart
 
 
 ## github技巧： 
