@@ -1,38 +1,40 @@
 # git基操 
 ## git  相关创建分支推送分支（部署ssh）
-    新建一个本地分支 
+- 新建一个本地分支 
     git checkout -b ts_EN
 
-    新建一个本地分支 以master主分支为模板创建一个yutong分支在从公用的仓库fetch代码：
+- 新建一个本地分支 以master主分支为模板创建一个yutong分支在从公用的仓库fetch代码：
     git fetch origin master:yutong
 
-    提交到远程分支（没有需要commit的内容） //提交到远程分支：
+- 提交到远程分支（没有需要commit的内容） //提交到远程分支：
     git checkout -b ts_EN
 
-    查询分支
+- 查询分支
     git branch -a（-r只显示所有的分支 ， -a比-r多了本地已经选择的分支）  查看所有的分支  
 
-    切换分支  / 切换某个文件（修改后切换原文件） 
+- 切换分支  / 切换某个文件（修改后切换原文件） 
     git checkout   xxx  
 
-    删除本地分支： 
+- 删除本地分支： 
     git branch -d dev20181018
 
-    如果删除不了可以强制删除，
+- 如果删除不了可以强制删除，
     git branch -D dev20181018
 
-    有必要的情况下，删除远程分支(慎用)：
+- 有必要的情况下，删除远程分支(慎用)：
     git push origin --delete dev20181018
 
-    提交冲突的情况下： 
+- 提交冲突的情况下： 
     Updates were rejected because the tip of your current branch is behind
 
-    先更新本地版本  git pull  origin  xxx  
-    再进行提交   git  push origin xxx 
+- 先更新本地版本  git pull  origin  xxx  
+- 再进行提交   git  push origin xxx 
 
-    同步远程仓库中的代码更新到本地仓库中的对应分支上 ，它的作用是从远程仓库（origin）获取分支（dev20181018）的最新版本，并将它存储在本地仓库中的一个名为dev20181018的分支上
+- 同步远程仓库中的代码更新到本地仓库中的对应分支上 ，它的作用是从远程仓库（origin）获取分支（dev20181018）的最新版本，并将它存储在本地仓库中的一个名为dev20181018的分支上
     git fetch origin dev20181018:dev20181018
 
+- 临时关闭 git commit 的eslint功能 
+    git commit --no-verify -m " 添加配置说明"  
 
 ##  查看本机ssh公钥，生成公钥
     $ ssh-keygen -t rsa -C "applestven@gmail.com"
