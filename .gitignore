@@ -20,5 +20,5 @@ debug.log
 *.sln
 # secret.js
 
-/dist
-/vuepress/dist
+dist/
+.vuepress/

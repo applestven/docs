@@ -36,21 +36,16 @@ jobs:
 
     - name: Set the CNAME file
       run: echo 'itclass.top' > CNAME
-      
 
-
-    - name: run deploy
-      run : npm run deploy  
-
-    # - name: Initialize and commit changes
-    #   run: |
-    #     git config --global user.email "applestven@gmail.com"
-    #     git config --global user.name "applestven"
-    #     git init
-    #     git add -A
-    #     git commit -m 'deploy'
+    - name: Initialize and commit changes
+      run: |
+        git config --global user.email "applestven@gmail.com"
+        git config --global user.name "applestven"
+        git init
+        git add -A
+        git commit -m 'deploy'
         
 
-    # - name: Push to gh-pages branch
-    #   run: |
-    #     git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git master:gh-pages
+    - name: Push to gh-pages branch
+      run: |
+        git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git master:gh-pages
