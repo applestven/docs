@@ -20,7 +20,7 @@ jobs:
         node-version: 16
 
     - name: view config 1
-      run: ls    
+      run: git branch -a
 
     - name: Install dependencies
       run: npm install
@@ -48,4 +48,4 @@ jobs:
 
     - name: Push to gh-pages branch
       run: |
-        git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git master:gh-pages
+        git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git gh-pages
