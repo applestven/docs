@@ -33,6 +33,12 @@ jobs:
 
     - name: Set the CNAME file
       run: echo 'itclass.top' > CNAME
+      
+    - name: view config 1
+      run: ls
+
+    - name: view config 2
+      run: git remote -v
 
     - name: Initialize and commit changes
       run: |
