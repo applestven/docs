@@ -1,4 +1,4 @@
-# 写一个github workflow yml脚本，执行以下命令
+# 写一个github workflow yml脚本，完成静态页面github的自动部署
 name: Deploy to GitHub Pages
 
 on:
@@ -42,4 +42,4 @@ jobs:
 
     - name: Push to gh-pages branch
       run: |
-        git push -f git@github.com:applestven/docs.git master:gh-pages
+        git push https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git master:gh-pages
