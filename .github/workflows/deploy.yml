@@ -42,7 +42,6 @@ jobs:
         git config --global user.email "applestven@gmail.com"
         git config --global user.name "applestven"
         git pull origin gh-pages
-        git init
         git add -A
         git commit -m 'deploy'
         
