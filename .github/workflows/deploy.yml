@@ -47,4 +47,4 @@ jobs:
 
     - name: Push to gh-pages branch
       run: |
-        git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git gh-pages
+        git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git master:gh-pages
