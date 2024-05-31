@@ -41,3 +41,29 @@ FLUSH PRIVILEGES; #刷新权限
 重置密码：alter user'root'@'localhost' identified by '779604436';
 
 #忘记密码重新设置  ： https://www.cnblogs.com/wsl-/p/10688292.html
+
+
+## ubuntu 数据库初始化
+
+  1. 安装
+  sudo apt-get update 
+  sudo apt-get install mysql-server
+
+  1. 设置账号密码
+  安装后 直接使用 sudo mysql  登陆root用户数据库
+  修改账号密码 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '2134567';
+  刷新权限使更改生效 FLUSH PRIVILEGES;
+
+
+  3. 数据库状态
+   sudo systemctl status mysql
+
+   停止服务 ：sudo systemctl stop mysql
+
+  4. 进行安全性配置：
+  sudo mysql_secure_installation
+  按照提示设置密码、删除匿名用户、禁止远程root登录等。
+
+  5. 查询数据库端口 
+
+netstat -tuln | grep mysql

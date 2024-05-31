@@ -17,7 +17,9 @@
 2. 手动安装
   待完善 
 
-    
+## 要停止所有的Docker镜像，可以使用以下命令 docker stop $(docker ps -aq)  
+## 删除所有容器 docker rm $(docker ps -aq)
+## 可以使用以下命令来删除所有镜像 docker rmi $(docker images -q)
 
 ## 1. docker 获取镜像 image 的两种方式 
 

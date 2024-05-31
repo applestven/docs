@@ -1,5 +1,30 @@
 module.exports = [
   {
+    "text": "AIGC",
+    "items": [
+      {
+        "text": "Whisper",
+        "link": "/AIGC/whisper/"
+      },
+      {
+        "text": "Ffmpeg",
+        "link": "/AIGC/ffmpeg/"
+      },
+      {
+        "text": "动画制作",
+        "link": "/AIGC/动画制作/"
+      },
+      {
+        "text": "Tts",
+        "link": "/AIGC/tts/"
+      },
+      {
+        "text": "AIGC",
+        "link": "/AIGC/"
+      }
+    ]
+  },
+  {
     "text": "case",
     "items": [
       {
@@ -58,6 +83,10 @@ module.exports = [
         "link": "/前端/CSS/"
       },
       {
+        "text": "Electron",
+        "link": "/前端/Electron/"
+      },
+      {
         "text": "Git",
         "link": "/前端/git/"
       },
@@ -72,6 +101,10 @@ module.exports = [
       {
         "text": "React",
         "link": "/前端/React/"
+      },
+      {
+        "text": "React Native",
+        "link": "/前端/ReactNative/"
       },
       {
         "text": "Study",
@@ -107,6 +140,14 @@ module.exports = [
     "text": "后端",
     "items": [
       {
+        "text": "CICD",
+        "link": "/后端/CICD/"
+      },
+      {
+        "text": "Crawlers",
+        "link": "/后端/Crawlers/"
+      },
+      {
         "text": "Docker",
         "link": "/后端/docker/"
       },
@@ -135,8 +176,34 @@ module.exports = [
         "link": "/后端/nvm/"
       },
       {
+        "text": "Puppteer",
+        "link": "/后端/Crawlers/puppteer/"
+      },
+      {
         "text": "Redis",
         "link": "/后端/redis/"
+      },
+      {
+        "text": "Shell",
+        "link": "/后端/shell/"
+      }
+    ]
+  },
+  {
+    "text": "杂项",
+    "items": [
+      {
+        "text": "杂项",
+        "link": "/杂项/"
+      }
+    ]
+  },
+  {
+    "text": "网络",
+    "items": [
+      {
+        "text": "网络",
+        "link": "/网络/"
       }
     ]
   },
@@ -158,6 +225,10 @@ module.exports = [
       {
         "text": "Lib",
         "link": "/面经/lib/"
+      },
+      {
+        "text": "前端面试",
+        "link": "/面经/前端面试/"
       },
       {
         "text": "面经",
