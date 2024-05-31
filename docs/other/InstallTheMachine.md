@@ -1,3 +1,4 @@
+
 ## 零刻ser5 max 装macOS黑苹果
 
 https://baijiahao.baidu.com/s?id=1773166315272261509&wfr=spider&for=pc
@@ -90,7 +91,7 @@ alias adb='/mnt/c/tool/android-develpe-SDK/platform-tools/adb.exe'
 
 
 
-### wsl的相关命令 
+## wsl的相关命令 
 - 列出可用的 Linux 发行版
 wsl --list --online
 - 列出已安装的 Linux 发行版
@@ -104,18 +105,29 @@ wsl --version
 - 关闭
 wsl --shutdown
 - Terminate
+```shell
 wsl --terminate <Distribution Name>
+```
 - 导入和导出发行版
+```shell
 wsl --export <Distribution Name> <FileName>
 wsl --import <Distribution Name> <InstallLocation> <FileName>
+```
 - 注销或卸载 Linux 发行版
+```shell
 wsl --unregister <DistributionName>
-如果将 <DistributionName> 替换为目标 Linux 发行版的名称，则将从 WSL 取消注册该发行版，以便可以重新安装或清理它。 警告：取消注册后，与该分发版关联的所有数据、设置和软件将永久丢失
+
+```
+如果将 DistributionName 替换为目标 Linux 发行版的名称，则将从 WSL 取消注册该发行版，以便可以重新安装或清理它。 警告：取消注册后，与该分发版关联的所有数据、设置和软件将永久丢失
 - 安装
 wsl --install
 - 设置默认 Linux 发行版
+```shell
 wsl --set-default <Distribution Name>
+```
 - 更新 WSL
 wsl --update
 - 取消挂载磁盘
+```shell
 wsl --unmount <DiskPath>
+```

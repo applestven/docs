@@ -28,22 +28,6 @@ https://www.zerotier.com/download/
 ## 网络组网 
 
 
-### 组网方式 
-
-
-
-### 组网方式 
-
-
-
-### 组网方式 
-
-
-
-### 组网方式
-
-
-
 ## zerotier 组网 
 搭建根 plant
 https://zhuanlan.zhihu.com/p/544807922     可以参考其思路 ，但下载链接不能使用
