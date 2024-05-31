@@ -19,6 +19,9 @@ jobs:
       with:
         node-version: 16
 
+    - name: view config 1
+      run: ls    
+
     - name: Install dependencies
       run: npm install
 
@@ -34,11 +37,7 @@ jobs:
     - name: Set the CNAME file
       run: echo 'itclass.top' > CNAME
       
-    - name: view config 1
-      run: ls
 
-    - name: view config 2
-      run: git remote -v
 
     - name: run deploy
       run : npm run deploy  
