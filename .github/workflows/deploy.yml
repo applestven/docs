@@ -72,7 +72,7 @@ jobs:
 
     - name: Build Site 🏗️
       run: npm run build # 假设你的构建命令是这样的，根据你的实际构建命令修改
-      
+
     - name: view config 1
       run: ls
 
@@ -80,6 +80,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
         branch: gh-pages # 目标分支
-        folder: .vuepress/dist # 构建后输出的目录，根据你的实际情况调整
+        folder: docs/.vuepress/dist # 构建后输出的目录，根据你的实际情况调整
         clean: true # 是否清理目标分支上的旧文件
         single-commit: true # 将所有更改作为单个提交推送
