@@ -83,3 +83,4 @@ jobs:
         folder: docs/.vuepress/dist # 构建后输出的目录，根据你的实际情况调整
         clean: true # 是否清理目标分支上的旧文件
         single-commit: true # 将所有更改作为单个提交推送
+        token: ${{ secrets.GIT_TOKEN }} # 或者使用个人访问令牌
