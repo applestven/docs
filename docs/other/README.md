@@ -57,3 +57,6 @@ https://blog.csdn.net/hyc13520/article/details/128475495   OBS虚拟摄像头使
 ## 将node项目打包成二进制文件开机运行 
 
 https://blog.csdn.net/m0_55173487/article/details/128015052
+
+
+## 测试是否成功自动部署
