@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React 脚手架 | 大青虫</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/xiao.PNG">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.PNG">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="文档、笔记、博客">
+    <meta rel="author" content="不爱吃青菜的大青虫">
+    <meta rel="Keywords" content="vuepress介绍说明 不爱吃青菜的大青虫">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.PNG">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.7aacbfa3.css" as="style"><link rel="preload" href="/assets/js/app.0fcc7604.js" as="script"><link rel="preload" href="/assets/js/16.d51c5d6e.js" as="script"><link rel="preload" href="/assets/js/3.cf002b28.js" as="script"><link rel="preload" href="/assets/js/68.4b45d8e9.js" as="script"><link rel="preload" href="/assets/js/7.684d279e.js" as="script"><link rel="prefetch" href="/assets/js/1.54146c49.js"><link rel="prefetch" href="/assets/js/10.aa8b1301.js"><link rel="prefetch" href="/assets/js/100.2a774c8b.js"><link rel="prefetch" href="/assets/js/101.f2cae32e.js"><link rel="prefetch" href="/assets/js/102.053295b3.js"><link rel="prefetch" href="/assets/js/103.cce19d4e.js"><link rel="prefetch" href="/assets/js/104.b0b38c07.js"><link rel="prefetch" href="/assets/js/105.27981a61.js"><link rel="prefetch" href="/assets/js/106.12e75804.js"><link rel="prefetch" href="/assets/js/107.08c38205.js"><link rel="prefetch" href="/assets/js/108.d640d36c.js"><link rel="prefetch" href="/assets/js/109.ca9d757c.js"><link rel="prefetch" href="/assets/js/11.ccc7ba2f.js"><link rel="prefetch" href="/assets/js/110.83fc70ea.js"><link rel="prefetch" href="/assets/js/111.2f7e2b9c.js"><link rel="prefetch" href="/assets/js/112.bb75b0bb.js"><link rel="prefetch" href="/assets/js/113.84ab8900.js"><link rel="prefetch" href="/assets/js/114.2fd4c310.js"><link rel="prefetch" href="/assets/js/115.cc1eb8ae.js"><link rel="prefetch" href="/assets/js/116.66c23597.js"><link rel="prefetch" href="/assets/js/117.e5862254.js"><link rel="prefetch" href="/assets/js/118.4638b3df.js"><link rel="prefetch" href="/assets/js/119.50b5550b.js"><link rel="prefetch" href="/assets/js/12.a5f43f13.js"><link rel="prefetch" href="/assets/js/120.287016b7.js"><link rel="prefetch" href="/assets/js/121.80e6afd3.js"><link rel="prefetch" href="/assets/js/122.fd561d8f.js"><link rel="prefetch" href="/assets/js/123.dd6c137b.js"><link rel="prefetch" href="/assets/js/124.9d66ef79.js"><link rel="prefetch" href="/assets/js/125.cad5aeb6.js"><link rel="prefetch" href="/assets/js/126.798d9ab3.js"><link rel="prefetch" href="/assets/js/127.2667359d.js"><link rel="prefetch" href="/assets/js/128.c302a97f.js"><link rel="prefetch" href="/assets/js/129.2316de76.js"><link rel="prefetch" href="/assets/js/13.d4298862.js"><link rel="prefetch" href="/assets/js/130.7beedbff.js"><link rel="prefetch" href="/assets/js/131.2684cedb.js"><link rel="prefetch" href="/assets/js/132.75ac0a72.js"><link rel="prefetch" href="/assets/js/133.b1bcf944.js"><link rel="prefetch" href="/assets/js/134.1a6d65ad.js"><link rel="prefetch" href="/assets/js/135.9802d8d2.js"><link rel="prefetch" href="/assets/js/136.b0f54674.js"><link rel="prefetch" href="/assets/js/137.29fbe1b1.js"><link rel="prefetch" href="/assets/js/138.59708a7c.js"><link rel="prefetch" href="/assets/js/139.319de24c.js"><link rel="prefetch" href="/assets/js/14.abb5fbae.js"><link rel="prefetch" href="/assets/js/140.b799ca95.js"><link rel="prefetch" href="/assets/js/141.e01d37ad.js"><link rel="prefetch" href="/assets/js/142.f3d2329d.js"><link rel="prefetch" href="/assets/js/143.4864e80e.js"><link rel="prefetch" href="/assets/js/144.5f23dacc.js"><link rel="prefetch" href="/assets/js/145.66dfd74f.js"><link rel="prefetch" href="/assets/js/146.4c1dea09.js"><link rel="prefetch" href="/assets/js/147.4d1f8aa4.js"><link rel="prefetch" href="/assets/js/148.c24bc7dc.js"><link rel="prefetch" href="/assets/js/149.658003fe.js"><link rel="prefetch" href="/assets/js/15.32f3149f.js"><link rel="prefetch" href="/assets/js/150.1c597192.js"><link rel="prefetch" href="/assets/js/151.442c3c50.js"><link rel="prefetch" href="/assets/js/152.edc5acf9.js"><link rel="prefetch" href="/assets/js/153.1817af55.js"><link rel="prefetch" href="/assets/js/154.a252ef45.js"><link rel="prefetch" href="/assets/js/155.3a03d093.js"><link rel="prefetch" href="/assets/js/156.3face6a9.js"><link rel="prefetch" href="/assets/js/157.eadb012d.js"><link rel="prefetch" href="/assets/js/158.35e5a8bf.js"><link rel="prefetch" href="/assets/js/159.9a78826a.js"><link rel="prefetch" href="/assets/js/17.c2aba72e.js"><link rel="prefetch" href="/assets/js/18.19ad05d9.js"><link rel="prefetch" href="/assets/js/19.d80ae71f.js"><link rel="prefetch" href="/assets/js/20.49ff4c3d.js"><link rel="prefetch" href="/assets/js/21.256e7ed2.js"><link rel="prefetch" href="/assets/js/22.2b36768d.js"><link rel="prefetch" href="/assets/js/23.f9b95e21.js"><link rel="prefetch" href="/assets/js/24.4b72c335.js"><link rel="prefetch" href="/assets/js/25.76895fb4.js"><link rel="prefetch" href="/assets/js/26.412a8275.js"><link rel="prefetch" href="/assets/js/27.8677abe7.js"><link rel="prefetch" href="/assets/js/28.f2002fd2.js"><link rel="prefetch" href="/assets/js/29.32f53023.js"><link rel="prefetch" href="/assets/js/30.133917ea.js"><link rel="prefetch" href="/assets/js/31.3b97538d.js"><link rel="prefetch" href="/assets/js/32.362beb94.js"><link rel="prefetch" href="/assets/js/33.0b76de21.js"><link rel="prefetch" href="/assets/js/34.7a091458.js"><link rel="prefetch" href="/assets/js/35.853e254e.js"><link rel="prefetch" href="/assets/js/36.b3e5d0c3.js"><link rel="prefetch" href="/assets/js/37.8a12cb57.js"><link rel="prefetch" href="/assets/js/38.4e832e2b.js"><link rel="prefetch" href="/assets/js/39.4d0d2298.js"><link rel="prefetch" href="/assets/js/4.56bfa720.js"><link rel="prefetch" href="/assets/js/40.58f60d02.js"><link rel="prefetch" href="/assets/js/41.79478401.js"><link rel="prefetch" href="/assets/js/42.d295cf98.js"><link rel="prefetch" href="/assets/js/43.aa0fab21.js"><link rel="prefetch" href="/assets/js/44.0784fbe7.js"><link rel="prefetch" href="/assets/js/45.eca82abf.js"><link rel="prefetch" href="/assets/js/46.3cd7c3b5.js"><link rel="prefetch" href="/assets/js/47.9369f24b.js"><link rel="prefetch" href="/assets/js/48.802eacdb.js"><link rel="prefetch" href="/assets/js/49.3484f1c3.js"><link rel="prefetch" href="/assets/js/5.a6e81e8c.js"><link rel="prefetch" href="/assets/js/50.d35d1369.js"><link rel="prefetch" href="/assets/js/51.7998ac72.js"><link rel="prefetch" href="/assets/js/52.22e85edd.js"><link rel="prefetch" href="/assets/js/53.f3da6411.js"><link rel="prefetch" href="/assets/js/54.4a52010d.js"><link rel="prefetch" href="/assets/js/55.404a6bdb.js"><link rel="prefetch" href="/assets/js/56.9454e5bf.js"><link rel="prefetch" href="/assets/js/57.55a97cd8.js"><link rel="prefetch" href="/assets/js/58.08d44615.js"><link rel="prefetch" href="/assets/js/59.567f7ca8.js"><link rel="prefetch" href="/assets/js/6.d624c4e7.js"><link rel="prefetch" href="/assets/js/60.f1cad5ed.js"><link rel="prefetch" href="/assets/js/61.ddd28062.js"><link rel="prefetch" href="/assets/js/62.4b10c529.js"><link rel="prefetch" href="/assets/js/63.0c57c9a6.js"><link rel="prefetch" href="/assets/js/64.0e8610b4.js"><link rel="prefetch" href="/assets/js/65.3a81b6b4.js"><link rel="prefetch" href="/assets/js/66.b116a257.js"><link rel="prefetch" href="/assets/js/67.14d9108d.js"><link rel="prefetch" href="/assets/js/69.9b585ec5.js"><link rel="prefetch" href="/assets/js/70.27297e57.js"><link rel="prefetch" href="/assets/js/71.77498a79.js"><link rel="prefetch" href="/assets/js/72.551a3420.js"><link rel="prefetch" href="/assets/js/73.16d5aff3.js"><link rel="prefetch" href="/assets/js/74.ec08194e.js"><link rel="prefetch" href="/assets/js/75.98ff89eb.js"><link rel="prefetch" href="/assets/js/76.b67562fe.js"><link rel="prefetch" href="/assets/js/77.d0378e51.js"><link rel="prefetch" href="/assets/js/78.fcde82dd.js"><link rel="prefetch" href="/assets/js/79.79c26d13.js"><link rel="prefetch" href="/assets/js/8.a28389e3.js"><link rel="prefetch" href="/assets/js/80.81aa2ad7.js"><link rel="prefetch" href="/assets/js/81.4fb81a1b.js"><link rel="prefetch" href="/assets/js/82.68df2f38.js"><link rel="prefetch" href="/assets/js/83.7ace0793.js"><link rel="prefetch" href="/assets/js/84.a0044771.js"><link rel="prefetch" href="/assets/js/85.5a39068c.js"><link rel="prefetch" href="/assets/js/86.501b2294.js"><link rel="prefetch" href="/assets/js/87.6f94f019.js"><link rel="prefetch" href="/assets/js/88.17c90902.js"><link rel="prefetch" href="/assets/js/89.d0f1dd11.js"><link rel="prefetch" href="/assets/js/9.a4841f71.js"><link rel="prefetch" href="/assets/js/90.1cd933c4.js"><link rel="prefetch" href="/assets/js/91.e56d564c.js"><link rel="prefetch" href="/assets/js/92.3c94314c.js"><link rel="prefetch" href="/assets/js/93.b0ba2608.js"><link rel="prefetch" href="/assets/js/94.9a1b4bdd.js"><link rel="prefetch" href="/assets/js/95.190afd10.js"><link rel="prefetch" href="/assets/js/96.b209d3e4.js"><link rel="prefetch" href="/assets/js/97.562ef1b9.js"><link rel="prefetch" href="/assets/js/98.262ca9eb.js"><link rel="prefetch" href="/assets/js/99.19450d47.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7aacbfa3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./assets/img/xiaosi.PNG" alt="大青虫" class="logo"> <span class="site-name can-hide">大青虫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/%E9%A1%B9%E7%9B%AE/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/webpack/项目/react-cli.html" class="active sidebar-link">React 脚手架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack/项目/react-cli.html#开发模式配置" class="sidebar-link">开发模式配置</a></li><li class="sidebar-sub-header"><a href="/webpack/项目/react-cli.html#生产模式配置" class="sidebar-link">生产模式配置</a></li><li class="sidebar-sub-header"><a href="/webpack/项目/react-cli.html#其他配置" class="sidebar-link">其他配置</a></li><li class="sidebar-sub-header"><a href="/webpack/项目/react-cli.html#合并开发和生产配置" class="sidebar-link">合并开发和生产配置</a></li><li class="sidebar-sub-header"><a href="/webpack/项目/react-cli.html#优化配置" class="sidebar-link">优化配置</a></li></ul></li><li><a href="/webpack/项目/summary.html" class="sidebar-link">总结</a></li><li><a href="/webpack/项目/vue-cli.html" class="sidebar-link">Vue 脚手架</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-脚手架"><a href="#react-脚手架" class="header-anchor">#</a> React 脚手架</h1> <h2 id="开发模式配置"><a href="#开发模式配置" class="header-anchor">#</a> 开发模式配置</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.dev.js</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ESLintWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;eslint-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;html-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ReactRefreshWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@pmmmwh/react-refresh-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CopyPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;copy-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">getStyleLoaders</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">preProcessor</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;style-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;postcss-loader&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">postcssOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;postcss-preset-env&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 能解决大多数样式兼容性问题</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    preProcessor<span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">&quot;./src/main.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[name].js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[name].chunk.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">assetModuleFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[hash:10][ext][query]&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">oneOf</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token comment">// 用来匹配 .css 结尾的文件</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token comment">// use 数组里面 Loader 执行顺序是从右到左</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;less-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.s[ac]ss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;sass-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.styl$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;stylus-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpe?g|gif|svg)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">dataUrlCondition</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">maxSize</span><span class="token operator">:</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">1024</span><span class="token punctuation">,</span> <span class="token comment">// 小于10kb的图片会被base64处理</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(ttf|woff2?)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset/resource&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(jsx|js)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">include</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">cacheDirectory</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">cacheCompression</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token comment">// &quot;@babel/plugin-transform-runtime&quot;, // presets中包含了</span>
+                <span class="token string">&quot;react-refresh/babel&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 开启js的HMR功能</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">ESLintWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">context</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token string">&quot;node_modules&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cache</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cacheLocation</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>
+        __dirname<span class="token punctuation">,</span>
+        <span class="token string">&quot;../node_modules/.cache/.eslintcache&quot;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">template</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public/index.html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">ReactRefreshWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 解决js的HMR功能运行时全局变量的问题</span>
+    <span class="token comment">// 将public下面的资源复制到dist目录去（除了index.html）</span>
+    <span class="token keyword">new</span> <span class="token class-name">CopyPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">patterns</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">from</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">to</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../dist&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">toType</span><span class="token operator">:</span> <span class="token string">&quot;dir&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">noErrorOnMissing</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 不生成错误</span>
+          <span class="token literal-property property">globOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 忽略文件</span>
+            <span class="token literal-property property">ignore</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;**/index.html&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 跳过terser压缩js</span>
+            <span class="token literal-property property">minimized</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">optimization</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">splitChunks</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">runtimeChunk</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">name</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">entrypoint</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">runtime~</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>entrypoint<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 自动补全文件扩展名，让jsx可以使用</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hot</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">compress</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">historyApiFallback</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 解决react-router刷新404问题</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">&quot;development&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">&quot;cheap-module-source-map&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="生产模式配置"><a href="#生产模式配置" class="header-anchor">#</a> 生产模式配置</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.prod.js</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ESLintWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;eslint-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;html-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> MiniCssExtractPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;mini-css-extract-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> TerserWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;terser-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CssMinimizerPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;css-minimizer-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ImageMinimizerPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;image-minimizer-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CopyPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;copy-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">getStyleLoaders</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">preProcessor</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>
+    MiniCssExtractPlugin<span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;postcss-loader&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">postcssOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;postcss-preset-env&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 能解决大多数样式兼容性问题</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    preProcessor<span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">&quot;./src/main.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../dist&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[name].[contenthash:10].js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[name].[contenthash:10].chunk.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">assetModuleFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[hash:10][ext][query]&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">clean</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">oneOf</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token comment">// 用来匹配 .css 结尾的文件</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token comment">// use 数组里面 Loader 执行顺序是从右到左</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;less-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.s[ac]ss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;sass-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.styl$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;stylus-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpe?g|gif|svg)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">dataUrlCondition</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">maxSize</span><span class="token operator">:</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">1024</span><span class="token punctuation">,</span> <span class="token comment">// 小于10kb的图片会被base64处理</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(ttf|woff2?)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset/resource&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(jsx|js)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">include</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">cacheDirectory</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">cacheCompression</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token comment">// &quot;@babel/plugin-transform-runtime&quot; // presets中包含了</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">ESLintWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">context</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token string">&quot;node_modules&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cache</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cacheLocation</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>
+        __dirname<span class="token punctuation">,</span>
+        <span class="token string">&quot;../node_modules/.cache/.eslintcache&quot;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">template</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public/index.html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">&quot;static/css/[name].[contenthash:10].css&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/css/[name].[contenthash:10].chunk.css&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token comment">// 将public下面的资源复制到dist目录去（除了index.html）</span>
+    <span class="token keyword">new</span> <span class="token class-name">CopyPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">patterns</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">from</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">to</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../dist&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">toType</span><span class="token operator">:</span> <span class="token string">&quot;dir&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">noErrorOnMissing</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 不生成错误</span>
+          <span class="token literal-property property">globOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 忽略文件</span>
+            <span class="token literal-property property">ignore</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;**/index.html&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 跳过terser压缩js</span>
+            <span class="token literal-property property">minimized</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">optimization</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 压缩的操作</span>
+    <span class="token literal-property property">minimizer</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token keyword">new</span> <span class="token class-name">CssMinimizerPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token keyword">new</span> <span class="token class-name">TerserWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token keyword">new</span> <span class="token class-name">ImageMinimizerPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">minimizer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">implementation</span><span class="token operator">:</span> ImageMinimizerPlugin<span class="token punctuation">.</span>imageminGenerate<span class="token punctuation">,</span>
+          <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;gifsicle&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">interlaced</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;jpegtran&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">progressive</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;optipng&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">optimizationLevel</span><span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token string">&quot;svgo&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;preset-default&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;prefixIds&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;sortAttrs&quot;</span><span class="token punctuation">,</span>
+                      <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token literal-property property">xmlnsOrder</span><span class="token operator">:</span> <span class="token string">&quot;alphabetical&quot;</span><span class="token punctuation">,</span>
+                      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">splitChunks</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">runtimeChunk</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">name</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">entrypoint</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">runtime~</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>entrypoint<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devtool</span><span class="token operator">:</span> <span class="token string">&quot;source-map&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="其他配置"><a href="#其他配置" class="header-anchor">#</a> 其他配置</h2> <ul><li>package.json</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-cli&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run dev&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=development webpack serve --config ./config/webpack.dev.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.17.10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@pmmmwh/react-refresh-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.5.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;babel-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.2.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;babel-preset-react-app&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;copy-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.2.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cross-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.7.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;css-minimizer-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.4.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eslint-config-react-app&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eslint-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.1.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;html-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.5.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;image-minimizer-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.2.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-gifsicle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-jpegtran&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-optipng&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-svgo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;less-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mini-css-extract-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;postcss-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.2.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;postcss-preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.5.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-refresh&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.13.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sass-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^12.6.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;style-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;stylus-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.72.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.9.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack-dev-server&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.9.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;antd&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.20.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^18.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^18.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-router-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.3.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;browserslist&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;last 2 version&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&gt; 1%&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;not dead&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>.eslintrc.js</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;react-app&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 继承 react 官方规则</span>
+  <span class="token literal-property property">parserOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">babelOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">presets</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token comment">// 解决页面报错问题</span>
+        <span class="token punctuation">[</span><span class="token string">&quot;babel-preset-react-app&quot;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;babel-preset-react-app/prod&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>babel.config.js</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 使用react官方规则</span>
+  <span class="token literal-property property">presets</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;react-app&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="合并开发和生产配置"><a href="#合并开发和生产配置" class="header-anchor">#</a> 合并开发和生产配置</h2> <ul><li>webpack.config.js</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ESLintWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;eslint-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;html-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> MiniCssExtractPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;mini-css-extract-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CssMinimizerPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;css-minimizer-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> TerserWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;terser-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ImageMinimizerPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;image-minimizer-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ReactRefreshWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@pmmmwh/react-refresh-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 需要通过 cross-env 定义环境变量</span>
+<span class="token keyword">const</span> isProduction <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">getStyleLoaders</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">preProcessor</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>
+    isProduction <span class="token operator">?</span> MiniCssExtractPlugin<span class="token punctuation">.</span>loader <span class="token operator">:</span> <span class="token string">&quot;style-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;postcss-loader&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">postcssOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;postcss-preset-env&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 能解决大多数样式兼容性问题</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    preProcessor<span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">&quot;./src/main.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> isProduction <span class="token operator">?</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../dist&quot;</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> isProduction
+      <span class="token operator">?</span> <span class="token string">&quot;static/js/[name].[contenthash:10].js&quot;</span>
+      <span class="token operator">:</span> <span class="token string">&quot;static/js/[name].js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> isProduction
+      <span class="token operator">?</span> <span class="token string">&quot;static/js/[name].[contenthash:10].chunk.js&quot;</span>
+      <span class="token operator">:</span> <span class="token string">&quot;static/js/[name].chunk.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">assetModuleFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[hash:10][ext][query]&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">clean</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">oneOf</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token comment">// 用来匹配 .css 结尾的文件</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token comment">// use 数组里面 Loader 执行顺序是从右到左</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;less-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.s[ac]ss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;sass-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.styl$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;stylus-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpe?g|gif|svg)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">dataUrlCondition</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">maxSize</span><span class="token operator">:</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">1024</span><span class="token punctuation">,</span> <span class="token comment">// 小于10kb的图片会被base64处理</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(ttf|woff2?)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset/resource&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(jsx|js)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">include</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">cacheDirectory</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 开启babel编译缓存</span>
+              <span class="token literal-property property">cacheCompression</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 缓存文件不要压缩</span>
+              <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token comment">// &quot;@babel/plugin-transform-runtime&quot;,  // presets中包含了</span>
+                <span class="token operator">!</span>isProduction <span class="token operator">&amp;&amp;</span> <span class="token string">&quot;react-refresh/babel&quot;</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">ESLintWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">context</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token string">&quot;node_modules&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cache</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cacheLocation</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>
+        __dirname<span class="token punctuation">,</span>
+        <span class="token string">&quot;../node_modules/.cache/.eslintcache&quot;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">template</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public/index.html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    isProduction <span class="token operator">&amp;&amp;</span>
+      <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">&quot;static/css/[name].[contenthash:10].css&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/css/[name].[contenthash:10].chunk.css&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">!</span>isProduction <span class="token operator">&amp;&amp;</span> <span class="token keyword">new</span> <span class="token class-name">ReactRefreshWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">optimization</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">minimize</span><span class="token operator">:</span> isProduction<span class="token punctuation">,</span>
+    <span class="token comment">// 压缩的操作</span>
+    <span class="token literal-property property">minimizer</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// 压缩css</span>
+      <span class="token keyword">new</span> <span class="token class-name">CssMinimizerPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token comment">// 压缩js</span>
+      <span class="token keyword">new</span> <span class="token class-name">TerserWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token comment">// 压缩图片</span>
+      <span class="token keyword">new</span> <span class="token class-name">ImageMinimizerPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">minimizer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">implementation</span><span class="token operator">:</span> ImageMinimizerPlugin<span class="token punctuation">.</span>imageminGenerate<span class="token punctuation">,</span>
+          <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;gifsicle&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">interlaced</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;jpegtran&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">progressive</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;optipng&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">optimizationLevel</span><span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token string">&quot;svgo&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;preset-default&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;prefixIds&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;sortAttrs&quot;</span><span class="token punctuation">,</span>
+                      <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token literal-property property">xmlnsOrder</span><span class="token operator">:</span> <span class="token string">&quot;alphabetical&quot;</span><span class="token punctuation">,</span>
+                      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 代码分割配置</span>
+    <span class="token literal-property property">splitChunks</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 其他都用默认值</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">runtimeChunk</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">name</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">entrypoint</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">runtime~</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>entrypoint<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hot</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">compress</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">historyApiFallback</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> isProduction <span class="token operator">?</span> <span class="token string">&quot;production&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;development&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devtool</span><span class="token operator">:</span> isProduction <span class="token operator">?</span> <span class="token string">&quot;source-map&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;cheap-module-source-map&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>修改运行指令 package.json</li></ul> <div class="language-json extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-cli&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run dev&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=production webpack --config ./config/webpack.config.js&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.17.10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@pmmmwh/react-refresh-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.5.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;babel-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.2.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;babel-preset-react-app&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cross-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.7.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;css-minimizer-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.4.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eslint-config-react-app&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eslint-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.1.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;html-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.5.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;image-minimizer-webpack-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.2.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-gifsicle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-jpegtran&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-optipng&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;imagemin-svgo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;less-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mini-css-extract-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-refresh&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.13.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sass-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^12.6.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;style-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.3.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;stylus-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.72.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.9.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack-dev-server&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.9.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^18.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^18.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-router-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.3.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;browserslist&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;last 2 version&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&gt; 1%&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;not dead&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="优化配置"><a href="#优化配置" class="header-anchor">#</a> 优化配置</h2> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br></div><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ESLintWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;eslint-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;html-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> MiniCssExtractPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;mini-css-extract-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CssMinimizerPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;css-minimizer-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> TerserWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;terser-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ImageMinimizerPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;image-minimizer-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ReactRefreshWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;@pmmmwh/react-refresh-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CopyPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;copy-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> isProduction <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">&quot;production&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">getStyleLoaders</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">preProcessor</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>
+    isProduction <span class="token operator">?</span> MiniCssExtractPlugin<span class="token punctuation">.</span>loader <span class="token operator">:</span> <span class="token string">&quot;style-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;postcss-loader&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">postcssOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;postcss-preset-env&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    preProcessor <span class="token operator">&amp;&amp;</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">loader</span><span class="token operator">:</span> preProcessor<span class="token punctuation">,</span>
+      <span class="token literal-property property">options</span><span class="token operator">:</span>
+        preProcessor <span class="token operator">===</span> <span class="token string">&quot;less-loader&quot;</span>
+          <span class="token operator">?</span> <span class="token punctuation">{</span>
+              <span class="token comment">// antd的自定义主题</span>
+              <span class="token literal-property property">lessOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">modifyVars</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token comment">// 其他主题色：https://ant.design/docs/react/customize-theme-cn</span>
+                  <span class="token string-property property">&quot;@primary-color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#1DA57A&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 全局主色</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">javascriptEnabled</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span>
+          <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">&quot;./src/main.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> isProduction <span class="token operator">?</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../dist&quot;</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> isProduction
+      <span class="token operator">?</span> <span class="token string">&quot;static/js/[name].[contenthash:10].js&quot;</span>
+      <span class="token operator">:</span> <span class="token string">&quot;static/js/[name].js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> isProduction
+      <span class="token operator">?</span> <span class="token string">&quot;static/js/[name].[contenthash:10].chunk.js&quot;</span>
+      <span class="token operator">:</span> <span class="token string">&quot;static/js/[name].chunk.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">assetModuleFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/js/[hash:10][ext][query]&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">clean</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">oneOf</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.less$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;less-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.s[ac]ss$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;sass-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.styl$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token function">getStyleLoaders</span><span class="token punctuation">(</span><span class="token string">&quot;stylus-loader&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(png|jpe?g|gif|svg)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">dataUrlCondition</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">maxSize</span><span class="token operator">:</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token number">1024</span><span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(ttf|woff2?)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;asset/resource&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.(jsx|js)$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+            <span class="token literal-property property">include</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">cacheDirectory</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">cacheCompression</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token comment">// &quot;@babel/plugin-transform-runtime&quot;,  // presets中包含了</span>
+                <span class="token operator">!</span>isProduction <span class="token operator">&amp;&amp;</span> <span class="token string">&quot;react-refresh/babel&quot;</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">ESLintWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">context</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token string">&quot;node_modules&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cache</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cacheLocation</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>
+        __dirname<span class="token punctuation">,</span>
+        <span class="token string">&quot;../node_modules/.cache/.eslintcache&quot;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">template</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public/index.html&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    isProduction <span class="token operator">&amp;&amp;</span>
+      <span class="token keyword">new</span> <span class="token class-name">MiniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">&quot;static/css/[name].[contenthash:10].css&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">chunkFilename</span><span class="token operator">:</span> <span class="token string">&quot;static/css/[name].[contenthash:10].chunk.css&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">!</span>isProduction <span class="token operator">&amp;&amp;</span> <span class="token keyword">new</span> <span class="token class-name">ReactRefreshWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token comment">// 将public下面的资源复制到dist目录去（除了index.html）</span>
+    <span class="token keyword">new</span> <span class="token class-name">CopyPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">patterns</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">from</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../public&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">to</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../dist&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">toType</span><span class="token operator">:</span> <span class="token string">&quot;dir&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">noErrorOnMissing</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 不生成错误</span>
+          <span class="token literal-property property">globOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 忽略文件</span>
+            <span class="token literal-property property">ignore</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;**/index.html&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">info</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 跳过terser压缩js</span>
+            <span class="token literal-property property">minimized</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">optimization</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">minimize</span><span class="token operator">:</span> isProduction<span class="token punctuation">,</span>
+    <span class="token comment">// 压缩的操作</span>
+    <span class="token literal-property property">minimizer</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// 压缩css</span>
+      <span class="token keyword">new</span> <span class="token class-name">CssMinimizerPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token comment">// 压缩js</span>
+      <span class="token keyword">new</span> <span class="token class-name">TerserWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token comment">// 压缩图片</span>
+      <span class="token keyword">new</span> <span class="token class-name">ImageMinimizerPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">minimizer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">implementation</span><span class="token operator">:</span> ImageMinimizerPlugin<span class="token punctuation">.</span>imageminGenerate<span class="token punctuation">,</span>
+          <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;gifsicle&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">interlaced</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;jpegtran&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">progressive</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span><span class="token string">&quot;optipng&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">optimizationLevel</span><span class="token operator">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token string">&quot;svgo&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token string">&quot;preset-default&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;prefixIds&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;sortAttrs&quot;</span><span class="token punctuation">,</span>
+                      <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token literal-property property">xmlnsOrder</span><span class="token operator">:</span> <span class="token string">&quot;alphabetical&quot;</span><span class="token punctuation">,</span>
+                      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 代码分割配置</span>
+    <span class="token literal-property property">splitChunks</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cacheGroups</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// layouts通常是admin项目的主体布局组件，所有路由组件都要使用的</span>
+        <span class="token comment">// 可以单独打包，从而复用</span>
+        <span class="token comment">// 如果项目中没有，请删除</span>
+        <span class="token literal-property property">layouts</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;layouts&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">test</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;../src/layouts&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">priority</span><span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 如果项目中使用antd，此时将所有node_modules打包在一起，那么打包输出文件会比较大。</span>
+        <span class="token comment">// 所以我们将node_modules中比较大的模块单独打包，从而并行加载速度更好</span>
+        <span class="token comment">// 如果项目中没有，请删除</span>
+        <span class="token literal-property property">antd</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;chunk-antd&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\\/]node_modules[\\/]antd(.*)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+          <span class="token literal-property property">priority</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 将react相关的库单独打包，减少node_modules的chunk体积。</span>
+        <span class="token literal-property property">react</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\\/]node_modules[\\/]react(.*)?[\\/]</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+          <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token string">&quot;initial&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">priority</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">libs</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;chunk-libs&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\\/]node_modules[\\/]</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+          <span class="token literal-property property">priority</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">// 权重最低，优先考虑前面内容</span>
+          <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token string">&quot;initial&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">runtimeChunk</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">name</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">entrypoint</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">runtime~</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>entrypoint<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">hot</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">compress</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">historyApiFallback</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> isProduction <span class="token operator">?</span> <span class="token string">&quot;production&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;development&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">devtool</span><span class="token operator">:</span> isProduction <span class="token operator">?</span> <span class="token string">&quot;source-map&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;cheap-module-source-map&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">performance</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 关闭性能分析，提示速度</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webpack/%E9%A1%B9%E7%9B%AE/" class="prev router-link-active">
+        介绍
+      </a></span> <span class="next"><a href="/webpack/项目/summary.html">
+        总结
+      </a>
+      →
+    </span></p></div> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.0fcc7604.js" defer></script><script src="/assets/js/16.d51c5d6e.js" defer></script><script src="/assets/js/3.cf002b28.js" defer></script><script src="/assets/js/68.4b45d8e9.js" defer></script><script src="/assets/js/7.684d279e.js" defer></script>
+  </body>
+</html>

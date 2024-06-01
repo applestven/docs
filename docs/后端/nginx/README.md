@@ -1,9 +1,62 @@
 # nginx 基础
+## whereis nginx  返回关于 Nginx 的一些路径信息
+    
+   通常情况下 Nginx 的配置文件位于 /etc/nginx 目录下  在该目录下找到 Nginx 的配置文件，如 nginx.conf 或者其他以 .conf 结尾的文件
+
+ 1.  编辑命令 
+   sudo vim /etc/nginx/nginx.conf
+   
+   
+## 重启使得修改的nginx配置文件生效
+sudo nginx -s reload
+
+
+## 查询 nginx 状态 
+
+sudo systemctl status nginx
+
+## 启动 Nginx 服务 
+
+sudo systemctl start nginx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 其他笔记
+
+
 1. 进入nginx容器进行相关配置
  ```bash 
  ## whereis nginx #可以在容器中查询出nginx的相关配置文件存放位置
  ```
 文件夹 nodePro docke-compose 部署 两个node应用示例
+
+
+2. 进入容器后 查询nginx配置文件存放位置
+```bash
+    
+```
+
 ## nas配置nginx过程  
 部署 vue前端应用
 1. 通过containerStation 安装 nginx 

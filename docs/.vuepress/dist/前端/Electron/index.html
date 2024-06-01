@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>快速搭建 electron-quick-start 项目 ： | 大青虫</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/xiao.PNG">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.PNG">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="文档、笔记、博客">
+    <meta rel="author" content="不爱吃青菜的大青虫">
+    <meta rel="Keywords" content="vuepress介绍说明 不爱吃青菜的大青虫">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.PNG">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.7aacbfa3.css" as="style"><link rel="preload" href="/assets/js/app.0fcc7604.js" as="script"><link rel="preload" href="/assets/js/16.d51c5d6e.js" as="script"><link rel="preload" href="/assets/js/3.cf002b28.js" as="script"><link rel="preload" href="/assets/js/79.79c26d13.js" as="script"><link rel="preload" href="/assets/js/7.684d279e.js" as="script"><link rel="prefetch" href="/assets/js/1.54146c49.js"><link rel="prefetch" href="/assets/js/10.aa8b1301.js"><link rel="prefetch" href="/assets/js/100.2a774c8b.js"><link rel="prefetch" href="/assets/js/101.f2cae32e.js"><link rel="prefetch" href="/assets/js/102.053295b3.js"><link rel="prefetch" href="/assets/js/103.cce19d4e.js"><link rel="prefetch" href="/assets/js/104.b0b38c07.js"><link rel="prefetch" href="/assets/js/105.27981a61.js"><link rel="prefetch" href="/assets/js/106.12e75804.js"><link rel="prefetch" href="/assets/js/107.08c38205.js"><link rel="prefetch" href="/assets/js/108.d640d36c.js"><link rel="prefetch" href="/assets/js/109.ca9d757c.js"><link rel="prefetch" href="/assets/js/11.ccc7ba2f.js"><link rel="prefetch" href="/assets/js/110.83fc70ea.js"><link rel="prefetch" href="/assets/js/111.2f7e2b9c.js"><link rel="prefetch" href="/assets/js/112.bb75b0bb.js"><link rel="prefetch" href="/assets/js/113.84ab8900.js"><link rel="prefetch" href="/assets/js/114.2fd4c310.js"><link rel="prefetch" href="/assets/js/115.cc1eb8ae.js"><link rel="prefetch" href="/assets/js/116.66c23597.js"><link rel="prefetch" href="/assets/js/117.e5862254.js"><link rel="prefetch" href="/assets/js/118.4638b3df.js"><link rel="prefetch" href="/assets/js/119.50b5550b.js"><link rel="prefetch" href="/assets/js/12.a5f43f13.js"><link rel="prefetch" href="/assets/js/120.287016b7.js"><link rel="prefetch" href="/assets/js/121.80e6afd3.js"><link rel="prefetch" href="/assets/js/122.fd561d8f.js"><link rel="prefetch" href="/assets/js/123.dd6c137b.js"><link rel="prefetch" href="/assets/js/124.9d66ef79.js"><link rel="prefetch" href="/assets/js/125.cad5aeb6.js"><link rel="prefetch" href="/assets/js/126.798d9ab3.js"><link rel="prefetch" href="/assets/js/127.2667359d.js"><link rel="prefetch" href="/assets/js/128.c302a97f.js"><link rel="prefetch" href="/assets/js/129.2316de76.js"><link rel="prefetch" href="/assets/js/13.d4298862.js"><link rel="prefetch" href="/assets/js/130.7beedbff.js"><link rel="prefetch" href="/assets/js/131.2684cedb.js"><link rel="prefetch" href="/assets/js/132.75ac0a72.js"><link rel="prefetch" href="/assets/js/133.b1bcf944.js"><link rel="prefetch" href="/assets/js/134.1a6d65ad.js"><link rel="prefetch" href="/assets/js/135.9802d8d2.js"><link rel="prefetch" href="/assets/js/136.b0f54674.js"><link rel="prefetch" href="/assets/js/137.29fbe1b1.js"><link rel="prefetch" href="/assets/js/138.59708a7c.js"><link rel="prefetch" href="/assets/js/139.319de24c.js"><link rel="prefetch" href="/assets/js/14.abb5fbae.js"><link rel="prefetch" href="/assets/js/140.b799ca95.js"><link rel="prefetch" href="/assets/js/141.e01d37ad.js"><link rel="prefetch" href="/assets/js/142.f3d2329d.js"><link rel="prefetch" href="/assets/js/143.4864e80e.js"><link rel="prefetch" href="/assets/js/144.5f23dacc.js"><link rel="prefetch" href="/assets/js/145.66dfd74f.js"><link rel="prefetch" href="/assets/js/146.4c1dea09.js"><link rel="prefetch" href="/assets/js/147.4d1f8aa4.js"><link rel="prefetch" href="/assets/js/148.c24bc7dc.js"><link rel="prefetch" href="/assets/js/149.658003fe.js"><link rel="prefetch" href="/assets/js/15.32f3149f.js"><link rel="prefetch" href="/assets/js/150.1c597192.js"><link rel="prefetch" href="/assets/js/151.442c3c50.js"><link rel="prefetch" href="/assets/js/152.edc5acf9.js"><link rel="prefetch" href="/assets/js/153.1817af55.js"><link rel="prefetch" href="/assets/js/154.a252ef45.js"><link rel="prefetch" href="/assets/js/155.3a03d093.js"><link rel="prefetch" href="/assets/js/156.3face6a9.js"><link rel="prefetch" href="/assets/js/157.eadb012d.js"><link rel="prefetch" href="/assets/js/158.35e5a8bf.js"><link rel="prefetch" href="/assets/js/159.9a78826a.js"><link rel="prefetch" href="/assets/js/17.c2aba72e.js"><link rel="prefetch" href="/assets/js/18.19ad05d9.js"><link rel="prefetch" href="/assets/js/19.d80ae71f.js"><link rel="prefetch" href="/assets/js/20.49ff4c3d.js"><link rel="prefetch" href="/assets/js/21.256e7ed2.js"><link rel="prefetch" href="/assets/js/22.2b36768d.js"><link rel="prefetch" href="/assets/js/23.f9b95e21.js"><link rel="prefetch" href="/assets/js/24.4b72c335.js"><link rel="prefetch" href="/assets/js/25.76895fb4.js"><link rel="prefetch" href="/assets/js/26.412a8275.js"><link rel="prefetch" href="/assets/js/27.8677abe7.js"><link rel="prefetch" href="/assets/js/28.f2002fd2.js"><link rel="prefetch" href="/assets/js/29.32f53023.js"><link rel="prefetch" href="/assets/js/30.133917ea.js"><link rel="prefetch" href="/assets/js/31.3b97538d.js"><link rel="prefetch" href="/assets/js/32.362beb94.js"><link rel="prefetch" href="/assets/js/33.0b76de21.js"><link rel="prefetch" href="/assets/js/34.7a091458.js"><link rel="prefetch" href="/assets/js/35.853e254e.js"><link rel="prefetch" href="/assets/js/36.b3e5d0c3.js"><link rel="prefetch" href="/assets/js/37.8a12cb57.js"><link rel="prefetch" href="/assets/js/38.4e832e2b.js"><link rel="prefetch" href="/assets/js/39.4d0d2298.js"><link rel="prefetch" href="/assets/js/4.56bfa720.js"><link rel="prefetch" href="/assets/js/40.58f60d02.js"><link rel="prefetch" href="/assets/js/41.79478401.js"><link rel="prefetch" href="/assets/js/42.d295cf98.js"><link rel="prefetch" href="/assets/js/43.aa0fab21.js"><link rel="prefetch" href="/assets/js/44.0784fbe7.js"><link rel="prefetch" href="/assets/js/45.eca82abf.js"><link rel="prefetch" href="/assets/js/46.3cd7c3b5.js"><link rel="prefetch" href="/assets/js/47.9369f24b.js"><link rel="prefetch" href="/assets/js/48.802eacdb.js"><link rel="prefetch" href="/assets/js/49.3484f1c3.js"><link rel="prefetch" href="/assets/js/5.a6e81e8c.js"><link rel="prefetch" href="/assets/js/50.d35d1369.js"><link rel="prefetch" href="/assets/js/51.7998ac72.js"><link rel="prefetch" href="/assets/js/52.22e85edd.js"><link rel="prefetch" href="/assets/js/53.f3da6411.js"><link rel="prefetch" href="/assets/js/54.4a52010d.js"><link rel="prefetch" href="/assets/js/55.404a6bdb.js"><link rel="prefetch" href="/assets/js/56.9454e5bf.js"><link rel="prefetch" href="/assets/js/57.55a97cd8.js"><link rel="prefetch" href="/assets/js/58.08d44615.js"><link rel="prefetch" href="/assets/js/59.567f7ca8.js"><link rel="prefetch" href="/assets/js/6.d624c4e7.js"><link rel="prefetch" href="/assets/js/60.f1cad5ed.js"><link rel="prefetch" href="/assets/js/61.ddd28062.js"><link rel="prefetch" href="/assets/js/62.4b10c529.js"><link rel="prefetch" href="/assets/js/63.0c57c9a6.js"><link rel="prefetch" href="/assets/js/64.0e8610b4.js"><link rel="prefetch" href="/assets/js/65.3a81b6b4.js"><link rel="prefetch" href="/assets/js/66.b116a257.js"><link rel="prefetch" href="/assets/js/67.14d9108d.js"><link rel="prefetch" href="/assets/js/68.4b45d8e9.js"><link rel="prefetch" href="/assets/js/69.9b585ec5.js"><link rel="prefetch" href="/assets/js/70.27297e57.js"><link rel="prefetch" href="/assets/js/71.77498a79.js"><link rel="prefetch" href="/assets/js/72.551a3420.js"><link rel="prefetch" href="/assets/js/73.16d5aff3.js"><link rel="prefetch" href="/assets/js/74.ec08194e.js"><link rel="prefetch" href="/assets/js/75.98ff89eb.js"><link rel="prefetch" href="/assets/js/76.b67562fe.js"><link rel="prefetch" href="/assets/js/77.d0378e51.js"><link rel="prefetch" href="/assets/js/78.fcde82dd.js"><link rel="prefetch" href="/assets/js/8.a28389e3.js"><link rel="prefetch" href="/assets/js/80.81aa2ad7.js"><link rel="prefetch" href="/assets/js/81.4fb81a1b.js"><link rel="prefetch" href="/assets/js/82.68df2f38.js"><link rel="prefetch" href="/assets/js/83.7ace0793.js"><link rel="prefetch" href="/assets/js/84.a0044771.js"><link rel="prefetch" href="/assets/js/85.5a39068c.js"><link rel="prefetch" href="/assets/js/86.501b2294.js"><link rel="prefetch" href="/assets/js/87.6f94f019.js"><link rel="prefetch" href="/assets/js/88.17c90902.js"><link rel="prefetch" href="/assets/js/89.d0f1dd11.js"><link rel="prefetch" href="/assets/js/9.a4841f71.js"><link rel="prefetch" href="/assets/js/90.1cd933c4.js"><link rel="prefetch" href="/assets/js/91.e56d564c.js"><link rel="prefetch" href="/assets/js/92.3c94314c.js"><link rel="prefetch" href="/assets/js/93.b0ba2608.js"><link rel="prefetch" href="/assets/js/94.9a1b4bdd.js"><link rel="prefetch" href="/assets/js/95.190afd10.js"><link rel="prefetch" href="/assets/js/96.b209d3e4.js"><link rel="prefetch" href="/assets/js/97.562ef1b9.js"><link rel="prefetch" href="/assets/js/98.262ca9eb.js"><link rel="prefetch" href="/assets/js/99.19450d47.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7aacbfa3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./assets/img/xiaosi.PNG" alt="大青虫" class="logo"> <span class="site-name can-hide">大青虫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Electron</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E5%89%8D%E7%AB%AF/Electron/" aria-current="page" class="active sidebar-link">快速搭建 electron-quick-start 项目 ：</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#快速搭建-electron-quick-start-项目" class="sidebar-link">快速搭建 electron-quick-start 项目 ：</a></li><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#创建的模板地址" class="sidebar-link">创建的模板地址 ：</a></li><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#手动创建" class="sidebar-link">手动创建</a></li><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#一些主程常用配置" class="sidebar-link">一些主程常用配置</a></li><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#如果关闭了-electron-窗口选项-会有不能拖动的问题" class="sidebar-link">如果关闭了 electron 窗口选项 ，会有不能拖动的问题</a></li><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#快捷插件electron-项目" class="sidebar-link">快捷插件electron 项目</a></li><li class="sidebar-sub-header"><a href="/%E5%89%8D%E7%AB%AF/Electron/#一些注意" class="sidebar-link">一些注意 :</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="快速搭建-electron-quick-start-项目"><a href="#快速搭建-electron-quick-start-项目" class="header-anchor">#</a> 快速搭建 electron-quick-start 项目 ：</h2> <p>git clone https://github.com/electron/electron-quick-start</p> <h2 id="创建的模板地址"><a href="#创建的模板地址" class="header-anchor">#</a> 创建的模板地址 ：</h2> <p>git clone https://gitee.com/simple-and-pure/template.git</p> <h2 id="手动创建"><a href="#手动创建" class="header-anchor">#</a> 手动创建</h2> <ol><li>安装 create-react-app 命令,如果已将安装请忽略
+npm install -g create-react-app</li> <li>创建 react项目
+create-react-app react-electron</li> <li>启动项目
+cd react-electron &amp;&amp; npm start</li></ol> <h3 id="_2-安装electron"><a href="#_2-安装electron" class="header-anchor">#</a> 2.安装Electron</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment">#在react-electron项目目录下</span>
+cnpm <span class="token function">install</span> --save electron
+</code></pre></div><h3 id="_3-0-配置文件"><a href="#_3-0-配置文件" class="header-anchor">#</a> 3.0 配置文件</h3> <ol><li>在项目根目录新建main.js</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> app<span class="token punctuation">,</span> BrowserWindow <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;electron&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'url'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">createWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> win <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BrowserWindow</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">minWidth</span><span class="token operator">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">minHeight</span><span class="token operator">:</span> <span class="token number">800</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  win<span class="token punctuation">.</span><span class="token function">loadURL</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:3000/&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+app<span class="token punctuation">.</span><span class="token function">whenReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">createWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;active&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>BrowserWindow<span class="token punctuation">.</span><span class="token function">getAllWindows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">createWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;window-all-closed&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>platform <span class="token operator">!==</span> <span class="token string">&quot;darwin&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    app<span class="token punctuation">.</span><span class="token function">quit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+</code></pre></div><ol start="2"><li>配置package.json</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>
+添加如下两项配置：
+<span class="token punctuation">{</span>
+	<span class="token string-property property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;main.js&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 配置electron的启动文件</span>
+	<span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token string-property property">&quot;electron-start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron .&quot;</span>
+	  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+
+
+</code></pre></div><ol start="3"><li>启动electron</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>
+<span class="token comment"># 这里要打开两个窗口</span>
+
+<span class="token comment"># 启动react项目</span>
+<span class="token function">npm</span> start
+<span class="token comment"># 启动electron</span>
+<span class="token function">npm</span> run electron-start
+
+
+</code></pre></div><h3 id="_4-打包electron桌面应用"><a href="#_4-打包electron桌面应用" class="header-anchor">#</a> 4.打包Electron桌面应用</h3> <p>浅试即止 能够找到electron本地安装的方法（从这里学到electron-builder打包方式）  ：https://blog.csdn.net/xiaorunye/article/details/128163117</p> <p>深入打包可以看 ： https://blog.csdn.net/duansamve/article/details/126494450</p> <p>有价值的文章 ： https://blog.csdn.net/weixin_39673601/article/details/110464670</p> <p>build-packpage 清晰的文章 ： https://blog.csdn.net/weixin_39673601/article/details/110464670</p> <p>可找到开发与打包配置script ：https://blog.csdn.net/weixin_38080573/article/details/105113219</p> <h4 id="_4-1打包成安装器"><a href="#_4-1打包成安装器" class="header-anchor">#</a> 4.1打包成安装器</h4> <ul><li>安装electron-builder：</li></ul> <p><code>cnpm install -g electron-builder</code></p> <ul><li><p>配置package.js文件的script节点：</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron .&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;pack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder --dir&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;postinstall&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder install-app-deps&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;dist&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;dist-win&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder --win --ia32&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;dist-win64&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder --win --x64&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;dist-mac&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder --mac&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;dist-linux&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electron-builder --linux&quot;</span>
+  <span class="token punctuation">}</span>
+
+</code></pre></div></li> <li><p>编译</p> <p><code>yarn postinstall</code></p></li> <li><p>打包windows 64位应用命令 （每次打包，需要重新编译 ，npm run build）</p> <p><code>yarn dist-win64</code></p></li> <li><p>在dist中可以找到安装包</p></li></ul> <h2 id="一些主程常用配置"><a href="#一些主程常用配置" class="header-anchor">#</a> 一些主程常用配置</h2> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> app<span class="token punctuation">,</span> BrowserWindow <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'electron'</span><span class="token punctuation">)</span>
+
+
+
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">createWindow</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> win <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BrowserWindow</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">600</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">500</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">x</span><span class="token operator">:</span><span class="token number">500</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">y</span><span class="token operator">:</span><span class="token number">800</span><span class="token punctuation">,</span>
+    <span class="token comment">// alwaysOnTop:&quot;true&quot;,//运行在最上层</span>
+    <span class="token literal-property property">webPreferences</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">nodeIntegration</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// frame:false , // 标题栏控制  ，没有标题栏控制不了 ,需要设置样式 （css/index.css）</span>
+    <span class="token comment">// transparent:true, // 整体窗口透明 ，全靠渲染进程给样式</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span> 
+
+  win<span class="token punctuation">.</span><span class="token function">loadFile</span><span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">)</span>
+<span class="token comment">//   win.loadURL(&quot;http://www.itclass.top&quot;)</span>
+<span class="token comment">//1::1 等比例缩放 </span>
+<span class="token comment">//   win.setAspectRatio(1) </span>
+<span class="token comment">//自动打开渲染进程控制台</span>
+  win<span class="token punctuation">.</span>webContents<span class="token punctuation">.</span><span class="token function">toggleDevTools</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">&quot;11111111111&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+app<span class="token punctuation">.</span><span class="token function">whenReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">createWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'activate'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>BrowserWindow<span class="token punctuation">.</span><span class="token function">getAllWindows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">createWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'window-all-closed'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>platform <span class="token operator">!==</span> <span class="token string">'darwin'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 判断系统 如果不为苹果系统 ， 则软件退出</span>
+    app<span class="token punctuation">.</span><span class="token function">quit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="如果关闭了-electron-窗口选项-会有不能拖动的问题"><a href="#如果关闭了-electron-窗口选项-会有不能拖动的问题" class="header-anchor">#</a> 如果关闭了 electron 窗口选项 ，会有不能拖动的问题</h2> <p>设置渲染进程 css</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">*</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">padding</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token literal-property property">margin</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+body<span class="token punctuation">{</span>
+    <span class="token comment">/* background-color: red; */</span>
+<span class="token punctuation">}</span>
+
+html<span class="token punctuation">{</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>app<span class="token operator">-</span>region<span class="token operator">:</span> drag <span class="token punctuation">;</span> <span class="token comment">/* 拖动主要属性 */</span>
+<span class="token punctuation">}</span>
+
+textarea<span class="token punctuation">{</span>
+    <span class="token operator">-</span>webkit<span class="token operator">-</span>app<span class="token operator">-</span>region<span class="token operator">:</span> no<span class="token operator">-</span>drag <span class="token punctuation">;</span> <span class="token comment">/* 文本属性不拖 */</span>
+<span class="token punctuation">}</span>
+
+body<span class="token punctuation">{</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> 100vw<span class="token punctuation">;</span> <span class="token operator">/</span> <span class="token comment">/*  整体窗口都能拖动 */</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> 100vh<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+h1<span class="token punctuation">{</span>
+    <span class="token comment">/* background-color:red; */</span>
+    <span class="token comment">/* height: 100vh; */</span>
+    <span class="token comment">/* border-radius: 50%; */</span>
+    <span class="token comment">/* overflow: hidden; */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="快捷插件electron-项目"><a href="#快捷插件electron-项目" class="header-anchor">#</a> 快捷插件electron 项目</h2> <p>这个项目提供了一个Project Boilerplate，允许你使用React开发Electron App.关于Webpack之类的复杂配置，项目组已经提前帮你配置好了，就不用再自己手动去踩坑了。使用它可以让你专注于push ideas into coding，避免冗长繁琐复杂的配置工作。</p> <p>实例化一个项目your-project-name，可以用以下命令：</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># ts版本</span>
+<span class="token function">git</span> clone --depth<span class="token operator">=</span><span class="token number">1</span> https://github.com/electron-react-boilerplate/electron-react-boilerplate.git your-project-name
+<span class="token builtin class-name">cd</span> your-project-name
+
+
+</code></pre></div><p>注 ： 只有ts版本 js版本不在维护 并删除了</p> <h2 id="一些注意"><a href="#一些注意" class="header-anchor">#</a> 一些注意 :</h2> <p>yarn \ npm 安装不了electron  只有cnpm可以</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.0fcc7604.js" defer></script><script src="/assets/js/16.d51c5d6e.js" defer></script><script src="/assets/js/3.cf002b28.js" defer></script><script src="/assets/js/79.79c26d13.js" defer></script><script src="/assets/js/7.684d279e.js" defer></script>
+  </body>
+</html>

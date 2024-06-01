@@ -1,4 +1,8 @@
 ## redis 入门记
+
+## window 安装redis
+下载地址 ： https://github.com/MicrosoftArchive/redis/releases
+
 <!--视频学习 ： https://www.bilibili.com/video/BV1GY41187d5/?p=10&spm_id_from=pageDriver&vd_source=0c88b82560db687e3ba0427782c655e3 -->
 1. 基本概念
       Redis 是一个高性能的key-value数据库。

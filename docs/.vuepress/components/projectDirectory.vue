@@ -163,13 +163,14 @@ export default{
     justify-content: center;
     width: 350px;
     height: 60px;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #f5deb3;
+    color: #f5deb3;
     border-radius: 0.5rem;
     /* background-color: rgb(0 0% 10% , .1); */
     backdrop-filter: blur(8px);
     /* 偏黑背景 */
     /* background-color: rgb(85 0 0 / 46%); */
+    cursor: pointer;
 }
 
 .home-containter .project .item-project .animate-list {

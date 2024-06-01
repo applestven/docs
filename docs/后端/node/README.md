@@ -1,3 +1,34 @@
+
+## linux安装node环境 
+
+source ~/.bashrc
+
+1. 下载 ： wget https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-x64.tar.xz
+
+2. 移动包到指定目录
+mv node-v14.17.0-linux-x64.tar.xz /mnt_data_01/local/node
+
+3. 解压安装包：
+进入安装目录，解压 Node.js 安装包
+cd /mnt_data_01/local/node
+tar -xf node-v14.17.0-linux-x64.tar.xz
+
+4. 设置环境变量：
+修改你的用户配置文件（比如 ~/.bashrc 或 ~/.bash_profile）来设置 Node.js 的环境变量
+
+export PATH=/mnt_data_01/local/node/node-v14.17.0-linux-x64/bin:$PATH
+
+5. 生效配置文件
+
+source ~/.bashrc
+
+验证安装 ： 
+
+node -v
+npm -v
+
+
+
 ## AMD  CMD 模块化 
 
 require  是由 AMD规范引入   运行时调用
@@ -31,3 +62,4 @@ __filename
 广义的来讲，模块化和组件化并不在一个维度上，模块化往往是代码的设计和项目结构的设计；但很多时候在狭义的场景中，比如一个很通用的功能，也完全能够将其组件化或模块化，这两者此时十分相似，最大的区别就是组件必定是模块化的，并且往往需要实例化，也应当赋有生命周期，而模块化往往是直接引用
 
 组件化往往是页面布局和特定功能结合在一起组成的可复用的组件 ，组件化的抽象设计是很重要的，不仅增加了复用性提高了工作效率，从某种程度上来说也反应了程序员对业务和产品设计的理解 ，一旦有问题或者需要功能扩展时，你就会发现之前的设计是多么的make sense
+

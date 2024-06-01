@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>react-router@6 | 大青虫</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/xiao.PNG">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.PNG">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="文档、笔记、博客">
+    <meta rel="author" content="不爱吃青菜的大青虫">
+    <meta rel="Keywords" content="vuepress介绍说明 不爱吃青菜的大青虫">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.PNG">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.7aacbfa3.css" as="style"><link rel="preload" href="/assets/js/app.0fcc7604.js" as="script"><link rel="preload" href="/assets/js/16.d51c5d6e.js" as="script"><link rel="preload" href="/assets/js/3.cf002b28.js" as="script"><link rel="preload" href="/assets/js/91.e56d564c.js" as="script"><link rel="preload" href="/assets/js/7.684d279e.js" as="script"><link rel="prefetch" href="/assets/js/1.54146c49.js"><link rel="prefetch" href="/assets/js/10.aa8b1301.js"><link rel="prefetch" href="/assets/js/100.2a774c8b.js"><link rel="prefetch" href="/assets/js/101.f2cae32e.js"><link rel="prefetch" href="/assets/js/102.053295b3.js"><link rel="prefetch" href="/assets/js/103.cce19d4e.js"><link rel="prefetch" href="/assets/js/104.b0b38c07.js"><link rel="prefetch" href="/assets/js/105.27981a61.js"><link rel="prefetch" href="/assets/js/106.12e75804.js"><link rel="prefetch" href="/assets/js/107.08c38205.js"><link rel="prefetch" href="/assets/js/108.d640d36c.js"><link rel="prefetch" href="/assets/js/109.ca9d757c.js"><link rel="prefetch" href="/assets/js/11.ccc7ba2f.js"><link rel="prefetch" href="/assets/js/110.83fc70ea.js"><link rel="prefetch" href="/assets/js/111.2f7e2b9c.js"><link rel="prefetch" href="/assets/js/112.bb75b0bb.js"><link rel="prefetch" href="/assets/js/113.84ab8900.js"><link rel="prefetch" href="/assets/js/114.2fd4c310.js"><link rel="prefetch" href="/assets/js/115.cc1eb8ae.js"><link rel="prefetch" href="/assets/js/116.66c23597.js"><link rel="prefetch" href="/assets/js/117.e5862254.js"><link rel="prefetch" href="/assets/js/118.4638b3df.js"><link rel="prefetch" href="/assets/js/119.50b5550b.js"><link rel="prefetch" href="/assets/js/12.a5f43f13.js"><link rel="prefetch" href="/assets/js/120.287016b7.js"><link rel="prefetch" href="/assets/js/121.80e6afd3.js"><link rel="prefetch" href="/assets/js/122.fd561d8f.js"><link rel="prefetch" href="/assets/js/123.dd6c137b.js"><link rel="prefetch" href="/assets/js/124.9d66ef79.js"><link rel="prefetch" href="/assets/js/125.cad5aeb6.js"><link rel="prefetch" href="/assets/js/126.798d9ab3.js"><link rel="prefetch" href="/assets/js/127.2667359d.js"><link rel="prefetch" href="/assets/js/128.c302a97f.js"><link rel="prefetch" href="/assets/js/129.2316de76.js"><link rel="prefetch" href="/assets/js/13.d4298862.js"><link rel="prefetch" href="/assets/js/130.7beedbff.js"><link rel="prefetch" href="/assets/js/131.2684cedb.js"><link rel="prefetch" href="/assets/js/132.75ac0a72.js"><link rel="prefetch" href="/assets/js/133.b1bcf944.js"><link rel="prefetch" href="/assets/js/134.1a6d65ad.js"><link rel="prefetch" href="/assets/js/135.9802d8d2.js"><link rel="prefetch" href="/assets/js/136.b0f54674.js"><link rel="prefetch" href="/assets/js/137.29fbe1b1.js"><link rel="prefetch" href="/assets/js/138.59708a7c.js"><link rel="prefetch" href="/assets/js/139.319de24c.js"><link rel="prefetch" href="/assets/js/14.abb5fbae.js"><link rel="prefetch" href="/assets/js/140.b799ca95.js"><link rel="prefetch" href="/assets/js/141.e01d37ad.js"><link rel="prefetch" href="/assets/js/142.f3d2329d.js"><link rel="prefetch" href="/assets/js/143.4864e80e.js"><link rel="prefetch" href="/assets/js/144.5f23dacc.js"><link rel="prefetch" href="/assets/js/145.66dfd74f.js"><link rel="prefetch" href="/assets/js/146.4c1dea09.js"><link rel="prefetch" href="/assets/js/147.4d1f8aa4.js"><link rel="prefetch" href="/assets/js/148.c24bc7dc.js"><link rel="prefetch" href="/assets/js/149.658003fe.js"><link rel="prefetch" href="/assets/js/15.32f3149f.js"><link rel="prefetch" href="/assets/js/150.1c597192.js"><link rel="prefetch" href="/assets/js/151.442c3c50.js"><link rel="prefetch" href="/assets/js/152.edc5acf9.js"><link rel="prefetch" href="/assets/js/153.1817af55.js"><link rel="prefetch" href="/assets/js/154.a252ef45.js"><link rel="prefetch" href="/assets/js/155.3a03d093.js"><link rel="prefetch" href="/assets/js/156.3face6a9.js"><link rel="prefetch" href="/assets/js/157.eadb012d.js"><link rel="prefetch" href="/assets/js/158.35e5a8bf.js"><link rel="prefetch" href="/assets/js/159.9a78826a.js"><link rel="prefetch" href="/assets/js/17.c2aba72e.js"><link rel="prefetch" href="/assets/js/18.19ad05d9.js"><link rel="prefetch" href="/assets/js/19.d80ae71f.js"><link rel="prefetch" href="/assets/js/20.49ff4c3d.js"><link rel="prefetch" href="/assets/js/21.256e7ed2.js"><link rel="prefetch" href="/assets/js/22.2b36768d.js"><link rel="prefetch" href="/assets/js/23.f9b95e21.js"><link rel="prefetch" href="/assets/js/24.4b72c335.js"><link rel="prefetch" href="/assets/js/25.76895fb4.js"><link rel="prefetch" href="/assets/js/26.412a8275.js"><link rel="prefetch" href="/assets/js/27.8677abe7.js"><link rel="prefetch" href="/assets/js/28.f2002fd2.js"><link rel="prefetch" href="/assets/js/29.32f53023.js"><link rel="prefetch" href="/assets/js/30.133917ea.js"><link rel="prefetch" href="/assets/js/31.3b97538d.js"><link rel="prefetch" href="/assets/js/32.362beb94.js"><link rel="prefetch" href="/assets/js/33.0b76de21.js"><link rel="prefetch" href="/assets/js/34.7a091458.js"><link rel="prefetch" href="/assets/js/35.853e254e.js"><link rel="prefetch" href="/assets/js/36.b3e5d0c3.js"><link rel="prefetch" href="/assets/js/37.8a12cb57.js"><link rel="prefetch" href="/assets/js/38.4e832e2b.js"><link rel="prefetch" href="/assets/js/39.4d0d2298.js"><link rel="prefetch" href="/assets/js/4.56bfa720.js"><link rel="prefetch" href="/assets/js/40.58f60d02.js"><link rel="prefetch" href="/assets/js/41.79478401.js"><link rel="prefetch" href="/assets/js/42.d295cf98.js"><link rel="prefetch" href="/assets/js/43.aa0fab21.js"><link rel="prefetch" href="/assets/js/44.0784fbe7.js"><link rel="prefetch" href="/assets/js/45.eca82abf.js"><link rel="prefetch" href="/assets/js/46.3cd7c3b5.js"><link rel="prefetch" href="/assets/js/47.9369f24b.js"><link rel="prefetch" href="/assets/js/48.802eacdb.js"><link rel="prefetch" href="/assets/js/49.3484f1c3.js"><link rel="prefetch" href="/assets/js/5.a6e81e8c.js"><link rel="prefetch" href="/assets/js/50.d35d1369.js"><link rel="prefetch" href="/assets/js/51.7998ac72.js"><link rel="prefetch" href="/assets/js/52.22e85edd.js"><link rel="prefetch" href="/assets/js/53.f3da6411.js"><link rel="prefetch" href="/assets/js/54.4a52010d.js"><link rel="prefetch" href="/assets/js/55.404a6bdb.js"><link rel="prefetch" href="/assets/js/56.9454e5bf.js"><link rel="prefetch" href="/assets/js/57.55a97cd8.js"><link rel="prefetch" href="/assets/js/58.08d44615.js"><link rel="prefetch" href="/assets/js/59.567f7ca8.js"><link rel="prefetch" href="/assets/js/6.d624c4e7.js"><link rel="prefetch" href="/assets/js/60.f1cad5ed.js"><link rel="prefetch" href="/assets/js/61.ddd28062.js"><link rel="prefetch" href="/assets/js/62.4b10c529.js"><link rel="prefetch" href="/assets/js/63.0c57c9a6.js"><link rel="prefetch" href="/assets/js/64.0e8610b4.js"><link rel="prefetch" href="/assets/js/65.3a81b6b4.js"><link rel="prefetch" href="/assets/js/66.b116a257.js"><link rel="prefetch" href="/assets/js/67.14d9108d.js"><link rel="prefetch" href="/assets/js/68.4b45d8e9.js"><link rel="prefetch" href="/assets/js/69.9b585ec5.js"><link rel="prefetch" href="/assets/js/70.27297e57.js"><link rel="prefetch" href="/assets/js/71.77498a79.js"><link rel="prefetch" href="/assets/js/72.551a3420.js"><link rel="prefetch" href="/assets/js/73.16d5aff3.js"><link rel="prefetch" href="/assets/js/74.ec08194e.js"><link rel="prefetch" href="/assets/js/75.98ff89eb.js"><link rel="prefetch" href="/assets/js/76.b67562fe.js"><link rel="prefetch" href="/assets/js/77.d0378e51.js"><link rel="prefetch" href="/assets/js/78.fcde82dd.js"><link rel="prefetch" href="/assets/js/79.79c26d13.js"><link rel="prefetch" href="/assets/js/8.a28389e3.js"><link rel="prefetch" href="/assets/js/80.81aa2ad7.js"><link rel="prefetch" href="/assets/js/81.4fb81a1b.js"><link rel="prefetch" href="/assets/js/82.68df2f38.js"><link rel="prefetch" href="/assets/js/83.7ace0793.js"><link rel="prefetch" href="/assets/js/84.a0044771.js"><link rel="prefetch" href="/assets/js/85.5a39068c.js"><link rel="prefetch" href="/assets/js/86.501b2294.js"><link rel="prefetch" href="/assets/js/87.6f94f019.js"><link rel="prefetch" href="/assets/js/88.17c90902.js"><link rel="prefetch" href="/assets/js/89.d0f1dd11.js"><link rel="prefetch" href="/assets/js/9.a4841f71.js"><link rel="prefetch" href="/assets/js/90.1cd933c4.js"><link rel="prefetch" href="/assets/js/92.3c94314c.js"><link rel="prefetch" href="/assets/js/93.b0ba2608.js"><link rel="prefetch" href="/assets/js/94.9a1b4bdd.js"><link rel="prefetch" href="/assets/js/95.190afd10.js"><link rel="prefetch" href="/assets/js/96.b209d3e4.js"><link rel="prefetch" href="/assets/js/97.562ef1b9.js"><link rel="prefetch" href="/assets/js/98.262ca9eb.js"><link rel="prefetch" href="/assets/js/99.19450d47.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7aacbfa3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./assets/img/xiaosi.PNG" alt="大青虫" class="logo"> <span class="site-name can-hide">大青虫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/杂项/" class="nav-link">
+  杂项
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>React</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E5%89%8D%E7%AB%AF/React/" aria-current="page" class="sidebar-link">React全家桶(技术栈)</a></li><li><a href="/前端/React/b.html" class="sidebar-link">第2章：React面向组件编程</a></li><li><a href="/前端/React/c.html" class="sidebar-link">第3章 React应用(基于React脚手架)</a></li><li><a href="/前端/React/d.html" class="sidebar-link">第4章：React ajax</a></li><li><a href="/前端/React/e.html" class="sidebar-link">第5章：React路由@5</a></li><li><a href="/前端/React/e-2.html" class="active sidebar-link">react-router@6</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/前端/React/e-2.html#常用标签" class="sidebar-link">常用标签</a></li><li class="sidebar-sub-header"><a href="/前端/React/e-2.html#常用hooks" class="sidebar-link">常用Hooks</a></li></ul></li><li><a href="/前端/React/f.html" class="sidebar-link">第6章: 常用UI组件</a></li><li><a href="/前端/React/g.html" class="sidebar-link">第7章: redux :集中式状态管理</a></li><li><a href="/前端/React/h.html" class="sidebar-link">第8章: 扩展</a></li><li><a href="/前端/React/z.html" class="sidebar-link">react项目常用笔记</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-router-6"><a href="#react-router-6" class="header-anchor">#</a> react-router@6</h1> <h2 id="常用标签"><a href="#常用标签" class="header-anchor">#</a> 常用标签</h2> <div class="language- extra-class"><pre><code>案例: https://gitee.com/big_insect/study-class/tree/master/react/react-cli/router6test
+</code></pre></div><h3 id="_1-browserrouter"><a href="#_1-browserrouter" class="header-anchor">#</a> 1.BrowserRouter</h3> <h3 id="_2-hashrouter"><a href="#_2-hashrouter" class="header-anchor">#</a> 2.HashRouter</h3> <h3 id="_3-route-与-routes"><a href="#_3-route-与-routes" class="header-anchor">#</a> 3.Route 与 Routes</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// V6 说明: </span>
+<span class="token comment">// 1.Routes 替换了 Switch  一个匹配上了 ，其他的就不匹配了 </span>
+<span class="token comment">// 2.element 替换了 component   </span>
+<span class="token comment">// 3. Navigate 替换  Redirect  重定向 </span>
+<span class="token comment">// 4. Routes和 route要配合使用 必须Router必须包裹Route </span>
+<span class="token comment">// 5. &lt;Route caseSensitive&gt; 属性用于指定:匹配时是否区分大小写 </span>
+<span class="token comment">// 6. &lt;Route&gt; 也可以嵌套使用 , 且可配合useRoutes()配置&quot;路由表&quot; ,但需要通过&lt;Outlet&gt;组件渲染其子路由</span>
+
+<span class="token comment">// 示例一 :  </span>
+<span class="token operator">&lt;</span>Routes<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/about&quot;</span> element<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>About<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>About<span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/home&quot;</span> element<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Home<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>Home<span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/&quot;</span> element<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Navigate to<span class="token operator">=</span><span class="token string">'/home/'</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>Home<span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Routes<span class="token operator">&gt;</span>
+
+<span class="token comment">// 示例二 :</span>
+<span class="token operator">&lt;</span>Routes<span class="token operator">&gt;</span>
+    <span class="token comment">/* path属性用于定义路径 ,element属性用于定于当前路径所对应的组件 */</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/login&quot;</span> element<span class="token operator">=</span><span class="token punctuation">{</span>Login<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>Home<span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+
+    <span class="token comment">// 用于定义嵌套路由 ,home是一级路由,对应的路径 /home</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;/home&quot;</span> element<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Home<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token comment">/* test1和test2 是二级路由 ,对应的路径是/home/test1 和 /home/test2 */</span>
+        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;test1&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span>Test1<span class="token operator">/</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;test2&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span>Test2<span class="token operator">/</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+    <span class="token comment">// Route 也可以不写element属性,这时就是用于展示嵌套的路由 ,所对应的路径是/users/xxx</span>
+    <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;users&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">&quot;xxx&quot;</span> element<span class="token operator">=</span><span class="token punctuation">{</span><span class="token operator">&lt;</span>Demo<span class="token operator">&gt;</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Route<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Routes<span class="token operator">&gt;</span> 
+
+</code></pre></div><h3 id="_4-link-与-navlink"><a href="#_4-link-与-navlink" class="header-anchor">#</a> 4.Link 与 NavLink</h3> <ol><li>link : 在应用程序周围提供声明式的,可访问的导航。 和V5一样</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token constant">V5</span> NavLink高亮写法  
+     <span class="token operator">&lt;</span>NavLink end activeClassName<span class="token operator">=</span><span class="token string">&quot;itclass&quot;</span>   className<span class="token operator">=</span><span class="token string">'list-group-item'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token comment">//   end  匹配了子路由 ,本身(父组件)不亮</span>
+      
+    <span class="token constant">V6</span>高亮写法写法  
+    className<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>isActive<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span> <span class="token keyword">return</span> isActive <span class="token operator">?</span><span class="token string">'list-group-item itclass'</span> <span class="token operator">:</span><span class="token string">'list-group-item'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span> 
+</code></pre></div><h3 id="_5-navigate"><a href="#_5-navigate" class="header-anchor">#</a> 5.Navigate</h3> <ol><li>作用 : 只要&lt; Navigate &gt;组件被渲染, 就会修改路径 , 切换视图</li> <li>replace属性用于控制跳转模式 :(push 或replace ,默认是push)</li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>示例</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span>home的内容<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span><span class="token comment">/* 根据sum值决定是否切换视图 */</span><span class="token punctuation">}</span>
+    <span class="token punctuation">{</span>sum <span class="token operator">===</span> <span class="token number">2</span> <span class="token operator">?</span> <span class="token operator">&lt;</span>Navigate to<span class="token operator">=</span><span class="token string">'/about/'</span> replace <span class="token operator">/</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span>当前的sum值为 <span class="token operator">:</span><span class="token punctuation">{</span>sum<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span> <span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span><span class="token function">setSum</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>点击将sum变为<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+</code></pre></div></div> <h3 id="_6-outlet"><a href="#_6-outlet" class="header-anchor">#</a> 6.Outlet</h3> <ol><li>作用 : 当&lt; Route &gt;产生嵌套时 , 渲染其对应的后续子路由</li> <li>示例代码:</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 根据路由表生成对应的路由规则</span>
+<span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token function">useRoutes</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token literal-property property">path</span><span class="token operator">:</span><span class="token string">'/about'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">element</span><span class="token operator">:</span><span class="token operator">&lt;</span>About<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">children</span><span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token literal-property property">path</span><span class="token operator">:</span><span class="token string">'news'</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">element</span><span class="token operator">:</span><span class="token operator">&lt;</span>News <span class="token operator">/</span><span class="token operator">&gt;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token literal-property property">path</span><span class="token operator">:</span><span class="token string">'message'</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">element</span><span class="token operator">:</span><span class="token operator">&lt;</span>Message <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">children</span><span class="token operator">:</span><span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token literal-property property">path</span><span class="token operator">:</span><span class="token string">'detail'</span><span class="token punctuation">,</span>
+                        <span class="token literal-property property">element</span><span class="token operator">:</span><span class="token operator">&lt;</span>Detail<span class="token operator">/</span><span class="token operator">&gt;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">path</span><span class="token operator">:</span><span class="token string">'/home'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">element</span><span class="token operator">:</span><span class="token operator">&lt;</span>Home<span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">path</span><span class="token operator">:</span><span class="token string">'/'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">element</span><span class="token operator">:</span><span class="token operator">&lt;</span>Navigate to<span class="token operator">=</span><span class="token string">'home'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">// home.js</span>
+<span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">&quot;panel-body&quot;</span><span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span>element<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="常用hooks"><a href="#常用hooks" class="header-anchor">#</a> 常用Hooks</h2> <h3 id="_1-useroutes"><a href="#_1-useroutes" class="header-anchor">#</a> 1.useRoutes()</h3> <div class="language- extra-class"><pre><code>作用:根据路由表,动态创建&lt;Routes&gt; 和&lt;Route&gt;
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> routes <span class="token keyword">from</span> <span class="token string">'./routes'</span>
+<span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token function">useRoutes</span><span class="token punctuation">(</span>routes<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_2-usenavigate"><a href="#_2-usenavigate" class="header-anchor">#</a> 2.useNavigate()</h3> <div class="language- extra-class"><pre><code>作用:返回一个函数用来实现编程式导航
+</code></pre></div><p>示例:</p> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token keyword">const</span> navigate <span class="token operator">=</span> <span class="token function">useNavigate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">function</span> <span class="token function">showDetail</span> <span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">'/home'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">replace</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">state</span><span class="token operator">:</span><span class="token punctuation">{</span>
+                <span class="token literal-property property">id</span><span class="token operator">:</span>id
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function">back</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">navigate</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">function</span> <span class="token function">forward</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">navigate</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="_3-useparams"><a href="#_3-useparams" class="header-anchor">#</a> 3.useParams()</h3> <ol><li>作用:回当前匹配路由的params参数 , 类似5.x中的match.params</li> <li>示例</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 路由传值方式 : /:id/:title/:content</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> id <span class="token punctuation">,</span>title<span class="token punctuation">,</span>content<span class="token punctuation">}</span><span class="token operator">=</span> <span class="token function">useParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_4-usesearchparams"><a href="#_4-usesearchparams" class="header-anchor">#</a> 4.useSearchParams()</h3> <ol><li>作用:用于读取和修改当前位置的URL中的查询字符串</li> <li>返回一个包含两个值的数组 , 内容分别为 , 当前的search参数 ,更新search的函数</li> <li>示例代码</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 路由传值方式 : ?id=004&amp;title=消息4&amp;content=粒粒皆辛苦</span>
+    <span class="token function">useSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> search <span class="token punctuation">,</span> setSearch<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> id <span class="token operator">=</span> search<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">const</span> title <span class="token operator">=</span> search<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span> 
+    <span class="token keyword">const</span> content <span class="token operator">=</span> search<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'content'</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_5-uselocation"><a href="#_5-uselocation" class="header-anchor">#</a> 5.useLocation()</h3> <ol><li>作用:获取当前location消息 , 达标5.x中的路由组件的location属性</li> <li>示例代码</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 路由传值方式 : ?id=004&amp;title=消息4&amp;content=粒粒皆辛苦</span>
+<span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">useLocation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'useLocation'</span><span class="token punctuation">,</span>x<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_6-usematch"><a href="#_6-usematch" class="header-anchor">#</a> 6.useMatch()</h3> <ol><li>作用 : 返回当前匹配消息 , 达标5.x中的路由组件的match属性</li> <li>示例代码</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 路由传值方式 /:id/:title/:content </span>
+<span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">useMatch</span><span class="token punctuation">(</span><span class="token string">'/about/message/detail/:id/:title/:content'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'useMatch'</span><span class="token punctuation">,</span>x<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_7-useroutercontext"><a href="#_7-useroutercontext" class="header-anchor">#</a> 7.useRouterContext()</h3> <div class="language- extra-class"><pre><code>作用: 如果组件在Router的上下文中呈现 , 则useRouterContext钩子返回true , 否则返回false 
+</code></pre></div><h3 id="_8-usenavigatetype"><a href="#_8-usenavigatetype" class="header-anchor">#</a> 8.useNavigateType()</h3> <div class="language- extra-class"><pre><code>1.作用:返回当前的导航类型 (用户是如何来到页面的)
+2.返回值:POP . PUSH . REPLACE
+3.POP是值在浏览器中直接打开了这个路由组件 (刷新页面) 
+</code></pre></div><h3 id="_9-useoutlet"><a href="#_9-useoutlet" class="header-anchor">#</a> 9.useOutlet()</h3> <div class="language- extra-class"><pre><code>1.作用 :用来呈现当前组件要渲染的嵌套路由.
+2.示例代码 :
+const result = useOutlet()
+console.log(result)
+//如果嵌套路由没有挂载 ,则result为null
+//如果嵌套路由已经挂载 , 则展示嵌套的路由对象
+</code></pre></div><h3 id="_10-useresolvedpath"><a href="#_10-useresolvedpath" class="header-anchor">#</a> 10.useResolvedPath()</h3> <div class="language- extra-class"><pre><code>1.作用:给定一个URL值 , 解析其中的path ; search ; hash 值
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/前端/React/e.html" class="prev">
+        第5章：React路由@5
+      </a></span> <span class="next"><a href="/前端/React/f.html">
+        第6章: 常用UI组件
+      </a>
+      →
+    </span></p></div> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.0fcc7604.js" defer></script><script src="/assets/js/16.d51c5d6e.js" defer></script><script src="/assets/js/3.cf002b28.js" defer></script><script src="/assets/js/91.e56d564c.js" defer></script><script src="/assets/js/7.684d279e.js" defer></script>
+  </body>
+</html>

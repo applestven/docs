@@ -1,0 +1,48 @@
+# 写一个github workflow yml脚本，完成静态页面github的自动部署
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: view config 1
+      run: git branch -a
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build catalog
+      run: npm run docs:navf
+
+    - name: Build VuePress site
+      run: npm run docs:build
+
+    - name: Change to the dist directory
+      run: cd docs/.vuepress/dist
+
+    - name: Set the CNAME file
+      run: echo 'itclass.top' > CNAME
+
+    - name: Initialize and commit changes
+      run: |
+        git config --global user.email "applestven@gmail.com"
+        git config --global user.name "applestven"
+        git add -A
+        git commit -m 'deploy'
+    - name: Push to gh-pages branch
+      run: |
+        git push -f https://${{ secrets.GIT_TOKEN }}@github.com/applestven/docs.git HEAD:gh-pages
