@@ -1,48 +1,82 @@
-# 写一个github workflow yml脚本，完成静态页面github的自动部署
+# # 写一个github workflow yml脚本，完成静态页面github的自动部署
+# name: Deploy to GitHub Pages
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v2
+
+#     - name: Set up Node.js
+#       uses: actions/setup-node@v2
+#       with:
+#         node-version: 16
+
+#     - name: view config 1
+#       run: git branch -a
+
+#     - name: Install dependencies
+#       run: npm install
+
+#     - name: Build catalog
+#       run: npm run docs:navf
+
+#     - name: Build VuePress site
+#       run: npm run docs:build
+
+#     - name: Change to the dist directory
+#       run: cd docs/.vuepress/dist
+
+#     - name: Set the CNAME file
+#       run: echo 'itclass.top' > CNAME
+
+#     - name: Initialize and commit changes
+#       run: |
+#         git config --global user.email "applestven@gmail.com"
+#         git config --global user.name "applestven"
+#         git add -A
+#         git commit -m 'deploy'
+#     - name: Push to gh-pages branch
+#       run: |
+#         git push -f https://${{ secrets.SSHS }}@github.com/applestven/docs.git HEAD:gh-pages
+
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main # 或者你的默认分支，可能是 'master'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Setup Node.js 🍌
+      uses: actions/setup-node@v3
       with:
         node-version: 16
 
-    - name: view config 1
-      run: git branch -a
+    - name: Install Dependencies 🔧
+      run: npm ci # 如果你的项目使用npm, 对于yarn则使用yarn install
 
-    - name: Install dependencies
-      run: npm install
+    - name: Build Site 🏗️
+      run: npm run build # 假设你的构建命令是这样的，根据你的实际构建命令修改
 
-    - name: Build catalog
-      run: npm run docs:navf
-
-    - name: Build VuePress site
-      run: npm run docs:build
-
-    - name: Change to the dist directory
-      run: cd docs/.vuepress/dist
-
-    - name: Set the CNAME file
-      run: echo 'itclass.top' > CNAME
-
-    - name: Initialize and commit changes
-      run: |
-        git config --global user.email "applestven@gmail.com"
-        git config --global user.name "applestven"
-        git add -A
-        git commit -m 'deploy'
-    - name: Push to gh-pages branch
-      run: |
-        git push -f https://${{ secrets.SSHS }}@github.com/applestven/docs.git HEAD:gh-pages
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      with:
+        branch: gh-pages # 目标分支
+        folder: .vuepress/dist # 构建后输出的目录，根据你的实际情况调整
+        clean: true # 是否清理目标分支上的旧文件
+        single-commit: true # 将所有更改作为单个提交推送
