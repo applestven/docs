@@ -68,7 +68,7 @@ jobs:
         node-version: 16
 
     - name: Install Dependencies 🔧
-      run: npm ci # 如果你的项目使用npm, 对于yarn则使用yarn install
+      run: npm i # 如果你的项目使用npm, 对于yarn则使用yarn install
 
     - name: Build Site 🏗️
       run: npm run build # 假设你的构建命令是这样的，根据你的实际构建命令修改
