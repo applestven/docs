@@ -13,11 +13,11 @@
   },
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",
-    "start": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "nav": "vuepress nav docs",
-    "navf": "vuepress nav docs -f"
+    "navf": "vuepress nav docs -f",
+    "serve": "vuepress serve docs"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",

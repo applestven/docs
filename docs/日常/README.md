@@ -1,0 +1,10 @@
+## 收藏即学习
+    1、浙江大学课程攻略共享计划（星标 35.3 K）：https://github.com/QSCTech/zju-icicles
+    2、清华大学计算机系课程攻略（星标 31.3 K）：https://github.com/PKUanonym/REKCARC-TSC-UHT
+    3、贵校课程资料民间整理（星标 29.9 K）：https://github.com/lib-pku/libpku
+    4、中国科学技术大学课程资源（星标 14.3 K）：https://github.com/USTC-Resource/USTC-Course
+    5、Bilibili 公开课目录（星标 4.4 K）：https://github.com/elder-frog/OpenCourseCatalog
+    6、Open Source Society University（开源社会大学，星标 158 K）：https://github.com/ossu/computer-science#intro-cs
+    7、TeachYourselfCS-CN（自学计算机科学，星标 19.1 K）：https://github.com/izackwu/TeachYourselfCS-CN
+    8、Awesome CS Courses（真棒计算机科学课程，星标 52.7 K）：https://github.com/prakhar1989/awesome-courses 
+

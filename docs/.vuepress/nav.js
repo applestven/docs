@@ -11,6 +11,10 @@ module.exports = [
         "link": "/AIGC/ffmpeg/"
       },
       {
+        "text": "AI网站",
+        "link": "/AIGC/AI网站/"
+      },
+      {
         "text": "动画制作",
         "link": "/AIGC/动画制作/"
       },
@@ -43,6 +47,15 @@ module.exports = [
       {
         "text": "Note",
         "link": "/note/"
+      }
+    ]
+  },
+  {
+    "text": "other",
+    "items": [
+      {
+        "text": "Other",
+        "link": "/other/"
       }
     ]
   },
@@ -194,17 +207,25 @@ module.exports = [
     ]
   },
   {
-    "text": "杂项",
+    "text": "日常",
     "items": [
       {
-        "text": "杂项",
-        "link": "/杂项/"
+        "text": "临时笔记",
+        "link": "/日常/临时笔记/"
+      },
+      {
+        "text": "日常",
+        "link": "/日常/"
       }
     ]
   },
   {
     "text": "网络",
     "items": [
+      {
+        "text": "网站搭建",
+        "link": "/网络/网站搭建/"
+      },
       {
         "text": "网络",
         "link": "/网络/"
