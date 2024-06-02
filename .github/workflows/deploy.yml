@@ -76,9 +76,6 @@ jobs:
     - name: Build Site 🏗️
       run: npm run build # 假设你的构建命令是这样的，根据你的实际构建命令修改
 
-    - name: view config 1
-      run: ls
-
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
