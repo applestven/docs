@@ -1,6 +1,8 @@
 ## 一些console的用法  特效 
 
+
 ### 美化打印实现方法
+参考：https://juejin.cn/post/7371716384847364147 
 ```js
 js复制代码// 美化打印实现方法
 const prettyLog = () => {
