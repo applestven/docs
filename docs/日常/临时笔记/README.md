@@ -39,3 +39,7 @@ CSS Tricks  css开发博客技巧
 
 cssreference.IO  如果需要更新CSS知识或者查询不熟悉S不常用的属性
 
+
+https://www.zhihu.com/question/618451816/answer/3203738230?utm_psn=1784494945379422208  按键效率工具   
+
+剪切板的使用
