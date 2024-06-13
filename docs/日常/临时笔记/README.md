@@ -43,3 +43,7 @@ cssreference.IO  如果需要更新CSS知识或者查询不熟悉S不常用的�
 https://www.zhihu.com/question/618451816/answer/3203738230?utm_psn=1784494945379422208  按键效率工具   
 
 剪切板的使用
+
+https://zhuanlan.zhihu.com/p/673019468?utm_psn=1784499271741087744
+31K star! Screenshot to Code:将截图翻译
+成代码的黑科技!
