@@ -53,14 +53,17 @@ yarn dev
 
 
 ### 安装完成的日常使用 
+**需要梯子**
 
 - 后台
 ``` bash
-    poetry run uvicorn main:app --reload --port 7000
+cd backend
+    poetry run uvicorn main:app --reload --port 7001
 ```   
 
 - 前台
 ``` bash
+cd frontend
     yarn dev
 ```      
 
