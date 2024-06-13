@@ -47,3 +47,5 @@ https://www.zhihu.com/question/618451816/answer/3203738230?utm_psn=1784494945379
 https://zhuanlan.zhihu.com/p/673019468?utm_psn=1784499271741087744
 31K star! Screenshot to Code:将截图翻译
 成代码的黑科技!
+
+【（有声重制）群晖搭建免费chatGPT4教程（利用GitHub copilot）基于docker-哔哩哔哩】 https://b23.tv/c69T988
