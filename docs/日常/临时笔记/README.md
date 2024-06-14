@@ -49,3 +49,7 @@ https://zhuanlan.zhihu.com/p/673019468?utm_psn=1784499271741087744
 成代码的黑科技!
 
 【（有声重制）群晖搭建免费chatGPT4教程（利用GitHub copilot）基于docker-哔哩哔哩】 https://b23.tv/c69T988
+
+## github host设置 加速访问
+
+https://gitee.com/klmahuaw/GitHub520
