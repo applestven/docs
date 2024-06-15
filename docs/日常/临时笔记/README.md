@@ -11,9 +11,6 @@
 		abtn.download = '';
 		abtn.target = '_blank';
 		abtn.click();
-
-## UNiapp 跳转如何做调试 
-    H5跳转登录后  ,替换本地请求地址    
 	    
 ## 内外穿透 
 
@@ -22,4 +19,5 @@ https://dashboard.cpolar.com/get-started
 ## 学习git 
 
 https://learngitbranching.js.org/?locale=zh_CN
+
 
