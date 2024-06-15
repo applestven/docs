@@ -20,4 +20,36 @@ https://dashboard.cpolar.com/get-started
 
 https://learngitbranching.js.org/?locale=zh_CN
 
+## 效率工具尝试  
 
+devdocs    文档查询
+
+
+collect UI   设计灵感
+
+fontSpark   字体选择
+
+CSSeffectsSnippets收录了大约20多种cSS动画
+
+CSS Tricks  css开发博客技巧
+
+
+cssreference.IO  如果需要更新CSS知识或者查询不熟悉S不常用的属性
+
+
+https://www.zhihu.com/question/618451816/answer/3203738230?utm_psn=1784494945379422208  按键效率工具   
+
+剪切板的使用
+
+https://zhuanlan.zhihu.com/p/673019468?utm_psn=1784499271741087744
+31K star! Screenshot to Code:将截图翻译
+成代码的黑科技!
+
+【（有声重制）群晖搭建免费chatGPT4教程（利用GitHub copilot）基于docker-哔哩哔哩】 https://b23.tv/c69T988
+
+## github host设置 加速访问
+
+https://gitee.com/klmahuaw/GitHub520
+
+
+## 需要写一个判断读取本地配置的脚本 并判断是否有显卡 
