@@ -54,8 +54,15 @@ sudo systemctl start nginx
 
 2. 进入容器后 查询nginx配置文件存放位置
 ```bash
-    
+    /etc/nginx/nginx.conf
 ```
+
+3. 查询nginx代理日志 
+```bash
+sudo tail -f /var/log/nginx/access.log
+```
+    
+
 
 ## nas配置nginx过程  
 部署 vue前端应用
