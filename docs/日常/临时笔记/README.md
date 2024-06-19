@@ -98,3 +98,38 @@ ABBYY FineReader Engine:
 ## npm 包更新的问题  包括单个包更新 各包之间的冲突问题 等 
 
 ## art-log  打印 Array[string]
+
+
+## google插件的开发 
+
+1. 长期学习 
+收藏夹-浏览器插件开发 有关于audio录音
+
+https://github.com/arblast/Chrome-Audio-Capturer
+
+https://github.com/sxei/chrome-plugin-demo
+
+https://18055975947.github.io/extension/api/index.html
+
+2. Audio录音的开发
+
+https://chromewebstore.google.com/detail/%E5%8D%B3%E6%97%B6%E9%9F%B3%E9%A2%91%E5%BD%95%E5%88%B6%E5%99%A8-%E6%8D%95%E8%8E%B7%E5%B1%8F%E5%B9%95%E9%9F%B3%E9%A2%91/gilmhnfniipoefkgfaoociaehdcmdcgk?utm_source=chrome-app-launcher-info-dialog
+
+操作流程：
+1）安装插件，打开某个直播间（理论上支持所有平台直播间）
+2）点击打开插件，选择按tab录制音频
+3）停止录制，保存音频为mp3格式
+
+参考代码（上面插件没有开源）：https://github.com/killergerbah/chrome-audio-recorder
+
+
+
+
+开发入门 
+
+https://blog.csdn.net/qq_37860930/article/details/135130830 
+
+开发进阶
+
+https://blog.csdn.net/qimablue/article/details/131304835
+
