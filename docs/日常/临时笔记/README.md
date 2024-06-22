@@ -111,6 +111,8 @@ https://github.com/sxei/chrome-plugin-demo
 
 https://18055975947.github.io/extension/api/index.html
 
+google文档 ： https://developer.chrome.com/docs/extensions/how-to/web-platform/screen-capture?hl=zh-cn
+
 2. Audio录音的开发
 
 https://chromewebstore.google.com/detail/%E5%8D%B3%E6%97%B6%E9%9F%B3%E9%A2%91%E5%BD%95%E5%88%B6%E5%99%A8-%E6%8D%95%E8%8E%B7%E5%B1%8F%E5%B9%95%E9%9F%B3%E9%A2%91/gilmhnfniipoefkgfaoociaehdcmdcgk?utm_source=chrome-app-launcher-info-dialog
@@ -133,3 +135,6 @@ https://blog.csdn.net/qq_37860930/article/details/135130830
 
 https://blog.csdn.net/qimablue/article/details/131304835
 
+## chat TTS 快去尝试一下吧  
+
+控制搞笑[laugh]啊 ！ 
