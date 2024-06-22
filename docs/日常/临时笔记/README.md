@@ -138,3 +138,7 @@ https://blog.csdn.net/qimablue/article/details/131304835
 ## chat TTS 快去尝试一下吧  
 
 控制搞笑[laugh]啊 ！ 
+
+## 视频下载开源项目
+
+https://zhuanlan.zhihu.com/p/695712398?utm_psn=1787854020767006720
