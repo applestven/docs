@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Plugin 原理 | 大青虫</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/xiao.PNG">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.PNG">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="文档、笔记、博客">
+    <meta rel="author" content="不爱吃青菜的大青虫">
+    <meta rel="Keywords" content="vuepress介绍说明 不爱吃青菜的大青虫">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.PNG">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.543aeca0.css" as="style"><link rel="preload" href="/assets/js/app.cb1f3de8.js" as="script"><link rel="preload" href="/assets/js/16.9ec431fc.js" as="script"><link rel="preload" href="/assets/js/3.bf340958.js" as="script"><link rel="preload" href="/assets/js/50.1c1f7685.js" as="script"><link rel="preload" href="/assets/js/7.684d279e.js" as="script"><link rel="prefetch" href="/assets/js/1.54146c49.js"><link rel="prefetch" href="/assets/js/10.aa8b1301.js"><link rel="prefetch" href="/assets/js/100.4444e74a.js"><link rel="prefetch" href="/assets/js/101.bd02ff2d.js"><link rel="prefetch" href="/assets/js/102.2660116a.js"><link rel="prefetch" href="/assets/js/103.4027bd9c.js"><link rel="prefetch" href="/assets/js/104.051d90c9.js"><link rel="prefetch" href="/assets/js/105.3268cfae.js"><link rel="prefetch" href="/assets/js/106.788c829b.js"><link rel="prefetch" href="/assets/js/107.c46560a8.js"><link rel="prefetch" href="/assets/js/108.f2762b6f.js"><link rel="prefetch" href="/assets/js/109.ebf6a084.js"><link rel="prefetch" href="/assets/js/11.399b8003.js"><link rel="prefetch" href="/assets/js/110.1349b5cd.js"><link rel="prefetch" href="/assets/js/111.cca21547.js"><link rel="prefetch" href="/assets/js/112.0b6b1bcf.js"><link rel="prefetch" href="/assets/js/113.5b7e1e08.js"><link rel="prefetch" href="/assets/js/114.1838c32a.js"><link rel="prefetch" href="/assets/js/115.c7c5cc09.js"><link rel="prefetch" href="/assets/js/116.fd7bb44f.js"><link rel="prefetch" href="/assets/js/117.f5c98f6e.js"><link rel="prefetch" href="/assets/js/118.f93122eb.js"><link rel="prefetch" href="/assets/js/119.13b39540.js"><link rel="prefetch" href="/assets/js/12.83e9969b.js"><link rel="prefetch" href="/assets/js/120.a6d40fa6.js"><link rel="prefetch" href="/assets/js/121.fd49d64f.js"><link rel="prefetch" href="/assets/js/122.2cfc93e3.js"><link rel="prefetch" href="/assets/js/123.ba3b29f1.js"><link rel="prefetch" href="/assets/js/124.b8bff13a.js"><link rel="prefetch" href="/assets/js/125.27fa500d.js"><link rel="prefetch" href="/assets/js/126.c3f9a203.js"><link rel="prefetch" href="/assets/js/127.78c650ae.js"><link rel="prefetch" href="/assets/js/128.d6a3f914.js"><link rel="prefetch" href="/assets/js/129.4c522c1c.js"><link rel="prefetch" href="/assets/js/13.5290e31d.js"><link rel="prefetch" href="/assets/js/130.a34f1611.js"><link rel="prefetch" href="/assets/js/131.9bb2edb4.js"><link rel="prefetch" href="/assets/js/132.7af1a92f.js"><link rel="prefetch" href="/assets/js/133.da599368.js"><link rel="prefetch" href="/assets/js/134.ed961ab7.js"><link rel="prefetch" href="/assets/js/135.11f1b828.js"><link rel="prefetch" href="/assets/js/136.328aa65f.js"><link rel="prefetch" href="/assets/js/137.15a22049.js"><link rel="prefetch" href="/assets/js/138.4bda7aa6.js"><link rel="prefetch" href="/assets/js/139.4aba3c38.js"><link rel="prefetch" href="/assets/js/14.f4691306.js"><link rel="prefetch" href="/assets/js/140.6bd807e4.js"><link rel="prefetch" href="/assets/js/141.1ed7e93c.js"><link rel="prefetch" href="/assets/js/142.7ef4379a.js"><link rel="prefetch" href="/assets/js/143.c0563a21.js"><link rel="prefetch" href="/assets/js/144.83078004.js"><link rel="prefetch" href="/assets/js/145.e1f552d9.js"><link rel="prefetch" href="/assets/js/146.3e8c46d3.js"><link rel="prefetch" href="/assets/js/147.28e62032.js"><link rel="prefetch" href="/assets/js/148.9816b97f.js"><link rel="prefetch" href="/assets/js/149.c7cae1b2.js"><link rel="prefetch" href="/assets/js/15.32f3149f.js"><link rel="prefetch" href="/assets/js/150.1f2a2e76.js"><link rel="prefetch" href="/assets/js/151.3caebd35.js"><link rel="prefetch" href="/assets/js/152.c50afc58.js"><link rel="prefetch" href="/assets/js/153.0091d215.js"><link rel="prefetch" href="/assets/js/154.0daca2fd.js"><link rel="prefetch" href="/assets/js/155.a95f3eb0.js"><link rel="prefetch" href="/assets/js/156.37ac6505.js"><link rel="prefetch" href="/assets/js/157.535357ad.js"><link rel="prefetch" href="/assets/js/158.9aaf41fa.js"><link rel="prefetch" href="/assets/js/159.04ada915.js"><link rel="prefetch" href="/assets/js/160.a8b2e8ae.js"><link rel="prefetch" href="/assets/js/161.fc813cec.js"><link rel="prefetch" href="/assets/js/162.48e935e7.js"><link rel="prefetch" href="/assets/js/163.10377296.js"><link rel="prefetch" href="/assets/js/164.f9ef9170.js"><link rel="prefetch" href="/assets/js/165.0dc3160e.js"><link rel="prefetch" href="/assets/js/166.028eae50.js"><link rel="prefetch" href="/assets/js/17.c2aba72e.js"><link rel="prefetch" href="/assets/js/18.c7c16e0d.js"><link rel="prefetch" href="/assets/js/19.bbe762d9.js"><link rel="prefetch" href="/assets/js/20.6150792f.js"><link rel="prefetch" href="/assets/js/21.05a61dc2.js"><link rel="prefetch" href="/assets/js/22.16e02ad4.js"><link rel="prefetch" href="/assets/js/23.7140d8ce.js"><link rel="prefetch" href="/assets/js/24.46996a27.js"><link rel="prefetch" href="/assets/js/25.c3e1c912.js"><link rel="prefetch" href="/assets/js/26.c77104b3.js"><link rel="prefetch" href="/assets/js/27.03e03e8c.js"><link rel="prefetch" href="/assets/js/28.7cddcb62.js"><link rel="prefetch" href="/assets/js/29.c2751e08.js"><link rel="prefetch" href="/assets/js/30.712e63ab.js"><link rel="prefetch" href="/assets/js/31.973b1201.js"><link rel="prefetch" href="/assets/js/32.4b970f69.js"><link rel="prefetch" href="/assets/js/33.13653ecd.js"><link rel="prefetch" href="/assets/js/34.95e22083.js"><link rel="prefetch" href="/assets/js/35.d8aa2382.js"><link rel="prefetch" href="/assets/js/36.cf48bbfe.js"><link rel="prefetch" href="/assets/js/37.9bd22bdd.js"><link rel="prefetch" href="/assets/js/38.873c79e5.js"><link rel="prefetch" href="/assets/js/39.a06d88c4.js"><link rel="prefetch" href="/assets/js/4.56bfa720.js"><link rel="prefetch" href="/assets/js/40.998589d1.js"><link rel="prefetch" href="/assets/js/41.708c2616.js"><link rel="prefetch" href="/assets/js/42.98a0fcf1.js"><link rel="prefetch" href="/assets/js/43.8c431567.js"><link rel="prefetch" href="/assets/js/44.cf23d2f1.js"><link rel="prefetch" href="/assets/js/45.a098f544.js"><link rel="prefetch" href="/assets/js/46.494b630f.js"><link rel="prefetch" href="/assets/js/47.178cf923.js"><link rel="prefetch" href="/assets/js/48.b3a5228c.js"><link rel="prefetch" href="/assets/js/49.3136da99.js"><link rel="prefetch" href="/assets/js/5.f9bb1162.js"><link rel="prefetch" href="/assets/js/51.4e943d83.js"><link rel="prefetch" href="/assets/js/52.ae3dc8b2.js"><link rel="prefetch" href="/assets/js/53.38a83fa9.js"><link rel="prefetch" href="/assets/js/54.4f659a5d.js"><link rel="prefetch" href="/assets/js/55.c0ac0b8b.js"><link rel="prefetch" href="/assets/js/56.412d41b7.js"><link rel="prefetch" href="/assets/js/57.39e4ffda.js"><link rel="prefetch" href="/assets/js/58.5e702327.js"><link rel="prefetch" href="/assets/js/59.a2232778.js"><link rel="prefetch" href="/assets/js/6.3a89c651.js"><link rel="prefetch" href="/assets/js/60.155317ea.js"><link rel="prefetch" href="/assets/js/61.e378af76.js"><link rel="prefetch" href="/assets/js/62.aa13de6f.js"><link rel="prefetch" href="/assets/js/63.822cf5ae.js"><link rel="prefetch" href="/assets/js/64.ec5434db.js"><link rel="prefetch" href="/assets/js/65.866b5852.js"><link rel="prefetch" href="/assets/js/66.38edc8b7.js"><link rel="prefetch" href="/assets/js/67.80297d3b.js"><link rel="prefetch" href="/assets/js/68.46ad21c2.js"><link rel="prefetch" href="/assets/js/69.ca0b3c10.js"><link rel="prefetch" href="/assets/js/70.ad2ad795.js"><link rel="prefetch" href="/assets/js/71.55d93939.js"><link rel="prefetch" href="/assets/js/72.028aa764.js"><link rel="prefetch" href="/assets/js/73.dd2f3c2f.js"><link rel="prefetch" href="/assets/js/74.61981d05.js"><link rel="prefetch" href="/assets/js/75.684df9c5.js"><link rel="prefetch" href="/assets/js/76.608f2210.js"><link rel="prefetch" href="/assets/js/77.a02868d7.js"><link rel="prefetch" href="/assets/js/78.aba3ae44.js"><link rel="prefetch" href="/assets/js/79.40334d6b.js"><link rel="prefetch" href="/assets/js/8.5bd7a75f.js"><link rel="prefetch" href="/assets/js/80.b4695d0f.js"><link rel="prefetch" href="/assets/js/81.2146043b.js"><link rel="prefetch" href="/assets/js/82.8e2ddc4a.js"><link rel="prefetch" href="/assets/js/83.6a453f1e.js"><link rel="prefetch" href="/assets/js/84.e5a0eecc.js"><link rel="prefetch" href="/assets/js/85.067a81c0.js"><link rel="prefetch" href="/assets/js/86.54e014bc.js"><link rel="prefetch" href="/assets/js/87.12a728e2.js"><link rel="prefetch" href="/assets/js/88.44d36318.js"><link rel="prefetch" href="/assets/js/89.28cdb784.js"><link rel="prefetch" href="/assets/js/9.fa60bbd0.js"><link rel="prefetch" href="/assets/js/90.59c087b9.js"><link rel="prefetch" href="/assets/js/91.4e1c5724.js"><link rel="prefetch" href="/assets/js/92.ac865e6e.js"><link rel="prefetch" href="/assets/js/93.680825f4.js"><link rel="prefetch" href="/assets/js/94.f28735d1.js"><link rel="prefetch" href="/assets/js/95.c61e2db6.js"><link rel="prefetch" href="/assets/js/96.f7eb21ae.js"><link rel="prefetch" href="/assets/js/97.2b88006c.js"><link rel="prefetch" href="/assets/js/98.7c90d0e3.js"><link rel="prefetch" href="/assets/js/99.82b806dd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.543aeca0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./assets/img/xiaosi.PNG" alt="大青虫" class="logo"> <span class="site-name can-hide">大青虫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/AI网站/" class="nav-link">
+  AI网站
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/图生代码/" class="nav-link">
+  图生代码
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="other" class="dropdown-title"><span class="title">other</span> <span class="arrow down"></span></button> <button type="button" aria-label="other" class="mobile-dropdown-title"><span class="title">other</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常" class="dropdown-title"><span class="title">日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常" class="mobile-dropdown-title"><span class="title">日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/日常/临时笔记/" class="nav-link">
+  临时笔记
+</a></li><li class="dropdown-item"><!----> <a href="/日常/" class="nav-link">
+  日常
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/系统/" class="nav-link">
+  系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/网站搭建/" class="nav-link">
+  网站搭建
+</a></li><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/AI网站/" class="nav-link">
+  AI网站
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/图生代码/" class="nav-link">
+  图生代码
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="other" class="dropdown-title"><span class="title">other</span> <span class="arrow down"></span></button> <button type="button" aria-label="other" class="mobile-dropdown-title"><span class="title">other</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link router-link-active">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常" class="dropdown-title"><span class="title">日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常" class="mobile-dropdown-title"><span class="title">日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/日常/临时笔记/" class="nav-link">
+  临时笔记
+</a></li><li class="dropdown-item"><!----> <a href="/日常/" class="nav-link">
+  日常
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/系统/" class="nav-link">
+  系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/网站搭建/" class="nav-link">
+  网站搭建
+</a></li><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>原理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/%E5%8E%9F%E7%90%86/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/webpack/原理/loader.html" class="sidebar-link">Loader 原理</a></li><li><a href="/webpack/原理/plugin.html" class="active sidebar-link">Plugin 原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#plugin-的作用" class="sidebar-link">Plugin 的作用</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#plugin-工作原理" class="sidebar-link">Plugin 工作原理</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#webpack-内部的钩子" class="sidebar-link">Webpack 内部的钩子</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#plugin-构建对象" class="sidebar-link">Plugin 构建对象</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#开发一个插件" class="sidebar-link">开发一个插件</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#bannerwebpackplugin" class="sidebar-link">BannerWebpackPlugin</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#cleanwebpackplugin" class="sidebar-link">CleanWebpackPlugin</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#analyzewebpackplugin" class="sidebar-link">AnalyzeWebpackPlugin</a></li><li class="sidebar-sub-header"><a href="/webpack/原理/plugin.html#inlinechunkwebpackplugin" class="sidebar-link">InlineChunkWebpackPlugin</a></li></ul></li><li><a href="/webpack/原理/summary.html" class="sidebar-link">总结</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="plugin-原理"><a href="#plugin-原理" class="header-anchor">#</a> Plugin 原理</h1> <h2 id="plugin-的作用"><a href="#plugin-的作用" class="header-anchor">#</a> Plugin 的作用</h2> <p>通过插件我们可以扩展 webpack，加入自定义的构建行为，使 webpack 可以执行更广泛的任务，拥有更强的构建能力。</p> <h2 id="plugin-工作原理"><a href="#plugin-工作原理" class="header-anchor">#</a> Plugin 工作原理</h2> <blockquote><p>webpack 就像一条生产线，要经过一系列处理流程后才能将源文件转换成输出结果。 这条生产线上的每个处理流程的职责都是单一的，多个流程之间有存在依赖关系，只有完成当前处理后才能交给下一个流程去处理。
+插件就像是一个插入到生产线中的一个功能，在特定的时机对生产线上的资源做处理。webpack 通过 Tapable 来组织这条复杂的生产线。 webpack 在运行过程中会广播事件，插件只需要监听它所关心的事件，就能加入到这条生产线中，去改变生产线的运作。
+webpack 的事件流机制保证了插件的有序性，使得整个系统扩展性很好。
+——「深入浅出 Webpack」</p></blockquote> <p>站在代码逻辑的角度就是：webpack 在编译代码过程中，会触发一系列 <code>Tapable</code> 钩子事件，插件所做的，就是找到相应的钩子，往上面挂上自己的任务，也就是注册事件，这样，当 webpack 构建的时候，插件注册的事件就会随着钩子的触发而执行了。</p> <h2 id="webpack-内部的钩子"><a href="#webpack-内部的钩子" class="header-anchor">#</a> Webpack 内部的钩子</h2> <h3 id="什么是钩子"><a href="#什么是钩子" class="header-anchor">#</a> 什么是钩子</h3> <p>钩子的本质就是：事件。为了方便我们直接介入和控制编译过程，webpack 把编译过程中触发的各类关键事件封装成事件接口暴露了出来。这些接口被很形象地称做：<code>hooks</code>（钩子）。开发插件，离不开这些钩子。</p> <h3 id="tapable"><a href="#tapable" class="header-anchor">#</a> Tapable</h3> <p><code>Tapable</code> 为 webpack 提供了统一的插件接口（钩子）类型定义，它是 webpack 的核心功能库。webpack 中目前有十种 <code>hooks</code>，在 <code>Tapable</code> 源码中可以看到，他们是：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// https://github.com/webpack/tapable/blob/master/lib/index.js</span>
+exports<span class="token punctuation">.</span>SyncHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./SyncHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>SyncBailHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./SyncBailHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>SyncWaterfallHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./SyncWaterfallHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>SyncLoopHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./SyncLoopHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>AsyncParallelHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./AsyncParallelHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>AsyncParallelBailHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./AsyncParallelBailHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>AsyncSeriesHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./AsyncSeriesHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>AsyncSeriesBailHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./AsyncSeriesBailHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>AsyncSeriesLoopHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./AsyncSeriesLoopHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>AsyncSeriesWaterfallHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./AsyncSeriesWaterfallHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>HookMap <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./HookMap&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>MultiHook <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./MultiHook&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>Tapable</code> 还统一暴露了三个方法给插件，用于注入不同类型的自定义构建行为：</p> <ul><li><code>tap</code>：可以注册同步钩子和异步钩子。</li> <li><code>tapAsync</code>：回调方式注册异步钩子。</li> <li><code>tapPromise</code>：Promise 方式注册异步钩子。</li></ul> <h2 id="plugin-构建对象"><a href="#plugin-构建对象" class="header-anchor">#</a> Plugin 构建对象</h2> <h3 id="compiler"><a href="#compiler" class="header-anchor">#</a> Compiler</h3> <p>compiler 对象中保存着完整的 Webpack 环境配置，每次启动 webpack 构建时它都是一个独一无二，仅仅会创建一次的对象。</p> <p>这个对象会在首次启动 Webpack 时创建，我们可以通过 compiler 对象上访问到 Webapck 的主环境配置，比如 loader 、 plugin 等等配置信息。</p> <p>它有以下主要属性：</p> <ul><li><code>compiler.options</code> 可以访问本次启动 webpack 时候所有的配置文件，包括但不限于 loaders 、 entry 、 output 、 plugin 等等完整配置信息。</li> <li><code>compiler.inputFileSystem</code> 和 <code>compiler.outputFileSystem</code> 可以进行文件操作，相当于 Nodejs 中 fs。</li> <li><code>compiler.hooks</code> 可以注册 tapable 的不同种类 Hook，从而可以在 compiler 生命周期中植入不同的逻辑。</li></ul> <blockquote><p><a href="https://webpack.docschina.org/api/compiler-hooks/" target="_blank" rel="noopener noreferrer">compiler hooks 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h3 id="compilation"><a href="#compilation" class="header-anchor">#</a> Compilation</h3> <p>compilation 对象代表一次资源的构建，compilation 实例能够访问所有的模块和它们的依赖。</p> <p>一个 compilation 对象会对构建依赖图中所有模块，进行编译。 在编译阶段，模块会被加载(load)、封存(seal)、优化(optimize)、 分块(chunk)、哈希(hash)和重新创建(restore)。</p> <p>它有以下主要属性：</p> <ul><li><code>compilation.modules</code> 可以访问所有模块，打包的每一个文件都是一个模块。</li> <li><code>compilation.chunks</code> chunk 即是多个 modules 组成而来的一个代码块。入口文件引入的资源组成一个 chunk，通过代码分割的模块又是另外的 chunk。</li> <li><code>compilation.assets</code> 可以访问本次打包生成所有文件的结果。</li> <li><code>compilation.hooks</code> 可以注册 tapable 的不同种类 Hook，用于在 compilation 编译模块阶段进行逻辑添加以及修改。</li></ul> <blockquote><p><a href="https://webpack.docschina.org/api/compilation-hooks/" target="_blank" rel="noopener noreferrer">compilation hooks 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h3 id="生命周期简图"><a href="#生命周期简图" class="header-anchor">#</a> 生命周期简图</h3> <p><img src="/imgs/source/plugin.jpg" alt="Webpack 插件生命周期"></p> <h2 id="开发一个插件"><a href="#开发一个插件" class="header-anchor">#</a> 开发一个插件</h2> <h3 id="最简单的插件"><a href="#最简单的插件" class="header-anchor">#</a> 最简单的插件</h3> <ul><li>plugins/test-plugin.js</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">TestPlugin</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin constructor()&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 1. webpack读取配置时，new TestPlugin() ，会执行插件 constructor 方法</span>
+  <span class="token comment">// 2. webpack创建 compiler 对象</span>
+  <span class="token comment">// 3. 遍历所有插件，调用插件的 apply 方法</span>
+  <span class="token function">apply</span><span class="token punctuation">(</span><span class="token parameter">compiler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin apply()&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> TestPlugin<span class="token punctuation">;</span>
+</code></pre></div><h3 id="注册-hook"><a href="#注册-hook" class="header-anchor">#</a> 注册 hook</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">TestPlugin</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin constructor()&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 1. webpack读取配置时，new TestPlugin() ，会执行插件 constructor 方法</span>
+  <span class="token comment">// 2. webpack创建 compiler 对象</span>
+  <span class="token comment">// 3. 遍历所有插件，调用插件的 apply 方法</span>
+  <span class="token function">apply</span><span class="token punctuation">(</span><span class="token parameter">compiler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin apply()&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 从文档可知, compile hook 是 SyncHook, 也就是同步钩子, 只能用tap注册</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>compile<span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilationParams</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.compile()&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 从文档可知, make 是 AsyncParallelHook, 也就是异步并行钩子, 特点就是异步任务同时执行</span>
+    <span class="token comment">// 可以使用 tap、tapAsync、tapPromise 注册。</span>
+    <span class="token comment">// 如果使用tap注册的话，进行异步操作是不会等待异步操作执行完成的。</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>make<span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.make() 111&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 使用tapAsync、tapPromise注册，进行异步操作会等异步操作做完再继续往下执行</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>make<span class="token punctuation">.</span><span class="token function">tapAsync</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.make() 222&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 必须调用</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>make<span class="token punctuation">.</span><span class="token function">tapPromise</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.make() 333&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 必须返回promise</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 从文档可知, emit 是 AsyncSeriesHook, 也就是异步串行钩子，特点就是异步任务顺序执行</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>emit<span class="token punctuation">.</span><span class="token function">tapAsync</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.emit() 111&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>emit<span class="token punctuation">.</span><span class="token function">tapAsync</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.emit() 222&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>emit<span class="token punctuation">.</span><span class="token function">tapAsync</span><span class="token punctuation">(</span><span class="token string">&quot;TestPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;compiler.emit() 333&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> TestPlugin<span class="token punctuation">;</span>
+</code></pre></div><h3 id="启动调试"><a href="#启动调试" class="header-anchor">#</a> 启动调试</h3> <p>通过调试查看 <code>compiler</code> 和 <code>compilation</code> 对象数据情况。</p> <ol><li>package.json 配置指令</li></ol> <div class="language-json extra-class"><div class="highlight-lines"><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;source&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;debug&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node --inspect-brk ./node_modules/webpack-cli/bin/cli.js&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xiongjian&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.17.10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@babel/preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.17.10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.7.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;loader-utils&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.72.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;webpack-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.9.2&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>运行指令</li></ol> <div class="language- extra-class"><pre class="language-text"><code>npm run debug
+</code></pre></div><p>此时控制台输出以下内容：</p> <div class="language- extra-class"><pre class="language-text"><code>PS C:\Users\86176\Desktop\source&gt; npm run debug
+
+&gt; source@1.0.0 debug
+&gt; node --inspect-brk ./node_modules/webpack-cli/bin/cli.js
+
+Debugger listening on ws://127.0.0.1:9229/629ea097-7b52-4011-93a7-02f83c75c797
+For help, see: https://nodejs.org/en/docs/inspecto
+</code></pre></div><ol start="3"><li>打开 Chrome 浏览器，F12 打开浏览器调试控制台。</li></ol> <p>此时控制台会显示一个绿色的图标</p> <p><img src="/imgs/source/debug.png" alt="调试控制台"></p> <ol start="4"><li><p>点击绿色的图标进入调试模式。</p></li> <li><p>在需要调试代码处用 <code>debugger</code> 打断点，代码就会停止运行，从而调试查看数据情况。</p></li></ol> <h2 id="bannerwebpackplugin"><a href="#bannerwebpackplugin" class="header-anchor">#</a> BannerWebpackPlugin</h2> <ol><li><p>作用：给打包输出文件添加注释。</p></li> <li><p>开发思路:</p></li></ol> <ul><li>需要打包输出前添加注释：需要使用 <code>compiler.hooks.emit</code> 钩子, 它是打包输出前触发。</li> <li>如何获取打包输出的资源？<code>compilation.assets</code> 可以获取所有即将输出的资源文件。</li></ul> <ol start="3"><li>实现：</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// plugins/banner-webpack-plugin.js</span>
+<span class="token keyword">class</span> <span class="token class-name">BannerWebpackPlugin</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">options <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>options <span class="token operator">=</span> options<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">apply</span><span class="token punctuation">(</span><span class="token parameter">compiler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 需要处理文件</span>
+    <span class="token keyword">const</span> extensions <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// emit是异步串行钩子</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>emit<span class="token punctuation">.</span><span class="token function">tapAsync</span><span class="token punctuation">(</span><span class="token string">&quot;BannerWebpackPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// compilation.assets包含所有即将输出的资源</span>
+      <span class="token comment">// 通过过滤只保留需要处理的文件</span>
+      <span class="token keyword">const</span> assetPaths <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>compilation<span class="token punctuation">.</span>assets<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> splitted <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> extensions<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>splitted<span class="token punctuation">[</span>splitted<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      assetPaths<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">assetPath</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> asset <span class="token operator">=</span> compilation<span class="token punctuation">.</span>assets<span class="token punctuation">[</span>assetPath<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> source <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/*
+* Author: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">.</span>author<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+*/\n</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>asset<span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 覆盖资源</span>
+        compilation<span class="token punctuation">.</span>assets<span class="token punctuation">[</span>assetPath<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 资源内容</span>
+          <span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> source<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 资源大小</span>
+          <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> source<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> BannerWebpackPlugin<span class="token punctuation">;</span>
+</code></pre></div><h2 id="cleanwebpackplugin"><a href="#cleanwebpackplugin" class="header-anchor">#</a> CleanWebpackPlugin</h2> <ol><li><p>作用：在 webpack 打包输出前将上次打包内容清空。</p></li> <li><p>开发思路：</p></li></ol> <ul><li>如何在打包输出前执行？需要使用 <code>compiler.hooks.emit</code> 钩子, 它是打包输出前触发。</li> <li>如何清空上次打包内容？
+<ul><li>获取打包输出目录：通过 compiler 对象。</li> <li>通过文件操作清空内容：通过 <code>compiler.outputFileSystem</code> 操作文件。</li></ul></li></ul> <ol start="3"><li>实现：</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// plugins/clean-webpack-plugin.js</span>
+<span class="token keyword">class</span> <span class="token class-name">CleanWebpackPlugin</span> <span class="token punctuation">{</span>
+  <span class="token function">apply</span><span class="token punctuation">(</span><span class="token parameter">compiler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取操作文件的对象</span>
+    <span class="token keyword">const</span> fs <span class="token operator">=</span> compiler<span class="token punctuation">.</span>outputFileSystem<span class="token punctuation">;</span>
+    <span class="token comment">// emit是异步串行钩子</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>emit<span class="token punctuation">.</span><span class="token function">tapAsync</span><span class="token punctuation">(</span><span class="token string">&quot;CleanWebpackPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 获取输出文件目录</span>
+      <span class="token keyword">const</span> outputPath <span class="token operator">=</span> compiler<span class="token punctuation">.</span>options<span class="token punctuation">.</span>output<span class="token punctuation">.</span>path<span class="token punctuation">;</span>
+      <span class="token comment">// 删除目录所有文件</span>
+      <span class="token keyword">const</span> err <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">removeFiles</span><span class="token punctuation">(</span>fs<span class="token punctuation">,</span> outputPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 执行成功err为undefined，执行失败err就是错误原因</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">removeFiles</span><span class="token punctuation">(</span><span class="token parameter">fs<span class="token punctuation">,</span> path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 读取当前目录下所有文件</span>
+      <span class="token keyword">const</span> files <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readdirSync</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 遍历文件，删除</span>
+      files<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">file</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 获取文件完整路径</span>
+        <span class="token keyword">const</span> filePath <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+        <span class="token comment">// 分析文件</span>
+        <span class="token keyword">const</span> fileStat <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">statSync</span><span class="token punctuation">(</span>filePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 判断是否是文件夹</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>fileStat<span class="token punctuation">.</span><span class="token function">isDirectory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 是文件夹需要递归遍历删除下面所有文件</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">removeFiles</span><span class="token punctuation">(</span>fs<span class="token punctuation">,</span> filePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 不是文件夹就是文件，直接删除</span>
+          fs<span class="token punctuation">.</span><span class="token function">unlinkSync</span><span class="token punctuation">(</span>filePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 最后删除当前目录</span>
+      fs<span class="token punctuation">.</span><span class="token function">rmdirSync</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 将产生的错误返回出去</span>
+      <span class="token keyword">return</span> e<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> CleanWebpackPlugin<span class="token punctuation">;</span>
+</code></pre></div><h2 id="analyzewebpackplugin"><a href="#analyzewebpackplugin" class="header-anchor">#</a> AnalyzeWebpackPlugin</h2> <ol><li>作用：分析 webpack 打包资源大小，并输出分析文件。</li> <li>开发思路:</li></ol> <ul><li>在哪做? <code>compiler.hooks.emit</code>, 它是在打包输出前触发，我们需要分析资源大小同时添加上分析后的 md 文件。</li></ul> <ol start="3"><li>实现：</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// plugins/analyze-webpack-plugin.js</span>
+<span class="token keyword">class</span> <span class="token class-name">AnalyzeWebpackPlugin</span> <span class="token punctuation">{</span>
+  <span class="token function">apply</span><span class="token punctuation">(</span><span class="token parameter">compiler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// emit是异步串行钩子</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>emit<span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token string">&quot;AnalyzeWebpackPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Object.entries将对象变成二维数组。二维数组中第一项值是key，第二项值是value</span>
+      <span class="token keyword">const</span> assets <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>compilation<span class="token punctuation">.</span>assets<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">let</span> source <span class="token operator">=</span> <span class="token string">&quot;# 分析打包资源大小 \n| 名称 | 大小 |\n| --- | --- |&quot;</span><span class="token punctuation">;</span>
+
+      assets<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">[</span>filename<span class="token punctuation">,</span> file<span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        source <span class="token operator">+=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">\n| </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>filename<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> | </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> |</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// 添加资源</span>
+      compilation<span class="token punctuation">.</span>assets<span class="token punctuation">[</span><span class="token string">&quot;analyze.md&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> source<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> source<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> AnalyzeWebpackPlugin<span class="token punctuation">;</span>
+</code></pre></div><h2 id="inlinechunkwebpackplugin"><a href="#inlinechunkwebpackplugin" class="header-anchor">#</a> InlineChunkWebpackPlugin</h2> <ol><li>作用：webpack 打包生成的 runtime 文件太小了，额外发送请求性能不好，所以需要将其内联到 js 中，从而减少请求数量。</li> <li>开发思路:</li></ol> <ul><li>我们需要借助 <code>html-webpack-plugin</code> 来实现
+<ul><li>在 <code>html-webpack-plugin</code> 输出 index.html 前将内联 runtime 注入进去</li> <li>删除多余的 runtime 文件</li></ul></li> <li>如何操作 <code>html-webpack-plugin</code>？<a href="https://github.com/jantimon/html-webpack-plugin/#afteremit-hook" target="_blank" rel="noopener noreferrer">官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <ol start="3"><li>实现：</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// plugins/inline-chunk-webpack-plugin.js</span>
+<span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;safe-require&quot;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">&quot;html-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">InlineChunkWebpackPlugin</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">tests</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>tests <span class="token operator">=</span> tests<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">apply</span><span class="token punctuation">(</span><span class="token parameter">compiler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    compiler<span class="token punctuation">.</span>hooks<span class="token punctuation">.</span>compilation<span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token string">&quot;InlineChunkWebpackPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">compilation</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> hooks <span class="token operator">=</span> HtmlWebpackPlugin<span class="token punctuation">.</span><span class="token function">getHooks</span><span class="token punctuation">(</span>compilation<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      hooks<span class="token punctuation">.</span>alterAssetTagGroups<span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token string">&quot;InlineChunkWebpackPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">assets</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        assets<span class="token punctuation">.</span>headTags <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getInlineTag</span><span class="token punctuation">(</span>assets<span class="token punctuation">.</span>headTags<span class="token punctuation">,</span> compilation<span class="token punctuation">.</span>assets<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        assets<span class="token punctuation">.</span>bodyTags <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getInlineTag</span><span class="token punctuation">(</span>assets<span class="token punctuation">.</span>bodyTags<span class="token punctuation">,</span> compilation<span class="token punctuation">.</span>assets<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      hooks<span class="token punctuation">.</span>afterEmit<span class="token punctuation">.</span><span class="token function">tap</span><span class="token punctuation">(</span><span class="token string">&quot;InlineChunkHtmlPlugin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>compilation<span class="token punctuation">.</span>assets<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">assetName</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>tests<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">test</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> assetName<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">delete</span> compilation<span class="token punctuation">.</span>assets<span class="token punctuation">[</span>assetName<span class="token punctuation">]</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getInlineTag</span><span class="token punctuation">(</span><span class="token parameter">tags<span class="token punctuation">,</span> assets</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> tags<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">tag</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>tag<span class="token punctuation">.</span>tagName <span class="token operator">!==</span> <span class="token string">&quot;script&quot;</span><span class="token punctuation">)</span> <span class="token keyword">return</span> tag<span class="token punctuation">;</span>
+
+      <span class="token keyword">const</span> scriptName <span class="token operator">=</span> tag<span class="token punctuation">.</span>attributes<span class="token punctuation">.</span>src<span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>tests<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">test</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> scriptName<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>test<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> tag<span class="token punctuation">;</span>
+
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">tagName</span><span class="token operator">:</span> <span class="token string">&quot;script&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">innerHTML</span><span class="token operator">:</span> assets<span class="token punctuation">[</span>scriptName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">source</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token literal-property property">closeTag</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> InlineChunkWebpackPlugin<span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年6月22日星期六 06:28</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webpack/原理/loader.html" class="prev">
+        Loader 原理
+      </a></span> <span class="next"><a href="/webpack/原理/summary.html">
+        总结
+      </a>
+      →
+    </span></p></div> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.cb1f3de8.js" defer></script><script src="/assets/js/16.9ec431fc.js" defer></script><script src="/assets/js/3.bf340958.js" defer></script><script src="/assets/js/50.1c1f7685.js" defer></script><script src="/assets/js/7.684d279e.js" defer></script>
+  </body>
+</html>

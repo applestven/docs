@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx 基础 | 大青虫</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/img/xiao.PNG">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.PNG">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="文档、笔记、博客">
+    <meta rel="author" content="不爱吃青菜的大青虫">
+    <meta rel="Keywords" content="vuepress介绍说明 不爱吃青菜的大青虫">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.PNG">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.543aeca0.css" as="style"><link rel="preload" href="/assets/js/app.cb1f3de8.js" as="script"><link rel="preload" href="/assets/js/16.9ec431fc.js" as="script"><link rel="preload" href="/assets/js/3.bf340958.js" as="script"><link rel="preload" href="/assets/js/134.ed961ab7.js" as="script"><link rel="preload" href="/assets/js/7.684d279e.js" as="script"><link rel="prefetch" href="/assets/js/1.54146c49.js"><link rel="prefetch" href="/assets/js/10.aa8b1301.js"><link rel="prefetch" href="/assets/js/100.4444e74a.js"><link rel="prefetch" href="/assets/js/101.bd02ff2d.js"><link rel="prefetch" href="/assets/js/102.2660116a.js"><link rel="prefetch" href="/assets/js/103.4027bd9c.js"><link rel="prefetch" href="/assets/js/104.051d90c9.js"><link rel="prefetch" href="/assets/js/105.3268cfae.js"><link rel="prefetch" href="/assets/js/106.788c829b.js"><link rel="prefetch" href="/assets/js/107.c46560a8.js"><link rel="prefetch" href="/assets/js/108.f2762b6f.js"><link rel="prefetch" href="/assets/js/109.ebf6a084.js"><link rel="prefetch" href="/assets/js/11.399b8003.js"><link rel="prefetch" href="/assets/js/110.1349b5cd.js"><link rel="prefetch" href="/assets/js/111.cca21547.js"><link rel="prefetch" href="/assets/js/112.0b6b1bcf.js"><link rel="prefetch" href="/assets/js/113.5b7e1e08.js"><link rel="prefetch" href="/assets/js/114.1838c32a.js"><link rel="prefetch" href="/assets/js/115.c7c5cc09.js"><link rel="prefetch" href="/assets/js/116.fd7bb44f.js"><link rel="prefetch" href="/assets/js/117.f5c98f6e.js"><link rel="prefetch" href="/assets/js/118.f93122eb.js"><link rel="prefetch" href="/assets/js/119.13b39540.js"><link rel="prefetch" href="/assets/js/12.83e9969b.js"><link rel="prefetch" href="/assets/js/120.a6d40fa6.js"><link rel="prefetch" href="/assets/js/121.fd49d64f.js"><link rel="prefetch" href="/assets/js/122.2cfc93e3.js"><link rel="prefetch" href="/assets/js/123.ba3b29f1.js"><link rel="prefetch" href="/assets/js/124.b8bff13a.js"><link rel="prefetch" href="/assets/js/125.27fa500d.js"><link rel="prefetch" href="/assets/js/126.c3f9a203.js"><link rel="prefetch" href="/assets/js/127.78c650ae.js"><link rel="prefetch" href="/assets/js/128.d6a3f914.js"><link rel="prefetch" href="/assets/js/129.4c522c1c.js"><link rel="prefetch" href="/assets/js/13.5290e31d.js"><link rel="prefetch" href="/assets/js/130.a34f1611.js"><link rel="prefetch" href="/assets/js/131.9bb2edb4.js"><link rel="prefetch" href="/assets/js/132.7af1a92f.js"><link rel="prefetch" href="/assets/js/133.da599368.js"><link rel="prefetch" href="/assets/js/135.11f1b828.js"><link rel="prefetch" href="/assets/js/136.328aa65f.js"><link rel="prefetch" href="/assets/js/137.15a22049.js"><link rel="prefetch" href="/assets/js/138.4bda7aa6.js"><link rel="prefetch" href="/assets/js/139.4aba3c38.js"><link rel="prefetch" href="/assets/js/14.f4691306.js"><link rel="prefetch" href="/assets/js/140.6bd807e4.js"><link rel="prefetch" href="/assets/js/141.1ed7e93c.js"><link rel="prefetch" href="/assets/js/142.7ef4379a.js"><link rel="prefetch" href="/assets/js/143.c0563a21.js"><link rel="prefetch" href="/assets/js/144.83078004.js"><link rel="prefetch" href="/assets/js/145.e1f552d9.js"><link rel="prefetch" href="/assets/js/146.3e8c46d3.js"><link rel="prefetch" href="/assets/js/147.28e62032.js"><link rel="prefetch" href="/assets/js/148.9816b97f.js"><link rel="prefetch" href="/assets/js/149.c7cae1b2.js"><link rel="prefetch" href="/assets/js/15.32f3149f.js"><link rel="prefetch" href="/assets/js/150.1f2a2e76.js"><link rel="prefetch" href="/assets/js/151.3caebd35.js"><link rel="prefetch" href="/assets/js/152.c50afc58.js"><link rel="prefetch" href="/assets/js/153.0091d215.js"><link rel="prefetch" href="/assets/js/154.0daca2fd.js"><link rel="prefetch" href="/assets/js/155.a95f3eb0.js"><link rel="prefetch" href="/assets/js/156.37ac6505.js"><link rel="prefetch" href="/assets/js/157.535357ad.js"><link rel="prefetch" href="/assets/js/158.9aaf41fa.js"><link rel="prefetch" href="/assets/js/159.04ada915.js"><link rel="prefetch" href="/assets/js/160.a8b2e8ae.js"><link rel="prefetch" href="/assets/js/161.fc813cec.js"><link rel="prefetch" href="/assets/js/162.48e935e7.js"><link rel="prefetch" href="/assets/js/163.10377296.js"><link rel="prefetch" href="/assets/js/164.f9ef9170.js"><link rel="prefetch" href="/assets/js/165.0dc3160e.js"><link rel="prefetch" href="/assets/js/166.028eae50.js"><link rel="prefetch" href="/assets/js/17.c2aba72e.js"><link rel="prefetch" href="/assets/js/18.c7c16e0d.js"><link rel="prefetch" href="/assets/js/19.bbe762d9.js"><link rel="prefetch" href="/assets/js/20.6150792f.js"><link rel="prefetch" href="/assets/js/21.05a61dc2.js"><link rel="prefetch" href="/assets/js/22.16e02ad4.js"><link rel="prefetch" href="/assets/js/23.7140d8ce.js"><link rel="prefetch" href="/assets/js/24.46996a27.js"><link rel="prefetch" href="/assets/js/25.c3e1c912.js"><link rel="prefetch" href="/assets/js/26.c77104b3.js"><link rel="prefetch" href="/assets/js/27.03e03e8c.js"><link rel="prefetch" href="/assets/js/28.7cddcb62.js"><link rel="prefetch" href="/assets/js/29.c2751e08.js"><link rel="prefetch" href="/assets/js/30.712e63ab.js"><link rel="prefetch" href="/assets/js/31.973b1201.js"><link rel="prefetch" href="/assets/js/32.4b970f69.js"><link rel="prefetch" href="/assets/js/33.13653ecd.js"><link rel="prefetch" href="/assets/js/34.95e22083.js"><link rel="prefetch" href="/assets/js/35.d8aa2382.js"><link rel="prefetch" href="/assets/js/36.cf48bbfe.js"><link rel="prefetch" href="/assets/js/37.9bd22bdd.js"><link rel="prefetch" href="/assets/js/38.873c79e5.js"><link rel="prefetch" href="/assets/js/39.a06d88c4.js"><link rel="prefetch" href="/assets/js/4.56bfa720.js"><link rel="prefetch" href="/assets/js/40.998589d1.js"><link rel="prefetch" href="/assets/js/41.708c2616.js"><link rel="prefetch" href="/assets/js/42.98a0fcf1.js"><link rel="prefetch" href="/assets/js/43.8c431567.js"><link rel="prefetch" href="/assets/js/44.cf23d2f1.js"><link rel="prefetch" href="/assets/js/45.a098f544.js"><link rel="prefetch" href="/assets/js/46.494b630f.js"><link rel="prefetch" href="/assets/js/47.178cf923.js"><link rel="prefetch" href="/assets/js/48.b3a5228c.js"><link rel="prefetch" href="/assets/js/49.3136da99.js"><link rel="prefetch" href="/assets/js/5.f9bb1162.js"><link rel="prefetch" href="/assets/js/50.1c1f7685.js"><link rel="prefetch" href="/assets/js/51.4e943d83.js"><link rel="prefetch" href="/assets/js/52.ae3dc8b2.js"><link rel="prefetch" href="/assets/js/53.38a83fa9.js"><link rel="prefetch" href="/assets/js/54.4f659a5d.js"><link rel="prefetch" href="/assets/js/55.c0ac0b8b.js"><link rel="prefetch" href="/assets/js/56.412d41b7.js"><link rel="prefetch" href="/assets/js/57.39e4ffda.js"><link rel="prefetch" href="/assets/js/58.5e702327.js"><link rel="prefetch" href="/assets/js/59.a2232778.js"><link rel="prefetch" href="/assets/js/6.3a89c651.js"><link rel="prefetch" href="/assets/js/60.155317ea.js"><link rel="prefetch" href="/assets/js/61.e378af76.js"><link rel="prefetch" href="/assets/js/62.aa13de6f.js"><link rel="prefetch" href="/assets/js/63.822cf5ae.js"><link rel="prefetch" href="/assets/js/64.ec5434db.js"><link rel="prefetch" href="/assets/js/65.866b5852.js"><link rel="prefetch" href="/assets/js/66.38edc8b7.js"><link rel="prefetch" href="/assets/js/67.80297d3b.js"><link rel="prefetch" href="/assets/js/68.46ad21c2.js"><link rel="prefetch" href="/assets/js/69.ca0b3c10.js"><link rel="prefetch" href="/assets/js/70.ad2ad795.js"><link rel="prefetch" href="/assets/js/71.55d93939.js"><link rel="prefetch" href="/assets/js/72.028aa764.js"><link rel="prefetch" href="/assets/js/73.dd2f3c2f.js"><link rel="prefetch" href="/assets/js/74.61981d05.js"><link rel="prefetch" href="/assets/js/75.684df9c5.js"><link rel="prefetch" href="/assets/js/76.608f2210.js"><link rel="prefetch" href="/assets/js/77.a02868d7.js"><link rel="prefetch" href="/assets/js/78.aba3ae44.js"><link rel="prefetch" href="/assets/js/79.40334d6b.js"><link rel="prefetch" href="/assets/js/8.5bd7a75f.js"><link rel="prefetch" href="/assets/js/80.b4695d0f.js"><link rel="prefetch" href="/assets/js/81.2146043b.js"><link rel="prefetch" href="/assets/js/82.8e2ddc4a.js"><link rel="prefetch" href="/assets/js/83.6a453f1e.js"><link rel="prefetch" href="/assets/js/84.e5a0eecc.js"><link rel="prefetch" href="/assets/js/85.067a81c0.js"><link rel="prefetch" href="/assets/js/86.54e014bc.js"><link rel="prefetch" href="/assets/js/87.12a728e2.js"><link rel="prefetch" href="/assets/js/88.44d36318.js"><link rel="prefetch" href="/assets/js/89.28cdb784.js"><link rel="prefetch" href="/assets/js/9.fa60bbd0.js"><link rel="prefetch" href="/assets/js/90.59c087b9.js"><link rel="prefetch" href="/assets/js/91.4e1c5724.js"><link rel="prefetch" href="/assets/js/92.ac865e6e.js"><link rel="prefetch" href="/assets/js/93.680825f4.js"><link rel="prefetch" href="/assets/js/94.f28735d1.js"><link rel="prefetch" href="/assets/js/95.c61e2db6.js"><link rel="prefetch" href="/assets/js/96.f7eb21ae.js"><link rel="prefetch" href="/assets/js/97.2b88006c.js"><link rel="prefetch" href="/assets/js/98.7c90d0e3.js"><link rel="prefetch" href="/assets/js/99.82b806dd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.543aeca0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="./assets/img/xiaosi.PNG" alt="大青虫" class="logo"> <span class="site-name can-hide">大青虫</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/AI网站/" class="nav-link">
+  AI网站
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/图生代码/" class="nav-link">
+  图生代码
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="other" class="dropdown-title"><span class="title">other</span> <span class="arrow down"></span></button> <button type="button" aria-label="other" class="mobile-dropdown-title"><span class="title">other</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常" class="dropdown-title"><span class="title">日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常" class="mobile-dropdown-title"><span class="title">日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/日常/临时笔记/" class="nav-link">
+  临时笔记
+</a></li><li class="dropdown-item"><!----> <a href="/日常/" class="nav-link">
+  日常
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/系统/" class="nav-link">
+  系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/网站搭建/" class="nav-link">
+  网站搭建
+</a></li><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AIGC" class="dropdown-title"><span class="title">AIGC</span> <span class="arrow down"></span></button> <button type="button" aria-label="AIGC" class="mobile-dropdown-title"><span class="title">AIGC</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AIGC/whisper/" class="nav-link">
+  Whisper
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/ffmpeg/" class="nav-link">
+  Ffmpeg
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/AI网站/" class="nav-link">
+  AI网站
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/动画制作/" class="nav-link">
+  动画制作
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/图生代码/" class="nav-link">
+  图生代码
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/tts/" class="nav-link">
+  Tts
+</a></li><li class="dropdown-item"><!----> <a href="/AIGC/" class="nav-link">
+  AIGC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="case" class="dropdown-title"><span class="title">case</span> <span class="arrow down"></span></button> <button type="button" aria-label="case" class="mobile-dropdown-title"><span class="title">case</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/case/" class="nav-link">
+  Case
+</a></li><li class="dropdown-item"><!----> <a href="/case/threejsOne/" class="nav-link">
+  Threejs One
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="note" class="dropdown-title"><span class="title">note</span> <span class="arrow down"></span></button> <button type="button" aria-label="note" class="mobile-dropdown-title"><span class="title">note</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/" class="nav-link">
+  Note
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="other" class="dropdown-title"><span class="title">other</span> <span class="arrow down"></span></button> <button type="button" aria-label="other" class="mobile-dropdown-title"><span class="title">other</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webpack" class="dropdown-title"><span class="title">webpack</span> <span class="arrow down"></span></button> <button type="button" aria-label="webpack" class="mobile-dropdown-title"><span class="title">webpack</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/原理/" class="nav-link">
+  原理
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/项目/" class="nav-link">
+  项目
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/高级/" class="nav-link">
+  高级
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/Angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/前端/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/Electron/" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/前端/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/前端/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/前端/JavaScript/" class="nav-link">
+  Java Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/React/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/前端/ReactNative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/前端/study/" class="nav-link">
+  Study
+</a></li><li class="dropdown-item"><!----> <a href="/前端/THREEJS/" class="nav-link">
+  THREEJS
+</a></li><li class="dropdown-item"><!----> <a href="/前端/TypeScript/" class="nav-link">
+  Type Script
+</a></li><li class="dropdown-item"><!----> <a href="/前端/utils/" class="nav-link">
+  Utils
+</a></li><li class="dropdown-item"><!----> <a href="/前端/VUE/" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/前端/web3/" class="nav-link">
+  Web3
+</a></li><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  前端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/后端/CICD/" class="nav-link">
+  CICD
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/" class="nav-link">
+  Crawlers
+</a></li><li class="dropdown-item"><!----> <a href="/后端/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/后端/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/后端/koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/后端/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/后端/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/后端/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/后端/nvm/" class="nav-link">
+  Nvm
+</a></li><li class="dropdown-item"><!----> <a href="/后端/Crawlers/puppteer/" class="nav-link">
+  Puppteer
+</a></li><li class="dropdown-item"><!----> <a href="/后端/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/后端/shell/" class="nav-link">
+  Shell
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="日常" class="dropdown-title"><span class="title">日常</span> <span class="arrow down"></span></button> <button type="button" aria-label="日常" class="mobile-dropdown-title"><span class="title">日常</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/日常/临时笔记/" class="nav-link">
+  临时笔记
+</a></li><li class="dropdown-item"><!----> <a href="/日常/" class="nav-link">
+  日常
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/系统/" class="nav-link">
+  系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="网络" class="dropdown-title"><span class="title">网络</span> <span class="arrow down"></span></button> <button type="button" aria-label="网络" class="mobile-dropdown-title"><span class="title">网络</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/网络/网站搭建/" class="nav-link">
+  网站搭建
+</a></li><li class="dropdown-item"><!----> <a href="/网络/" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/面经/category/" class="nav-link">
+  Category
+</a></li><li class="dropdown-item"><!----> <a href="/面经/contribution/" class="nav-link">
+  Contribution
+</a></li><li class="dropdown-item"><!----> <a href="/面经/experience/" class="nav-link">
+  Experience
+</a></li><li class="dropdown-item"><!----> <a href="/面经/lib/" class="nav-link">
+  Lib
+</a></li><li class="dropdown-item"><!----> <a href="/面经/前端面试/" class="nav-link">
+  前端面试
+</a></li><li class="dropdown-item"><!----> <a href="/面经/" class="nav-link">
+  面经
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Nginx</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E5%90%8E%E7%AB%AF/nginx/" aria-current="page" class="active sidebar-link">nginx 基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#whereis-nginx-返回关于-nginx-的一些路径信息" class="sidebar-link">whereis nginx  返回关于 Nginx 的一些路径信息</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#重启使得修改的nginx配置文件生效" class="sidebar-link">重启使得修改的nginx配置文件生效</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#查询-nginx-状态" class="sidebar-link">查询 nginx 状态</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#启动-nginx-服务" class="sidebar-link">启动 Nginx 服务</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#nas配置nginx过程" class="sidebar-link">nas配置nginx过程</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#通过-docker-compose-部署-多应用程序-nas" class="sidebar-link">通过 docker-compose 部署 多应用程序 （nas）</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#docker-mysql-导入sql文件" class="sidebar-link">docker mysql 导入sql文件</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#mysql-查询-对外端口" class="sidebar-link">mysql 查询 对外端口</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#docker启动mysql后-其他应用如何连接-mysql" class="sidebar-link">docker启动MySQL后 其他应用如何连接 MySQL</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#查看-启动的nodejs的日志" class="sidebar-link">查看 启动的nodejs的日志</a></li><li class="sidebar-sub-header"><a href="/%E5%90%8E%E7%AB%AF/nginx/#docker-查可用版本" class="sidebar-link">docker 查可用版本</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nginx-基础"><a href="#nginx-基础" class="header-anchor">#</a> nginx 基础</h1> <h2 id="whereis-nginx-返回关于-nginx-的一些路径信息"><a href="#whereis-nginx-返回关于-nginx-的一些路径信息" class="header-anchor">#</a> whereis nginx  返回关于 Nginx 的一些路径信息</h2> <p>通常情况下 Nginx 的配置文件位于 /etc/nginx 目录下  在该目录下找到 Nginx 的配置文件，如 nginx.conf 或者其他以 .conf 结尾的文件</p> <ol><li>编辑命令
+sudo vim /etc/nginx/nginx.conf</li></ol> <h2 id="重启使得修改的nginx配置文件生效"><a href="#重启使得修改的nginx配置文件生效" class="header-anchor">#</a> 重启使得修改的nginx配置文件生效</h2> <p>sudo nginx -s reload</p> <h2 id="查询-nginx-状态"><a href="#查询-nginx-状态" class="header-anchor">#</a> 查询 nginx 状态</h2> <p>sudo systemctl status nginx</p> <h2 id="启动-nginx-服务"><a href="#启动-nginx-服务" class="header-anchor">#</a> 启动 Nginx 服务</h2> <p>sudo systemctl start nginx</p> <h1 id="其他笔记"><a href="#其他笔记" class="header-anchor">#</a> 其他笔记</h1> <ol><li>进入nginx容器进行相关配置</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">## whereis nginx #可以在容器中查询出nginx的相关配置文件存放位置</span>
+</code></pre></div><p>文件夹 nodePro docke-compose 部署 两个node应用示例</p> <ol start="2"><li>进入容器后 查询nginx配置文件存放位置</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>    /etc/nginx/nginx.conf
+</code></pre></div><ol start="3"><li>查询nginx代理日志</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">tail</span> -f /var/log/nginx/access.log
+</code></pre></div><h2 id="nas配置nginx过程"><a href="#nas配置nginx过程" class="header-anchor">#</a> nas配置nginx过程</h2> <p>部署 vue前端应用</p> <ol><li><p>通过containerStation 安装 nginx</p></li> <li><p>查询nginx相关配置文件存放位置  进入nginx容器   whereis nginx</p></li> <li><p>在finalshell上传需要部署的文件（/share/temporary） |
+| 将本地文件拷贝到docker容器文件内（使用finalshell ssh连接nas ）
+| docker cp 你的文件路径 容器长ID:docker容器路径</p></li> <li><p>配置nginx文件 ：</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>user  nginx<span class="token punctuation">;</span>
+worker_processes  <span class="token number">1</span><span class="token punctuation">;</span>
+
+error_log  /var/log/nginx/error.log warn<span class="token punctuation">;</span>
+pid        /var/run/nginx.pid<span class="token punctuation">;</span>
+
+
+events <span class="token punctuation">{</span>
+    worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+http <span class="token punctuation">{</span>
+    include       /etc/nginx/mime.types<span class="token punctuation">;</span>
+    default_type  application/octet-stream<span class="token punctuation">;</span>
+
+    log_format  main  <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+                      <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+                      <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+
+    access_log  /var/log/nginx/access.log  main<span class="token punctuation">;</span>
+
+    sendfile        on<span class="token punctuation">;</span>
+    <span class="token comment">#tcp_nopush     on;</span>
+
+    keepalive_timeout  <span class="token number">65</span><span class="token punctuation">;</span>
+
+    <span class="token comment">#gzip  on;</span>
+
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name  localhost<span class="token punctuation">;</span>
+
+        <span class="token comment">#charset koi8-r;</span>
+
+        <span class="token comment">#access_log  logs/host.access.log  main;</span>
+        location / <span class="token punctuation">{</span>
+            root /share/temporary/h5<span class="token punctuation">;</span>
+            try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span>/ /index.html<span class="token punctuation">;</span>
+            index  index.html index.htm<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="通过-docker-compose-部署-多应用程序-nas"><a href="#通过-docker-compose-部署-多应用程序-nas" class="header-anchor">#</a> 通过 docker-compose 部署 多应用程序 （nas）</h2> <ol><li>通过 docker-compose部署demo  :
+隐藏参考文件 ： nodePro （包括前后端的访问 内外网映射）</li></ol> <ul><li>docker-compose多容器启动 node项目、 nginx（）   docker-compose.yml</li> <li>nginx nginx映射配置 前端项目地址访问  default.conf</li> <li>nodejs nodejs2 两个后端项目</li> <li>statc文件夹 前端项目存放地址<br>
+（未完待续 完成水平扩展 负载均衡 nginx的水平扩展  不停机更新 版本回滚等）</li></ul> <ol start="2"><li>仿照demo nodePro 去部署一个前后端一体的项目 千里云课堂 （mysql + vue + express ）</li></ol> <h2 id="docker-mysql-导入sql文件"><a href="#docker-mysql-导入sql文件" class="header-anchor">#</a> docker mysql 导入sql文件</h2> <p>在容器内操作 ：<br>
+mysql -uroot -p test &lt; test.sql</p> <p>mysql -uroot -p payment &lt; /home/temporary/payment.sql</p> <p>mysql 基础操作 ：
+show databases  ;  显示数据库表
+USE payment;  选中数据库
+DESCRIBE adminpay;  // 查询数据库表结构</p> <h2 id="mysql-查询-对外端口"><a href="#mysql-查询-对外端口" class="header-anchor">#</a> mysql 查询 对外端口</h2> <p>进入mysql</p> <p>show global variables like 'port';</p> <h2 id="docker启动mysql后-其他应用如何连接-mysql"><a href="#docker启动mysql后-其他应用如何连接-mysql" class="header-anchor">#</a> docker启动MySQL后 其他应用如何连接 MySQL</h2> <h2 id="查看-启动的nodejs的日志"><a href="#查看-启动的nodejs的日志" class="header-anchor">#</a> 查看 启动的nodejs的日志</h2> <p>pm2 logs</p> <h2 id="docker-查可用版本"><a href="#docker-查可用版本" class="header-anchor">#</a> docker 查可用版本</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年6月22日星期六 06:28</span></div></footer> <!----> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.cb1f3de8.js" defer></script><script src="/assets/js/16.9ec431fc.js" defer></script><script src="/assets/js/3.bf340958.js" defer></script><script src="/assets/js/134.ed961ab7.js" defer></script><script src="/assets/js/7.684d279e.js" defer></script>
+  </body>
+</html>
